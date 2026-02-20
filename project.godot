@@ -29,6 +29,7 @@ buses/default_bus_layout="uid://x7olkos3adhq"
 GameManager="*res://Scripts/game_manager.gd"
 FadeManager="*res://scenes/fade_manager.tscn"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+SaveManager="*res://Scripts/save_manager.gd"
 
 [dialogic]
 

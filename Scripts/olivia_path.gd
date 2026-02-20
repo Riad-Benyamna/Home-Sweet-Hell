@@ -3,9 +3,11 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	# Re-enable saving when returning to VN after rhythm game
+	SaveManager.enable_saving()
+
 	Dialogic.signal_event.connect(_on_dialogic_signal)
 	Dialogic.start("Olivia Won")
-	pass # Replace with function body.
 
 func _on_dialogic_signal(argument: String):
 	if argument == "end":
