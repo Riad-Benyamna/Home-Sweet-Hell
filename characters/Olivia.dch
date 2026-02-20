@@ -1,0 +1,166 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.569833, 0.867188, 0.508118, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Angry",
+&"description": "",
+&"display_name": "Olivia",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Angry": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia angry.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Away": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia away.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Confused": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia confused.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Crying": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia crying.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Embarrassed": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia embarrassed.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Flirting": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia flirting.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Frustrated": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia Frustrated.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Happy": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia happy.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Judgemental": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia judgemental.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Laughing": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia laughing.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Neutral": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia neutral.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Sad": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia sad.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Scary": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia scary.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Shocked": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia shocked.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Smiling": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia smiling.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+},
+"Trolling": {
+"export_overrides": {
+"image": "\"res://sprites 2/Olivia new sprites/Olivia trolling.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": "res://addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.tscn"
+}
+},
+&"scale": 1.0
+}

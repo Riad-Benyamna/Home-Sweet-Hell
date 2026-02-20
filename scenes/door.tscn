@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://din1668mbgxpn"]
+
+[ext_resource type="Script" uid="uid://c246ud4uys1vb" path="res://Scripts/door.gd" id="1_0phs7"]
+[ext_resource type="Texture2D" uid="uid://sqx1ftjcyaqv" path="res://Assets/Sprites/Evil maneki neko.png" id="2_83dcw"]
+[ext_resource type="FontFile" uid="uid://odetu2hmfcb1" path="res://Assets/Fonts/Cheveuxdange.ttf" id="3_0phs7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v6xrn"]
+size = Vector2(603, 701)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83dcw"]
+size = Vector2(812, 715)
+
+[node name="door" type="AnimatableBody2D"]
+z_index = 5
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_0phs7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_83dcw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-49.5, -34.5)
+shape = SubResource("RectangleShape2D_v6xrn")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -507.0
+offset_top = -474.0
+offset_right = 488.0
+offset_bottom = -369.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_0phs7")
+theme_override_font_sizes/font_size = 50
+text = "You need at least more 200 coins to enter"
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(-43, -31.5)
+shape = SubResource("RectangleShape2D_83dcw")

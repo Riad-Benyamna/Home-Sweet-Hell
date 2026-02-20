@@ -1,0 +1,231 @@
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+audio music "res://sounds/0_120__Early-90s-bedtime-but-your-siblings-are-still-up-watching-TV-rain-_no-thunder_-90-minute-ASMR.mp3" [fade="5.0" volume="0.0"]
+[wait time="5.0"]
+
+Mother: [font_size=25]...another one...
+
+[wait time="1.0"]
+
+Mother: [font_size=32]PEARL! BRING ME ANOTHER BEER!
+
+[wait time="2.0"]
+
+Mother: [font_size=64][b]PEARL!
+
+[wait time="1.5"]
+
+Mother: [font_size=30]Useless bitch...
+
+[wait time="1.0"]
+
+Mother: [font_size=32]SOPHIA! GET DOWN HERE!
+
+[wait time="2.0"]
+
+Mother: [font_size=64][b]SOPHIA!!
+
+[wait time="1.0"]
+
+Mother: Oh my God *hick* I can't get shit in this goddamn house!
+audio sfx "res://sounds/walking-up-stairs-86304.mp3" [fade="1.0" volume="-20.0" loop="false"]
+
+[wait time="3.0"]
+audio sfx - [fade="1.0"]
+[wait time="2.0"]
+
+audio sfx "res://sounds/door-slam-sound-effect-21878.mp3" [volume="6.0" loop="false"]
+
+Mother: [b][font_size=64] HEY!
+Mother: [font_size=50][b]DIDN'T YOU HEAR ME?!
+
+Sophia: [font_size=25]...Sorry, Mom. I was just-
+
+Mother: [font_size=40][b]I DON'T CARE WHAT YOU WERE DOING!
+Mother: [b]WHEN I CALL, YOU ANSWER!
+Mother: *Hick*
+
+Sophia: [font_size=25]I'm sorry...
+
+Mother: [font_size=32]YOU'RE ALWAYS SORRY!
+Mother: SORRY, SORRY, SORRY!
+Mother: YOU AND YOUR SISTER!
+
+Mother: [font_size=50]USELESS! BOTH OF YOU!
+
+Sophia: [font_size=20]Mom, please...
+
+Mother: [font_size=28][b]DON'T "MOM PLEASE" ME!
+Mother: YOU KNOW WHAT YOU DID?!
+Mother: YOU KNOW WHAT YOU BOTH DID?!
+
+[wait time="1.5"]
+
+Mother: [font_size=32][b] THAT FUCKER LEFT BECAUSE OF YOU TWO CUNTS!
+Mother: [font_size=50]HE LEFT ME!
+Mother: [font_size=50]BECAUSE OF YOU TWO!
+label break
+Mother: [font_size=50][b]HE LEFT ME
+Mother: [font_size=50][b]FOR A FUCKING-
+
+Mother: [font_size=64][b]-NURSE!!
+Sophia: [font_size=40]WAIT MOM NO!
+audio music -
+
+audio sfx "res://sounds/glass-bottle-breaking-351297.mp3" [fade="0.0" volume="6.0" loop="false" sync=""]
+
+[background arg="res://Backgrounds/blank-white-background-xbsfzsltjksfompa.jpg" fade="0.1"]
+[wait time="0.1"]
+[background arg="res://Backgrounds/Black (1).png" fade="0.1"]
+[wait time="4.5"]
+audio sfx "res://sounds/body-fall-47877.mp3" [loop="false"]
+
+[wait time="3.0"]
+Now get your ass up and go grab me a beer.
+
+[wait time="2.0"]
+...
+
+[wait time="2.0"]
+HEY!
+
+[wait time="3.0"]
+
+Mother: [font_size=32]...Sophia?
+
+[wait time="1.5"]
+
+Mother: [font_size=20]Sophia, baby, wake up...
+
+[wait time="1.0"]
+
+Mother: [font_size=20]Please... please wake up...
+
+[wait time="2.0"]
+
+Mother: [font_size=32]Oh god... oh god, what did I do...
+
+[wait time="1.5"]
+
+Mother: [font_size=20]What did I do...
+[font_size=60][b]SOPHIA!!!
+
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/blank-white-background-xbsfzsltjksfompa.jpg" fade="5.0"]
+[wait time="3.0"]
+audio music "res://sounds/alarm-clock-90867.mp3" [loop="true"]
+[background arg="res://Backgrounds/Seb awake 1.jpg" fade="0.0"]
+[wait time="3.0"]
+[background arg="res://Backgrounds/Seb awake.jpg" fade="2.0"]
+[wait time="2.0"]
+I definitely hate this alarm.
+audio music -
+[background arg="res://Backgrounds/Black (1).png" fade="3.0" wait="true"]
+
+[background arg="res://Backgrounds/hall.jpg" fade="2.0"]
+
+join Seb (Neutral) left [animation="Fade In" length="2.0"]
+
+(The hallway was quieter than usual.)
+
+[wait time="1.5"]
+
+(I turned the corner.)
+
+[wait time="1.0"]
+
+join Marcus (Sad) right [animation="Fade In" z_index="2"]
+join Olivia (Sad) rightmost [animation="Fade In" z_index="2"]
+
+(And then I saw them.)
+(Marcus and Olivia.)
+(Standing directly in front of the board.)
+(Frozen.)
+
+
+[wait time="2.0"]
+
+update Seb (Curious)
+Seb: Marcus...? Olivia...?
+
+(They didn't respond.)
+(Didn't even blink.)
+
+[wait time="1.5"]
+
+update Seb (Effraid)
+Seb: Hey... guys?
+
+(Still nothing.)
+
+[wait time="1.0"]
+
+update Seb (Neutral)
+Seb: What's everyone looking at?
+
+(I stepped closer.)
+
+[wait time="1.5"]
+
+(Marcus's hand twitched.)
+(Like he wanted to reach out.)
+(To stop me.)
+(But he didn't move.)
+
+[wait time="1.5"]
+
+(Olivia's breathing was shallow.)
+(Quick.)
+(Like she'd just run a marathon.)
+
+[wait time="2.0"]
+
+update Seb (Curious)
+Seb: Where's Sophia?
+
+[wait time="2.5"]
+
+(Silence.)
+
+[wait time="1.5"]
+
+(I looked at the board.)
+
+[wait time="3.0"]
+
+
+leave Seb [animation="Fade Out" length="1.0"]
+leave Marcus [animation="Fade Out" length="1.0"]
+leave Olivia [animation="Fade Out" length="1.0"]
+
+label news
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+[wait time="1.0"]
+[background arg="res://Backgrounds/Sophia newspaper.jpg" fade="10.0"]
+audio music "res://game musics/Sophia death.mp3" [fade="2.0" volume="5.0"]
+[wait time="27.0"]
+
+[background arg="res://Backgrounds/Black (1).png" fade="3.0" wait="true"]
+[style name="End text"]
+[speed=2] Each year, 1.6 Billion children are victims of domestic abuse.
+[speed=2] More than 40 000 die from it.
+[speed=2] It could be your friend, your neighbour, or your cousin.
+[wait time="1.0"]
+[speed=2] If you, or someone you know, is experiencing domestic violence.
+[speed=2] Please, reach out for help.
+[wait time="1.0"]
+National Domestic Violence Hotline\: 1-800-799-7233\
+Available 24/7
+Childhelp National Child Abuse Hotline\: 1-800-422-4453\
+Available 24/7
+[wait time="1.0"]
+[speed=2] You are not alone.
+[wait time="3.0"]
+[speed=2.5] [font_size=70] Thank you for playing.
+[wait time="1.0"]
+audio music - [fade="1.0" volume="5.0"]
+[wait time="5.0"]
+audio music "res://game musics/reveal.mp3" [fade="0.0" volume="5.0"]
+[background arg="res://Backgrounds/Sophia dead.jpg" fade="0.0"]
+[wait time="5.0"]
+[signal arg="end"]

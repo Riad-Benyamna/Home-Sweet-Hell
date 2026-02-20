@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bo3wjxtkjimeq"
+path="res://.godot/imported/pearl_s theme.mp3-70db6de5cd81f8d94f0f4e8ae4f60de4.mp3str"
+
+[deps]
+
+source_file="res://game musics/pearl_s theme.mp3"
+dest_files=["res://.godot/imported/pearl_s theme.mp3-70db6de5cd81f8d94f0f4e8ae4f60de4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

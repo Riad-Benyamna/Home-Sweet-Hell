@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvjk06ox6m2ef"]
+
+[ext_resource type="Script" uid="uid://7ow7at4iv5sx" path="res://Scripts/cat_mouth_bottom.gd" id="1_07ndf"]
+[ext_resource type="Texture2D" uid="uid://b54np7hkafja8" path="res://Assets/Sprites/Cat Mouth.png" id="1_8yfbt"]
+[ext_resource type="PackedScene" uid="uid://cyblokmilv7qn" path="res://scenes/killzone.tscn" id="2_mh8xr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh8xr"]
+size = Vector2(507, 107.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_07ndf"]
+size = Vector2(419, 85.3571)
+
+[node name="Cat Mouth Bottom" type="AnimatableBody2D"]
+z_index = 2
+scale = Vector2(1.4, 1.4)
+script = ExtResource("1_07ndf")
+
+[node name="CatMouth" type="Sprite2D" parent="."]
+position = Vector2(9, -187)
+texture = ExtResource("1_8yfbt")
+region_enabled = true
+region_rect = Rect2(-2.72626, 543.139, 903.094, 353.692)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15.5, -127.625)
+shape = SubResource("RectangleShape2D_mh8xr")
+
+[node name="Killzone" parent="." instance=ExtResource("2_mh8xr")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(6.5, -215.179)
+shape = SubResource("RectangleShape2D_07ndf")

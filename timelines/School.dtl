@@ -1,0 +1,404 @@
+audio music "res://game musics/main theme.mp3" [fade="2.0" volume="-5.0"]
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+[wait time="2.0"]
+join Marcus (Angry) right [animation="Fade In" length="0.2"]
+Marcus: No really! I swear it's a real golden ball, my dad gave it to me!
+join Olivia (Laughing) left [animation="Fade In" length="0.2" mirrored="true"]
+Olivia: Yeah right, a 24-carat golden tennis ball?
+Olivia: What's next? it grants wishes ?
+update Marcus (Sad)
+Marcus: But it's truuuue!
+update Olivia (Confused)
+Olivia: Marcus[speed=6],[speed=1] not a day goes by without me lending you money for caramel.
+Olivia: It's like you never have allowance on you.
+update Marcus (Embarrassed)
+Marcus: That's 'cause my pockets are small…
+update Marcus (Sceptical)
+Marcus: Just admit you're jealous I have golden balls and you don't.
+update Olivia (Judgemental)
+Olivia: Honestly[speed=5],[speed=1] I won't even bother answering that.
+join Sophia (Soupir) rightmost [animation="Slide From Right"]
+Sophia: Will you two stop already?
+Sophia: The school year has barely even started.
+Sophia: This is our first meeting since the end of last year, come on.
+update Sophia (Confuse)
+Sophia: Hey wait…
+Sophia: Isn't that Seb over there?
+join Olivia (Judgemental) center [animation="Slide In Right"]
+Olivia: Hm ?
+update Olivia (Laughing)
+Olivia: Oh yeah,
+update Olivia (Trolling)
+Olivia: Jeez he's out of air again.
+join Seb (Exhausted) leftmost [animation="Slide From Left"]
+update Seb [animation="Tada" length="0.7" repeat="5"]
+Seb: *pant*[speed=5].[speed=1]..*pant*[speed=5].[speed=1].. Hey[speed=5].[speed=1]..*pant*[speed=5].[speed=1].. guys!
+update Seb
+update Marcus (Smiling) [z_index="1"]
+Marcus: Oh hey Seb!
+Marcus: Took you long enough! We've been waiting for like 20 minutes.
+update Sophia (Silly) [z_index="2"]
+Sophia: True;
+Sophia: I was starting to think you weren't coming.
+update Olivia (Judgemental)
+Olivia: Yeah you're lucky, I wouldn't have waited for you another second.
+update Seb (Embarrassed)
+Seb: I know this is gonna sound cliché…
+Seb: but… uh…
+Seb: my alarm [font_size=25]kinda… [font_size=20]didn't go off.
+update Marcus (Laughing) [animation="Tada" length="0.1"]
+Marcus: No waaay! I thought that only happened in movies!
+update Olivia (Laughing)
+Olivia: If you're always this late, it's gonna be tough for you to succeed at anything.
+update Marcus (Angry)
+Marcus: So what? I'm not the most punctual guy either, and I still beat you at running!
+update Olivia (Sad)
+Olivia: Real...
+update Olivia (Flirting)
+Olivia: But you don't need to run when you've got a private chauffeur.
+update Sophia (Soupir)
+Sophia: That really must make life easier.
+update Marcus (Sceptical)
+Marcus: Yeah well,
+Marcus: I don't remember your chauffeur saving you from falling and hurting your hand last time-
+update Olivia (Angry) left [animation="Tada" length="0.3" mirrored="true"]
+Olivia: I'm going to tag your stupid face you braindead twat !
+update Seb (Effraid)
+Seb: Hey, I know you two love bickering,
+Seb: but maybe we should hurry to class before we get scolded.
+update Marcus (Angry)
+Marcus: That's rich coming from you!
+Marcus: You're the one who arrived late Carrothead!
+update Sophia (Smiling)
+Sophia: Seb's right. Unless you want detention on the very first day?
+update Olivia (Sad)
+Olivia: I just hope there's still a seat in the front.
+update Marcus (Sceptical)
+Marcus: [font_size=20]Teacher's pet.
+update Marcus [animation="Shake X" length="0.1"]
+audio sfx "res://sounds/punch-41105.mp3" [volume="0.0" loop="false"]
+[wait time="0.5"]
+update Marcus (Shocked) [animation="Shake Y" length="0.1"]
+Marcus: [b]OWW!
+update Olivia (Smiling)
+Olivia: You said ?
+update Marcus (Sad)
+Marcus: Nothing…
+leave --All-- [animation="Fade Out"]
+audio music - [fade="2.0" volume="0.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+[wait time="2.0"]
+label class
+[background arg="res://Backgrounds/class.jpg" fade="2.0"]
+audio music "res://game musics/class theme.mp3" [fade="1.0" volume="0.0"]
+[wait time="2.5"]
+join Marcus (Excited) right [animation="Fade In" length="0.2"]
+Marcus: Hey psst! Seb, did you do anything cool this summer?
+join Seb (Neutral) left [animation="Fade In"]
+Seb: Oh, um.
+[wait time="0.4"]
+- I spent the entire summer napping
+	update Seb (Embarrassed) [length="0.2"]
+	Seb: Uh...let's just say I rested well
+- I spent the entire summer playing video games
+	update Seb (Embarrassed) left
+	Seb: Uh, nothing too interesting.
+	Seb: I spent most of my time on Uber Slash Cross.
+join Sophia (Embarrassed) rightmost [animation="Slide From Right" length="0.3"]
+Sophia: Oh you too? I stayed home all August,
+update Sophia (Soupir)
+Sophia: You wouldn't believe how hot it was.
+update Marcus (Exhausted)
+Marcus: Must have been fun…
+update Marcus (Embarrassed)
+Marcus: I spent most of the time with my dad to be fair...
+Marcus: And beside a few family visits in the countryside, not much going on either.
+update Seb (Trolling)
+Seb: So I guess we all had a very boring summer.
+update Marcus (Laughing) [animation="Tada" length="0.2"]
+Marcus: I bet that her majesty Olivia must have spent her summer on some fancy yacht !
+join Olivia (Angry) leftmost [animation="Slide From Left" length="0.2" mirrored="true"]
+Olivia: Will you three shut up?
+Olivia: I can barely hear the teacher.
+update Marcus (Sceptical)
+Marcus: Dude you really gotta stop licking the teacher's boots.
+update Marcus (Flirty)
+Marcus: You'll end up with wax all over your tongue.
+update Olivia (Judgemental)
+Olivia: Okay so first of all[speed=10],[speed=1] ew.
+Olivia: And second of all\:
+Olivia: That's the price to pay if you don't wanna fail the year, Marcus.
+Olivia: And I'm pretty sure Seb agrees with me.
+update Marcus (Sceptical)
+Marcus: I beg to differ your honor!
+Marcus: Seb would rather die.
+update Marcus (Smiling)
+Marcus: Am I right Seb or am I right Seb ?
+update Seb (Effraid)
+Seb: Uh...Well...
+update Seb (Tired)
+(Oh boy! )
+(Who should I agree with)
+(What's the best between bieng a troublemaker or a teacher's pet)
+- Agree with Marcus
+	update Seb (Smiling) center [mirrored="true"]
+	Seb: Come on Olivia, a little whispering isn't gonna ruin our whole year.
+	update Marcus (Sceptical) [z_index="1"]
+	Marcus: Don't bother Seb;
+	update Marcus (Laughing)
+	Marcus: Countess Olivia of Mybuttland is way above us poor loser peasants.
+	update Sophia (Embarrassed)
+	Sophia: Not sure that's what she meant…
+	update Olivia (Happy)
+	Olivia: Oh no, that's exactly what I meant.
+	update Sophia (Sad)
+	Sophia: Well, thanks for the compliment Olivia.
+- Agree with Olivia
+	update Seb (Embarrassed)
+	Seb: Honestly, Olivia's not wrong
+	Seb: Remember when Marcus and I got a note in our report books for talking too much?
+	Seb: Don't really wanna relive that...
+	update Marcus (Flirty)
+	Marcus: Sir Sébastien of Saint-Tropez is actually a bourgeois snob?
+	update Sophia (Silly)
+	Sophia: Thou never told us thou were noble, shall I bow ?
+	update Olivia (Scary) [animation="Tada" z_index="1"]
+	Olivia: Yeah Seb is actually Henry V's ghost [i]ooooo.
+	update Seb (Smiling)
+	Seb: Yeah..uh
+	Seb: booo...and stuff
+	update Marcus (Shocked) [animation="Shake X" length="0.1" repeat="5"]
+	Marcus: Gh-gh-[b]GHOST ??!
+	update Seb (Curious)
+	Seb: [font_size=20](was I this convincing ?)
+- Compliment Sophia
+	update Seb (Effraid)
+	Seb: Uuuuh...
+	update Seb (Embarrassed)
+	Seb: That's a really pretty flower you got there Sophia!
+	update Sophia (Happy) [animation="Shake Y" length="0.1"]
+	Sophia: Hahha! You noticed !
+	update Sophia (Silly) [animation="Shake Y" length="0.1"]
+	Sophia: I picked it in my neighbour's garden yesterday!
+	Seb: Yeah it looks very... "I found it in my nerighbour's garden yesterday"-ish
+	update Olivia (Judgemental)
+	Olivia: Seriously ?
+	update Marcus (Angry)
+	Marcus: You really thought you were smooth?
+	update Seb (Shock) [animation="Bounce" length="0.1"]
+	Seb: Well um..
+	update Seb (Embarrassed)
+	Seb: Yes ?
+	update Olivia (Laughing)
+	Olivia: You still got a lot to learn carrothead.
+	update Seb (Embarrassed)
+	Seb: I admit that was not a genius move.
+	update Olivia (Trolling)
+	Olivia: Have you ever done something that was a genius move.
+	update Seb (Sad)
+	Seb: How sweet...
+update Olivia (Judgemental)
+Olivia: I'm kidding obviously,
+Olivia: But seriously let me focus.
+update Olivia (Sad)
+Olivia: My parents will never let me hear the end of it if I fail the next test.
+update Sophia (Laughing)
+Sophia: You can't possibly do worse than Marcus, that's for sure.
+update Marcus (Crying)
+Marcus: Ouch Sophia, that's harsh...
+update Marcus (Embarrassed)
+Marcus: But she's not wrong, my mediocrity is hard to match.
+update Olivia (Trolling)
+Olivia: Just brushing against your level is a curse, Marcus.
+update Marcus (Angry)
+Marcus: Okay shut it now before I break your nose.
+update Olivia (Flirting)
+Olivia: You wouldn't hit a girl.
+update Olivia (Shocked) [animation="Shake X" length="0.1"]
+audio sfx "res://sounds/punch-41105.mp3" [volume="0.0" loop="false"]
+[wait time="0.5"]
+
+update Olivia (Angry)
+Olivia: HEY!
+update Marcus (Excited)
+Marcus: I'm for gender equality baby !
+update Sophia (Embarrassed)
+Sophia: Alright, I think we should end the chat till recess.
+Sophia: The teacher's looking at us funny.
+Olivia: BUT HE JUST-
+update Olivia (Judgemental)
+Olivia: Ugh...Nevermind.
+Olivia: We'll talk after, but for now zip it.
+update Marcus (Exhausted)
+Marcus: Fine, I'll take a little nap.
+Marcus: Seb, cover me from the teacher, will you?
+update Seb (Smiling) [animation="Bounce" length="0.1" z_index="2" mirrored="false"]
+Seb: On it sir!
+leave Marcus [animation="Fade Out"]
+leave Olivia [animation="Fade Out"]
+leave Sophia [animation="Fade Out"]
+join Seb (Smiling) center [animation="Slide In Left"]
+
+Seb: (These clowns really haven't changed a bit)
+Seb: (it's so good to see them again)
+Seb: (I guess we should make up for lost time)
+leave Seb [animation="Fade Out" length="1.0" wait="true"]
+[background arg="res://Backgrounds/Black (1).png" fade="1.0"]
+[wait time="1.0"]
+label hall
+audio sfx "res://sounds/School ambience.mp3" [volume="-15.0" loop="true"]
+[background arg="res://Backgrounds/hall.jpg" fade="2.0"]
+[wait time="2.3"]
+join Marcus (Exhausted) rightmost [animation="Slide From Right"]
+Marcus: First day and I'm already exhausted.
+join Sophia (Confuse) right [animation="Slide From Right"]
+Sophia: But Marcus, we only had 1h30 of art class;
+update Marcus (Confused) [animation="Tada" z_index="1"]
+Marcus: All those colors made me dizzy.
+join Olivia (Judgemental) leftmost [animation="Slide From Left" mirrored="true"]
+Olivia: Doesn't take much…
+update Olivia (Happy)
+Olivia: But hey, look on the bright side,
+Olivia: since it's Friday we don't have school tomorrow.
+join Seb (Laugh) left [animation="Slide From Left"]
+Seb: Lucky to start the year on a Friday.
+update Olivia (Laughing) [animation="Tada" length="0.2" z_index="1"]
+Olivia: What are you guys doing this afternoon anyway?
+update Seb (Embarrassed) [length="0.1"]
+Seb: Honestly, no clue, I never know what to do with my free time.
+update Marcus (Happy) [length="0.2"]
+Marcus: I've got tennis practice,
+update Marcus (Excited) [animation="Tada" length="0.2" z_index="1"]
+Marcus: big match in a few days so I gotta be sharp!
+update Sophia (Smiling) [length="0.1"]
+Sophia: I need to do the groceries for my mom,
+update Sophia (Soupir)
+Sophia: the list's long so it'll take a while,
+update Sophia (Silly) [animation="Shake Y" length="0.2"]
+Sophia: but I thought I'd swing by the park after.
+update Olivia (Smiling)
+Olivia: As for me, I've got cello rehearsal at the conservatory,
+update Olivia (Flirting)
+Olivia: I'm performing [b]Ferunovsky's 67th Etude[/b] next week at the city opera.
+update Sophia (Happy)
+Sophia: Oooh that sounds fancy Olivia!
+update Marcus (Sceptical)
+Marcus: If I ever try to pronounce this guy's name I'd start levitating.
+update Sophia (Confuse)
+Sophia: But Seb, since you've got nothing planned,
+update Sophia (Silly)
+Sophia: maybe you could tag along with one of us?
+update Marcus (Sad)
+Marcus: Oh yeah, true, we can't all hang out together!
+update Marcus (Smiling)
+Marcus: But yeah good idea.
+update Seb (Embarrassed) [animation="Tada" length="0.2" z_index="1"]
+Seb: Uh well…
+(That's not an easy choice)
+(I care about all of them equally and I'd love to spend time with each of them…)
+Seb: I don't know if…
+update Sophia (Smiling)
+Sophia: Don't make that face Seb!
+update Sophia (Laughing)
+Sophia: We won't be mad if you pick just one.
+update Olivia (Smiling)
+Olivia: She's right, Seb. Follow your heart…
+update Olivia (Embarrassed)
+Olivia: Well mostly your reason, unless you wanna end up like Marcus.
+update Olivia (Flirting)
+Olivia: But yeah, follow your heart.
+update Marcus (Sceptical)
+Marcus: At least I have a heart,
+Marcus: Witch.
+leave Marcus [animation="Fade Out"]
+leave Sophia [animation="Fade Out"]
+leave Olivia [animation="Fade Out"]
+update Seb (Neutral)
+(Okay, who should I spend the day with?)
+label choice
+- Sophia
+	join Olivia (Smiling) leftmost [animation="Fade In" mirrored="true"]
+	join Sophia (Smiling) right [animation="Fade In"]
+	join Marcus (Smiling) rightmost [animation="Fade In"]
+	update Seb (Smiling)
+	
+	Seb: I think I'll go with Sophia; a little greenery will do me good!
+	update Marcus (Sceptical)
+	Marcus: No kidding, you didn't step out all summer.
+	update Sophia (Happy) [animation="Tada" length="0.3"]
+	Sophia: YESSS!! We're gonna have so much fun!
+	Sophia: And I heard there are magnolias blooming at the park!
+	Sophia: Meet me in front of school at 4pm.
+	update Seb [animation="Tada" length="0.3"]
+	Seb: Deal.
+	update Olivia (Happy) [length="0.3"]
+	Olivia: Guess we're splitting up then,
+	Olivia: see you on Monday guys!
+	update Marcus (Smiling) [animation="Bounce" length="0.3"]
+	Marcus: Later!
+	update Marcus (Excited)
+	Marcus: Oh and before I forget !
+	update Seb (Curious)
+	Seb: what is it ?
+	Marcus: Olivia you smell!
+	leave Marcus [animation="Slide To Left"]
+	update Olivia (Shocked)
+	Olivia: Wh-
+	update Olivia (Angry) [mirrored="false"]
+	Olivia: I swear to God if I catch you Marcus !!
+	leave Olivia [animation="Slide To Left"]
+	[wait time="1.0"]
+	update Sophia (Soupir)
+	Sophia: These two...
+	update Sophia (Silly)
+	Sophia: Anyway see ya later Seb!
+	update Seb (Laugh)
+	Seb: See ya!
+	
+	leave --All-- [animation="Fade Out" length="2.0"]
+	[wait time="0.5"]
+	audio music - [fade="2.0" volume="0.0"]
+	audio sfx - [fade="2.0" volume="0.0"]
+	[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+	[wait time="2.0"]
+	jump Park/
+- Marcus
+	Sorry, Marcus' route isn't available in the demo ^^'
+	jump choice
+- Olivia
+	join Olivia (Smiling) leftmost [animation="Fade In" mirrored="true"]
+	join Sophia (Smiling) right [animation="Fade In"]
+	join Marcus (Sceptical) rightmost [animation="Fade In"]
+	update Seb (Smiling)
+	Seb: I think I'll go with Olivia;
+	Seb: it's been a while since I haven't listened to her playing!
+	update Olivia (Laughing) [animation="Tada" length="0.2"]
+	Olivia: Great! I always knew you had good taste in terms of hanging out Seb!
+	update Olivia (Smiling)
+	Olivia: Meet me in front of School today at 4,
+	update Olivia (Scary) [animation="Shake X" length="0.3"]
+	Olivia: And don't you [b]DARE[/b] to be late this time!
+	update Seb (Shock) [animation="Tada" length="0.2"]
+	Seb: I-I'll try not to...
+	update Marcus
+	Marcus: You already made him regert his choice Oli.
+	update Sophia (Soupir)
+	Sophia: Yeah Olivia hates unpunctual people...
+	update Sophia (Embarrassed)
+	Sophia: So I'd recommend you not to take too long;
+	Sophia: if you don't wanna end up hit by her cello bow.
+	update Sophia (Sad)
+	Sophia: My head still hurts from last time...
+	update Olivia (Trolling)
+	Olivia: I just had to, you were 5 minutes late
+	update Marcus (Smiling)
+	Marcus: Guess we're splitting up then, see you on Monday guys!
+	update Sophia (Silly) [animation="Bounce" length="0.3"]
+	Sophia: See ya !
+	leave --All-- [animation="Fade Out" length="2.0"]
+	[wait time="0.5"]
+	audio music - [fade="2.0" volume="0.0"]
+	audio sfx - [fade="2.0" volume="0.0"]
+	[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+	[wait time="2.0"]
+	jump conservatory/

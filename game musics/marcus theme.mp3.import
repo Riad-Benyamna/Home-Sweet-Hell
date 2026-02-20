@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byol2msgvim6"
+path="res://.godot/imported/marcus theme.mp3-3f4376c92024e397bfd5185c4653f4dc.mp3str"
+
+[deps]
+
+source_file="res://game musics/marcus theme.mp3"
+dest_files=["res://.godot/imported/marcus theme.mp3-3f4376c92024e397bfd5185c4653f4dc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://4vtgabjrwmrm"]
+
+[ext_resource type="Script" uid="uid://cmdrxmi6xj2s8" path="res://Scripts/coin_ui.gd" id="1_emhfd"]
+[ext_resource type="Texture2D" uid="uid://jndf5jm27oyu" path="res://Assets/Sprites/cat_coin.png" id="2_i8ha2"]
+[ext_resource type="FontFile" uid="uid://l5pef6l50use" path="res://Assets/Fonts/DrawveticaMini.ttf" id="2_kgjm3"]
+
+[node name="CoinUI" type="CanvasLayer"]
+layer = 5
+script = ExtResource("1_emhfd")
+
+[node name="CoinLabel" type="RichTextLabel" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -122.0
+offset_top = 73.0
+offset_right = 7.0
+offset_bottom = 118.0
+grow_horizontal = 0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_kgjm3")
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+text = "Coins"
+fit_content = true
+
+[node name="CatCoin" type="TextureRect" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -173.0
+offset_top = 68.0
+offset_right = -41.0
+offset_bottom = 202.0
+grow_horizontal = 0
+scale = Vector2(0.385, 0.395)
+texture = ExtResource("2_i8ha2")
+expand_mode = 1

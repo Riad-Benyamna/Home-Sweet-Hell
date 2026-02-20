@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vuja165f7cuv"
+path="res://.godot/imported/Hysteria 2.mp3-6bbf3c7386fee96d43a25e352ebd8002.mp3str"
+
+[deps]
+
+source_file="res://game musics/Hysteria 2.mp3"
+dest_files=["res://.godot/imported/Hysteria 2.mp3-6bbf3c7386fee96d43a25e352ebd8002.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

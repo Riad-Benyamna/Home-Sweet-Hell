@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm5bom4ahelv5"]
+
+[ext_resource type="Texture2D" uid="uid://7mmsdix244md" path="res://Assets/Sprites/Cat teeth.png" id="1_5m04u"]
+[ext_resource type="Script" uid="uid://bum8e8vjqo352" path="res://Scripts/teeth.gd" id="1_rbxf8"]
+[ext_resource type="PackedScene" uid="uid://cyblokmilv7qn" path="res://scenes/killzone.tscn" id="2_238c1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbxf8"]
+size = Vector2(325, 204.542)
+
+[node name="teeth" type="Node2D"]
+rotation = 1.5708
+scale = Vector2(1.2, 1.2)
+script = ExtResource("1_rbxf8")
+move_distance = 600.0
+move_duration = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.5, 85)
+scale = Vector2(0.863554, 1)
+texture = ExtResource("1_5m04u")
+
+[node name="Killzone" parent="." instance=ExtResource("2_238c1")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(6.24999, 134.396)
+shape = SubResource("RectangleShape2D_rbxf8")

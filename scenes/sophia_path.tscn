@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8rohspk7cgdu"]
+
+[ext_resource type="Script" uid="uid://cn073nul2ht86" path="res://Scripts/sophia_path.gd" id="1_g26bf"]
+
+[node name="SophiaPath" type="Node2D"]
+script = ExtResource("1_g26bf")

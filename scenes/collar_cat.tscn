@@ -1,0 +1,75 @@
+[gd_scene load_steps=14 format=3 uid="uid://0e2i35n7jbjm"]
+
+[ext_resource type="Script" uid="uid://dosg7i4yhegwt" path="res://Scripts/collar_cat.gd" id="1_bfvs3"]
+[ext_resource type="FontFile" uid="uid://odetu2hmfcb1" path="res://Assets/Fonts/Cheveuxdange.ttf" id="2_cp4tq"]
+[ext_resource type="Texture2D" uid="uid://bkx7ogeljl0vm" path="res://Assets/Sprites/wise cat 1.png" id="2_lx2yj"]
+[ext_resource type="Texture2D" uid="uid://dp4jbo0ch0c40" path="res://Assets/Sprites/wise cat 2.png" id="3_cp4tq"]
+[ext_resource type="Texture2D" uid="uid://de0a8u8sxinq6" path="res://sprites 2/collar.png" id="3_rmtvp"]
+[ext_resource type="Texture2D" uid="uid://c342x7aqx8wmj" path="res://Assets/Sprites/wise cat 3.png" id="4_rmtvp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5ceg"]
+atlas = ExtResource("2_lx2yj")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rvt5a"]
+atlas = ExtResource("3_cp4tq")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdmsp"]
+atlas = ExtResource("4_rmtvp")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sv1k3"]
+atlas = ExtResource("3_cp4tq")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqgl6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5ceg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rvt5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdmsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sv1k3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgn3o"]
+size = Vector2(254, 463)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfvs3"]
+size = Vector2(761, 468)
+
+[node name="CollarCat" type="StaticBody2D"]
+modulate = Color(0.385493, 0.385492, 0.385492, 1)
+script = ExtResource("1_bfvs3")
+custom_font = ExtResource("2_cp4tq")
+item_texture = ExtResource("3_rmtvp")
+item_initial_scale = Vector2(0, 0)
+item_final_scale = Vector2(0.2, 0.2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(37, 6)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_gqgl6")
+animation = &"idle"
+frame_progress = 0.842239
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(13, 13.5)
+shape = SubResource("RectangleShape2D_sgn3o")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-143.5, 13)
+shape = SubResource("RectangleShape2D_bfvs3")

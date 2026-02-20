@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck8thggwic5ib"]
+
+[ext_resource type="Texture2D" uid="uid://clb5pw16po603" path="res://style/text box.png" id="1_6cyym"]
+
+[node name="Scribbled Text Box" type="Node2D"]
+
+[node name="TextBox" type="Sprite2D" parent="."]
+position = Vector2(570, 577)
+texture = ExtResource("1_6cyym")

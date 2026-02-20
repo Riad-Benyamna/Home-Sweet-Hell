@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnvf63dc61d1t"]
+
+[ext_resource type="Texture2D" uid="uid://biwf0333ksjk8" path="res://Backgrounds/Olivia dream 4.jpg" id="2_h2ncd"]
+[ext_resource type="Script" uid="uid://c1vfs7pr2jd1p" path="res://Scripts/oliviadream_4.gd" id="3_17yfk"]
+[ext_resource type="Texture2D" uid="uid://byf6sj526qi85" path="res://Backgrounds/Olivia dream 4.5.jpg" id="3_soqp0"]
+
+[node name="Oliviadream4" type="Node2D"]
+position = Vector2(557, 312)
+scale = Vector2(0.718125, 0.722222)
+script = ExtResource("3_17yfk")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(25.0653, 18)
+texture = ExtResource("2_h2ncd")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(25.0653, 18)
+texture = ExtResource("3_soqp0")

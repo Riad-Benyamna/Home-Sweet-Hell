@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5oo070xpbfi"]
+
+[ext_resource type="Script" uid="uid://c0n4xsj3emob7" path="res://Scripts/catpaw.gd" id="1_k7bxa"]
+[ext_resource type="Texture2D" uid="uid://7rc7acypu0l6" path="res://Assets/Sprites/catpaw.png" id="1_lqtrb"]
+[ext_resource type="PackedScene" uid="uid://cyblokmilv7qn" path="res://scenes/killzone.tscn" id="2_k7bxa"]
+[ext_resource type="AudioStream" uid="uid://g57pry7fdkwh" path="res://Assets/AUDIO/Hit.mp3" id="4_wcfjb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqtrb"]
+size = Vector2(347, 456)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ayys"]
+size = Vector2(403, 201)
+
+[node name="catpaw" type="AnimatableBody2D"]
+z_index = 1
+script = ExtResource("1_k7bxa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lqtrb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(17.5, -222)
+shape = SubResource("RectangleShape2D_lqtrb")
+
+[node name="Killzone" parent="." instance=ExtResource("2_k7bxa")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(16.5, 259.5)
+shape = SubResource("RectangleShape2D_0ayys")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_wcfjb")
+pitch_scale = 1.11
+attenuation = 0.965937

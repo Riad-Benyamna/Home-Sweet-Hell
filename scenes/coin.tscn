@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dh8fpf1agbxty"]
+
+[ext_resource type="Script" uid="uid://3cdsknqdg7vj" path="res://Scripts/coin.gd" id="1_0t63x"]
+[ext_resource type="Texture2D" uid="uid://jndf5jm27oyu" path="res://Assets/Sprites/cat_coin.png" id="2_v7riw"]
+[ext_resource type="AudioStream" uid="uid://cghax1tyfbv3q" path="res://Assets/AUDIO/coins.mp3" id="3_11l1o"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pdq0q"]
+atlas = ExtResource("2_v7riw")
+region = Rect2(0, 0, 200, 200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w14il"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pdq0q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h4etq"]
+radius = 134.573
+
+[node name="Coin" type="Area2D"]
+z_index = 2
+scale = Vector2(0.9, 0.9)
+script = ExtResource("1_0t63x")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 5
+position = Vector2(6, 9)
+sprite_frames = SubResource("SpriteFrames_w14il")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 4
+position = Vector2(4, -5)
+shape = SubResource("CircleShape2D_h4etq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_11l1o")
+volume_db = 12.0
+attenuation = 0.101532
+max_polyphony = 2
+bus = &"OST"

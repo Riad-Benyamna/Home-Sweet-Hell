@@ -1,0 +1,211 @@
+[background arg="res://Backgrounds/Black (1).png" fade="2.0" wait="true"]
+audio sfx "res://sounds/door opening.mp3" [volume="0.0"]
+[wait time="1.5"]
+audio sfx "res://sounds/door-slam-sound-effect-21878.mp3" [volume="-3.0"]
+[wait time="1.5"]
+Olivia: I'm home...
+Good evening Olivia !
+You're right on time for dinner !
+I made your favorite meal, pasta Alfredo.
+Olivia: Th-Thanks Mom...But I'm not hungry...
+Hm ? Are you sure ?
+You need energy for Tomorrow's recital.
+You know how important it is!
+Olivia: Don't worry about me Mom, I'll eat later...
+Alright Sweetheart, make sure to practice and recheck your scores before going to bed.
+Make us proud !
+Olivia: ... Will do...
+audio sfx "res://sounds/door opening.mp3" [volume="0.0"]
+[wait time="1.5"]
+audio sfx "res://sounds/door-slam-sound-effect-21878.mp3" [volume="-3.0"]
+[wait time="1.5"]
+Olivia: Sigh...
+Olivia: Okay...They haven't noticed so far...
+Olivia: They DON'T have to notice.
+Olivia: This is bad...
+Olivia: This is really really bad...
+[wait time="1.5"]
+Olivia: I can barely move my hand...
+Olivia: WHAT WAS I THINKING- !!
+[wait time="1.5"]
+Olivia: Damn it-
+audio sfx "res://sounds/cello hit.mp3" [volume="-3.0"]
+Olivia: DAMN IT!
+audio sfx "res://sounds/cello hit.mp3" [volume="0.0"]
+Olivia: [font_size=40] DAMN IT!
+audio sfx "res://sounds/cello hit.mp3" [volume="3.0"]
+Olivia: [font_size=40][b]DAMN IT!
+Olivia: Huff...
+Olivia: [font_size=20] Huff...
+label panick
+audio music "res://sounds/Stressful.mp3" [volume="0.0"]
+[background arg="res://Backgrounds/Panick 0.jpg" fade="2.0" wait="true"]
+Olivia: What am I going to do now ?!
+Olivia: I can't disappoint them-
+Olivia: What if they discover?
+Olivia: I don't even want to imagine their reaction...
+Olivia: Come on Olivia think...
+Olivia: There has to be a way!
+Olivia: There has to be !
+Olivia: I must find a way !
+[background scene="res://scenes/panick.tscn" arg="res://Panick.png" fade="2.0" wait="true"]
+audio sfx "res://sounds/Heartbeat Speeding Up.mp3" [fade="10.0" volume="6.0" loop="true"]
+Olivia: [font_size=20]I must find a way !
+[wait time="1.0"]
+Olivia: [font_size=30]I MUST FIND A WAY !
+[wait time="1.0"]
+Olivia: [font_size=50]I MUST FIND A WAY !
+[wait time="1.0"]
+Olivia: [font_size=50] [b]I MUST FIND A WAY !
+Olivia: [font_size=10] I MUST FIND A WAY ! [font_size=30] I MUST FIND A WAY ![font_size=20]  I MUST FIND A WAY ! [font_size=10] I MUST FIND A WAY ! [font_size=30] I MUST FIND A WAY ![font_size=20]  I MUST FIND A WAY !
+[signal arg="panick"]
+[wait time="5.0"]
+audio sfx "res://sounds/cello hit.mp3" [fade="0.0" volume="-80.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+audio music - [volume="0.0"]
+Olivia: I must find a way.
+
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/blank-white-background-xbsfzsltjksfompa.jpg" fade="5.0"]
+[wait time="3.0"]
+audio music "res://sounds/alarm-clock-90867.mp3" [loop="true"]
+[background arg="res://Backgrounds/Seb awake 1.jpg" fade="0.0"]
+[wait time="3.0"]
+[background arg="res://Backgrounds/Seb awake.jpg" fade="2.0"]
+[wait time="2.0"]
+I definitely hate this alarm.
+audio music -
+
+[background arg="res://Backgrounds/Black (1).png" fade="3.0" wait="true"]
+[background arg="res://Backgrounds/hall.jpg" fade="2.0"]
+join Seb (Neutral) left [animation="Fade In" length="2.0"]
+
+(The hallway was quieter than usual.)
+
+[wait time="1.5"]
+
+(I turned the corner.)
+
+[wait time="1.0"]
+
+join Marcus (Crying) right [animation="Fade In" z_index="2"]
+join Sophia (Sad) rightmost [animation="Fade In" z_index="2"]
+
+(And then I saw them.)
+(Marcus and Sophia.)
+(Standing directly in front of the board.)
+(Frozen.)
+
+[wait time="2.0"]
+
+update Seb (Curious)
+Seb: Marcus...? Sophia...?
+
+(They didn't respond.)
+(Didn't even blink.)
+
+[wait time="1.5"]
+
+update Seb (Effraid)
+Seb: Hey... guys?
+
+(Still nothing.)
+
+[wait time="1.0"]
+
+(Marcus's face was red.)
+(Like he'd been crying.)
+
+[wait time="1.0"]
+
+(Sophia's hands were covering her mouth.)
+(Trembling.)
+
+[wait time="1.5"]
+
+update Seb (Neutral)
+Seb: What's going on?
+
+(I stepped closer.)
+
+[wait time="1.5"]
+
+(Marcus's hand twitched.)
+(Like he wanted to reach out.)
+(To stop me.)
+(But he didn't move.)
+
+[wait time="1.5"]
+
+(Sophia's breathing was shallow.)
+(Quick.)
+(Like she couldn't catch her breath.)
+
+[wait time="2.0"]
+
+update Seb (Curious)
+Seb: Where's Olivia?
+
+[wait time="2.5"]
+
+(Silence.)
+
+[wait time="1.5"]
+
+update Marcus (Sad)
+Marcus: [font_size=18]Seb... don't...
+
+[wait time="1.0"]
+
+(But I was already looking.)
+
+[wait time="3.0"]
+
+leave Seb [animation="Fade Out" length="1.0"]
+leave Marcus [animation="Fade Out" length="1.0"]
+leave Sophia [animation="Fade Out" length="1.0"]
+
+label news
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+[wait time="1.0"]
+[background arg="res://Backgrounds/Olivia newspaper.jpg" fade="10.0"]
+audio music "res://game musics/Olivia death.mp3" [fade="2.0" volume="5.0"]
+[wait time="27.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="3.0" wait="true"]
+
+[style name="End text"]
+[speed=2] Each year, millions of children suffer under extreme parental pressure.
+[speed=2] Thousands attempt suicide as a result.
+[speed=2] It could be your friend, your classmate, or your neighbor.
+
+[wait time="1.0"]
+
+[speed=2] If you, or someone you know, is experiencing emotional abuse or suicidal thoughts.
+[speed=2] Please, reach out for help.
+
+[wait time="1.0"]
+
+National Suicide Prevention Lifeline\: 988\
+Available 24/7
+
+Crisis Text Line\: Text "HELLO" to 741741\
+Available 24/7
+
+
+[wait time="1.0"]
+
+[speed=2] You are not alone.
+
+[wait time="3.0"]
+
+[speed=2.5] [font_size=70] Thank you for playing.
+
+[wait time="1.0"]
+audio music - [fade="1.0" volume="5.0"]
+[wait time="5.0"]
+audio music "res://game musics/reveal.mp3" [fade="0.0" volume="5.0"]
+[background arg="res://Backgrounds/Olivia dead.jpg" fade="0.0"]
+[wait time="5.0"]
+
+[signal arg="end"]

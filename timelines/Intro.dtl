@@ -1,0 +1,69 @@
+jump Conservatory/
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+[wait time="2.0"]
+audio music "res://game musics/sad theme 2 slowed and reverbed asf.mp3" [fade="2.0" volume="-5.0"]
+[wait time="2.0"]
+It’s crazy to think that...
+The people closest to us[speed=10], [speed=1]are often the ones we know the least...
+That overnight[speed=10], [speed=1]everything can change...
+That everything can collapse…
+That nothing is carved in stone…
+And yet[speed=10], [speed=1]those bitter revelations are so often the beginning of renewal…
+But for me..[speed=10]. [speed=1] change..[speed=10]. [speed=1]it's scary...
+And I wish things would never change.
+Never…
+Ne-
+audio music "res://sounds/alarm-clock-90867.mp3" [fade="4.0" volume="0.0"]
+[wait time="4.0" skippable="true"]
+[speed=1]No…[speed=20].[speed=1]not already..[speed=10]..[speed=1]not morning already[speed=10],[speed=1] I barely slept yesterday…
+Not the first day of school already..[speed=10].[speed=1]come on, just 5 more minutes...
+[speed=5]Just 5…
+[speed=7]Just...
+audio music - [fade="0.0" volume="0.0"]
+[speed=15]Zzzz....
+[wait time="2.0" skippable="true"]
+audio music "res://sounds/alarm-clock-90867.mp3" [fade="5.0" volume="0.0"]
+[background arg="res://Backgrounds/Seb awake 1.jpg" fade="0.0"]
+[wait time="3.0" skippable="true"]
+[background arg="res://Backgrounds/Seb awake.jpg" fade="1.0"]
+[wait time="2.0" skippable="true"]
+Argh ... is this damned alarm gonna keep bothering me my entire life…
+audio music - [fade="0.0" volume="0.0"]
+[background arg="res://Backgrounds/chambre jour.jpg" fade="2.0"]
+[wait time="2.0"]
+join Seb (Sleepy) center [animation="Fade In" length="1.0"]
+Seb: [speed=1](Yaaaaawn)
+(My vision still blurry and my mind foggy,
+I took a deep breath and got out of my comfy bed.)
+Seb: Those were the shortest 5 minutes of my life…
+update Seb (Tired)
+Seb: Alright, up we go…
+Seb: Mom and Dad must have left for work by now.
+update Seb (Neutral)
+Seb: I should probably start getting ready.
+[wait time="1.0"]
+update Seb (Curious) [animation="Tada" length="0.3" mirrored="false"]
+Seb: Huh? I must still be dreaming,
+Seb: The clock says 7\:55
+update Seb (Laugh)
+Seb: Imagine if I was actually late on the very first day of school...
+update 
+Seb: Hah…
+update Seb (Smiling)
+[wait time="1.0"]
+
+update Seb (Shock) [animation="Shake X" length="0.3"]
+audio music "res://game musics/stressful ost.mp3" [fade="1.0" volume="-5.0"]
+Seb: [b]OH CRAP! IT REALLY IS 7\:55?!!
+Seb: I could’ve sworn I only slept 5 minutes!!
+Seb: DAMN IT, QUICK QUICK QUICK! If I rush I can still make it on time!
+update Seb (Exhausted)
+Seb: What a great way to start the school year...
+update Seb (Effraid)
+Seb: I hope they’re still waiting for me at the gate...
+Seb: I’d look real stupid being the last one to walk into class…
+leave Seb [animation="Slide To Left" wait="true"]
+audio music - [fade="3.0" volume="0.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="4.0"]
+[wait time="4.0"]
+jump School/

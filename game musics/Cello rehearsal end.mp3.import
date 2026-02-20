@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btfetvlf6cdpt"
+path="res://.godot/imported/Cello rehearsal end.mp3-7521989d9ba0b65c77de903a0da21694.mp3str"
+
+[deps]
+
+source_file="res://game musics/Cello rehearsal end.mp3"
+dest_files=["res://.godot/imported/Cello rehearsal end.mp3-7521989d9ba0b65c77de903a0da21694.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

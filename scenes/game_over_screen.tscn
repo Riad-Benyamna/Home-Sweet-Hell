@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dkpsk3l6e0qa8"]
+
+[ext_resource type="FontFile" uid="uid://cesd7yrku342v" path="res://Assets/Fonts/Spell of Asia.ttf" id="1_iwahs"]
+[ext_resource type="Script" uid="uid://ee1r648d55n" path="res://Scripts/game_over_screen.gd" id="1_jw6e5"]
+[ext_resource type="Script" uid="uid://cwmmhmq62uqra" path="res://Scripts/restart_button.gd" id="2_61w2s"]
+
+[node name="GameOverScreen" type="Control" unique_id=1805885676]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_jw6e5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=786483726]
+modulate = Color(1, 1, 1, 0.352941)
+z_index = 1
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 703.0
+color = Color(0, 0, 0, 1)
+
+[node name="Button" type="Button" parent="." unique_id=1570842153]
+z_index = 100
+layout_mode = 0
+offset_left = 472.0
+offset_top = 504.0
+offset_right = 668.0
+offset_bottom = 572.0
+theme_override_fonts/font = ExtResource("1_iwahs")
+theme_override_font_sizes/font_size = 50
+text = "Restart"
+script = ExtResource("2_61w2s")
+
+[node name="Label" type="Label" parent="." unique_id=1589439022]
+z_index = 2
+layout_mode = 0
+offset_left = 274.0
+offset_top = 183.0
+offset_right = 825.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("1_iwahs")
+theme_override_font_sizes/font_size = 100
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

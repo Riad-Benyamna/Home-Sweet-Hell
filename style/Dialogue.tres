@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=9 format=3 uid="uid://cg66wq748i2x4"]
+
+[ext_resource type="PackedScene" uid="uid://syki6k0e6aac" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_TextBubble/text_bubble_base.tscn" id="1_iywf3"]
+[ext_resource type="Script" uid="uid://bwg6yncmh2cml" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_y05b7"]
+[ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="3_xicyy"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="4_iy85n"]
+[ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="5_jpq7q"]
+
+[sub_resource type="Resource" id="Resource_trcgd"]
+script = ExtResource("2_y05b7")
+scene = ExtResource("1_iywf3")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_3hisy"]
+script = ExtResource("2_y05b7")
+scene = ExtResource("3_xicyy")
+overrides = {}
+
+[sub_resource type="Resource" id="Resource_kpd4s"]
+script = ExtResource("2_y05b7")
+scene = ExtResource("4_iy85n")
+overrides = {
+"box_modulate": "Color(1, 1, 1, 0)",
+"normal_font": "\"res://Assets/Fonts/Cheveuxdange.ttf\"",
+"text_size": "32.0"
+}
+
+[resource]
+script = ExtResource("5_jpq7q")
+name = "Dialogue"
+layer_list = Array[String](["10", "11"])
+layer_info = {
+"": SubResource("Resource_trcgd"),
+"10": SubResource("Resource_3hisy"),
+"11": SubResource("Resource_kpd4s")
+}
+base_overrides = {}
+layers = Array[ExtResource("2_y05b7")]([])
+metadata/_latest_layer = "11"

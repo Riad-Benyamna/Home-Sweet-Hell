@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://d4mmcvqg4xtc2"]
+
+[ext_resource type="Script" uid="uid://dmdgocs83qqye" path="res://Scripts/fallingplatform.gd" id="1_poojk"]
+[ext_resource type="Texture2D" uid="uid://bjjqkhp8gd8t8" path="res://Assets/Sprites/disappearing platforms asleep.png" id="1_qk4po"]
+[ext_resource type="Texture2D" uid="uid://b2em8ofqchgoh" path="res://Assets/Sprites/disappearing platforms awaken.png" id="2_poojk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6jve"]
+atlas = ExtResource("1_qk4po")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1aprt"]
+atlas = ExtResource("2_poojk")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqhin"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6jve")
+}],
+"loop": true,
+"name": &"asleep",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1aprt")
+}],
+"loop": true,
+"name": &"awaken",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3owqx"]
+size = Vector2(607.5, 195)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2naee"]
+size = Vector2(603, 57.5)
+
+[node name="Fallingplatform" type="AnimatableBody2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_poojk")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(23, -8)
+sprite_frames = SubResource("SpriteFrames_hqhin")
+animation = &"asleep"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.50001, 3.75001)
+shape = SubResource("RectangleShape2D_3owqx")
+one_way_collision = true
+
+[node name="DetectionArea" type="Area2D" parent="."]
+position = Vector2(-4, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(4.5, -73.75)
+shape = SubResource("RectangleShape2D_2naee")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biee7jm3tioyp"
+path="res://.godot/imported/Perfect ascension 2.mp3-bac6d68d4d1bf80ba31526e0106de5ec.mp3str"
+
+[deps]
+
+source_file="res://game musics/Perfect ascension 2.mp3"
+dest_files=["res://.godot/imported/Perfect ascension 2.mp3-bac6d68d4d1bf80ba31526e0106de5ec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

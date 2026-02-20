@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsl540mjrpxd5"
+path="res://.godot/imported/Heartbeat Speeding Up.mp3-d00efc52d779aeab9b28a1b1f13c0087.mp3str"
+
+[deps]
+
+source_file="res://sounds/Heartbeat Speeding Up.mp3"
+dest_files=["res://.godot/imported/Heartbeat Speeding Up.mp3-d00efc52d779aeab9b28a1b1f13c0087.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

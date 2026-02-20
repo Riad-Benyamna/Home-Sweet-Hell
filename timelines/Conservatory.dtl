@@ -1,0 +1,593 @@
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+audio music "res://game musics/main theme.mp3" [fade="-2.0" volume="-7.0"]
+join Seb (Exhausted) left [animation="Slide From Left"]
+update Seb [animation="Tada" length="0.7" repeat="5"]
+Seb: *pants*... Hey... *pants*... Olivia.
+audio sfx "res://sounds/cello hit.mp3" [volume="0.0"]
+update Seb (Exhausted) [animation="Shake X" length="0.2" wait="true"]
+[wait time="0.3"]
+update Seb (Shock) [animation="Shake X" length="0.2"]
+Seb: [b]OUCH!
+update Seb (Exhausted)
+Seb: But I'm on time this time!
+join Olivia (Judgemental) right [animation="Slide From Right"]
+Olivia: Wrong.
+Olivia: Fifteen minutes late.
+update Seb (Effraid)
+Seb: Didn't we say 4 PM though?
+Olivia: At 4 PM sharp, I would've already chopped you into pieces.
+update Olivia (Laughing)
+Olivia: Remember this, Seb\:
+Olivia: a true champion always arrives thirty minutes early, minimum.
+(The park suddenly feels like a much nicer place to be.)
+Seb: Even in the army, they're more chill.
+update Olivia (Smiling)
+Olivia: Enough chatter. Time for rehearsal.
+Olivia: Come on, slowpoke.
+update Seb (Exhausted)
+Seb: Lead the way.
+(And so, we started our way towards the conservatory.)
+audio music - [fade="1.0" volume="0.0"]
+[background arg="res://Backgrounds/Conservatory.jpg" fade="2.0"]
+(Once Arrived)
+(We walk through the large mahogany doors with golden hardware.
+The hallway smells of beeswax.
+On the walls\: portraits of mustachioed men with illegible names and framed sheet music.)
+audio music "res://game musics/olivia's theme.mp3" [fade="3.5" volume="-3.0"]
+update Seb (Neutral)
+Seb: Wow... [speed=10]. [speed=1] this place is... [speed=10]. [speed=1] classy.
+update Olivia (Laughing)
+Olivia: It better be!
+Olivia: One of the most selective conservatories in the city. Ruthless entrance exam.
+update Seb (Embarrassed)
+Seb: Don't I stick out like a sore thumb?
+Seb: I feel like an imposter here.
+update Olivia (Happy)
+Olivia: Don't worry. I have my little reputation.
+Olivia: As long as you stay with me, nobody will say anything.
+update Seb (Curious)
+Seb: Are you that popular?
+update Olivia (Flirting)
+Olivia: Obviously! Without false modesty\:
+Olivia: Top cellist in my year [speed=10], [speed=1] several solo concertos [speed=10], [speed=1] about twenty prizes...
+update Seb (Smiling)
+Seb: Whoa! Your parents must be bursting with pride.
+update Olivia (Judgemental)
+Olivia: Yeah... [speed=10]. [speed=1] proud. In their own way.
+update Seb (Curious)
+Seb: Huh?
+update Olivia (Shocked) [animation="Shake X" length="0.2"]
+Olivia: I mean-
+update Olivia (Laughing)
+Olivia: Of course they're proud[speed=10]![speed=1] I'm the best, after all.
+update Seb (Trolling)
+Seb: Not getting a big head, are we?
+update Olivia (Flirting)
+Olivia: Trust me, Seb [speed=10]\: [speed=1] when you can brag [speed=10], [speed=1] you don't hold back.
+Seb: I'm world champion at being late, and I don't brag about it.
+update Olivia (Trolling)
+Olivia: Good thing! Can you imagine if they gave medals to people like you?
+update Seb (Smiling)
+Seb: I beg to differ, it's a very demanding discipline.
+Olivia: But of course! In that case, train hard. You might end up with a medal...
+update Olivia (Smiling)
+Olivia: But I'll get one first!
+update Seb (Laugh)
+Seb: You can dream! With your rigor, that'll never happen.
+update Olivia (Embarrassed)
+Olivia: Fair enough.
+update Olivia (Happy)
+Olivia: Anyway! Here we are.
+(With all the grace of a wannabe aristocrat,
+Olivia bows in an exaggerated curtsy.)
+update Olivia (Flirting)
+Olivia: After you, Your Lordship.
+Seb: If you insist.
+[background arg="res://Backgrounds/rehearsal room.jpg" fade="2.0"]
+(We enter the room and I can't help but admire its beauty\:
+polished floor, padded walls, a piano in the corner.)
+update Seb (Curious)
+Seb: So this is where you spend your life.
+update Olivia (Smiling)
+Olivia: Exactly.
+update Olivia (Happy)
+Olivia: Every new piece, I dissect it here.
+update Seb (Trolling)
+Seb: Understandable.
+update Seb (Laugh)
+Seb: If I had a room like this for video games,
+Seb: my parents would never see me again.
+Olivia: Have a seat, you're going to have the rare honor of listening to me rehearse.
+update Seb (Trolling)
+Seb: What a privilege!
+update Olivia (Embarrassed)
+Olivia: Still needs practice, but in theory, it shouldn't make your ears bleed.
+(Olivia rummages through her bag and pulls out a thick portfolio.)
+update Olivia (Judgemental)
+Olivia: Let's see...
+Olivia: Concerto No. 2, no...
+Olivia: Pas de deux, no...
+Olivia: Sonata for cello, no...
+Olivia: Brandenburg No. 3, no...
+update Olivia (Smiling)
+Olivia: Ah!
+Olivia: Rayane Sergeevich Ferunovsky Etude Op.67 n°42!
+Seb: Bless you.
+update Olivia (Judgemental)
+Olivia: Very funny.
+update Olivia (Smiling)
+Olivia: Get ready to meet my baby.
+update Seb (Curious)
+Seb: Your... baby?
+update Olivia (Judgemental)
+Olivia: My cello, dummy!
+update Olivia (Flirting)
+Olivia: I named it\: "El Divino."
+update Seb (Exhausted)
+Seb: I wouldn't have expected less from you...
+update Seb (Curious)
+Seb: Why "El Divino" though?
+update Olivia (Judgemental)
+Olivia: Because it's divine, duh.
+[wait time="0.2"]
+- It sounds stupid.
+	update Seb (Trolling)
+	Seb: It sounds really stupid if you want my opinion.
+	update Olivia (Angry)
+	Olivia: [b]You look stupid if you want my opinion!!
+	Olivia: This cello is probably worth more than you.
+	update Olivia (Judgemental)
+	Olivia: But that's honestly not surprising, I would trade you for a penny.
+	update Seb (Sad)
+	Seb: And how much would Marcus and Sophia be worth?
+	update Olivia (Laughing)
+	Olivia: Honestly, I'd give these two for free...
+	Olivia: The farther Marcus stays away, the better off I am.
+	update Seb (Exhausted)
+	Seb: How lovely can you be...
+	update Olivia (Smiling)
+	Olivia: What do you mean? I'm a real cinnamon roll!
+	Seb: If you say so.
+- Sounds cool !
+	update Seb (Laugh)
+	Seb: That sounds soooo cool!
+	Seb: Honestly, if I were your cello, I'd feel honored.
+	update Olivia (Scary)
+	Olivia: Give me ONE reason to have you as my cello.
+	update Seb (Embarrassed)
+	Seb: Uuuh... I...
+	update Olivia (Laughing)
+	Olivia: Exactly.
+	Olivia: El Divino makes angelic sounds.
+	update Olivia (Flirting)
+	Olivia: You just make noise.
+	update Seb (Exhausted)
+	Seb: Can't even compliment you anymore...
+	Olivia: My baby deserves the best and only the best.
+	update Seb (Trolling)
+	Seb: Careful though… if you spoil it too much, it might leave you for a richer owner.
+	update Olivia (Laughing)
+	Olivia: Ha! Over my dead body. This cello is mine for life.
+	update Seb (Smiling)
+	Seb: Figures… only you would treat a cello like royalty.
+	update Olivia (Smiling)
+	Olivia: You bet!
+Olivia: Look at this beauty\:
+update Olivia (Flirting)
+Olivia: Italian spruce top, natural rosin varnish,
+Olivia: black ebony pegs, flamed maple back...
+Olivia: And stamped Stradivarius.
+Olivia: Pure beauty, elegance incarnate!
+update Seb (Effraid)
+Seb: Uh... [speed=10].[speed=1] yeah [speed=10],[speed=1] Italian spruce and all... [speed=10].[speed=1] cool!
+update Olivia (Judgemental)
+Olivia: Why do I even bother...
+update Seb (Embarrassed)
+Seb: Heh... Sorry, music isn't really my field...
+Seb: But that's a really cool cello!
+update Olivia (Embarrassed)
+Olivia: Actually...
+Olivia: My dad picked it out for my eighth birthday.
+Olivia: Said if I was going to be serious about cello, I needed a serious instrument.
+update Seb (Curious)
+Seb: Eight years old with a Stratospherus ? That's intense.
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: A [b]STRADI—
+update Olivia (Judgemental)
+Olivia: ...You know what, never mind.
+update Olivia (Embarrassed)
+Olivia: Tell me about it though.
+Olivia: I was terrified of dropping it for months.
+update Seb (Curious)
+Seb: Did you ever drop it?
+update Olivia (Shocked)
+Olivia: Are you insane? My parents would've disowned me!
+update Olivia (Away)
+Olivia: I barely even touched it for the first week.
+Olivia: Just stared at it in its case like it was a bomb.
+update Seb (Embarrassed)
+Seb: That sounds... really stressful.
+update Olivia (Judgemental)
+Olivia: Well, that's what happens when you're given expensive things.
+update Olivia (Judgemental)
+Olivia: I guess this is why Marcus cares so much about his stupid golden balls.
+Seb: Surely...
+update Olivia (Laughing)
+Olivia: Anyway! Prepare to be completely astonished by my talent!
+(Olivia pulls out a huge vinyl from her gigantic collection.)
+(Some weird Russian text is written on it.)
+Olivia: Let me just put the piano accompaniment on the vinyl player first.
+update Seb (Smiling)
+Seb: I'm ready!
+label cello
+leave Olivia [animation="Fade Out"]
+leave Seb [animation="Fade Out"]
+update Olivia (Happy)
+Olivia: Don't you dare open that filthy mouth of yours during the performance.
+Olivia: I need to concentrate.
+update Seb (Embarrassed)
+Seb: Got it!
+leave Olivia [animation="Fade Out"]
+leave Seb [animation="Fade Out"]
+[background arg="res://Backgrounds/Olivia cello 1.jpg" fade="1.0"]
+[wait time="1.0"]
+Olivia: This piece took me weeks of practice.
+Olivia: It's a very tricky one.
+Seb: Well, impress me!
+audio music - [fade="1.0" volume="-0.2"]
+(She closes her eyes, takes a deep breath.)
+(With a precise gesture, she attacks the first notes.)
+audio music "res://game musics/Cello rehearsal.mp3" [fade="2.0" volume="0.0"]
+[wait time="2.0"]
+(Her posture is... perfect. Too perfect.)
+(It must be really uncomfortable...)
+[wait time="2.0"]
+(Her bow moves with such precision.)
+(Every stroke measured, calculated.)
+[wait time="1.5"]
+(She bites her lip during a difficult passage.)
+(Quickly opens her eyes, then shuts them again.)
+[wait time="1.5"]
+(I've never seen someone look so tense while playing music.)
+(Isn't it supposed to be... fun?)
+[wait time="2.0"]
+(Her eyes are still closed.)
+(She looks... concerned.)
+Seb: Olivia, you good?
+Olivia: SHUSH!
+[background arg="res://Backgrounds/Olivia cello 2.jpg" fade="1.0"]
+<Empty Text Event>
+[wait time="1.5"]
+(She hits a wrong note and her eyes snap open for a second.)
+(Panic flashes across her face.)
+(Then she forces them shut again.)
+[wait time="2.0"]
+(The music is beautiful.)
+(But watching her play is...)
+(concerning.)
+[wait time="1.5"]
+(Like watching someone take a really hard test.)
+audio music "res://game musics/Cello rehearsal end.mp3" [fade="0.5" volume="0.0" loop="false"]
+[wait time="2.0"]
+(Final note.)
+(She holds it, bow trembling.)
+(Then silence.)
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+join Olivia (Away) right [animation="Fade In" length="1.0"]
+join Seb (Shock) left [animation="Fade In" length="1.0"]
+(She lowers the bow.)
+(Her hands are shaking more now.)
+(Sweaty palms. Short breath.)
+(I was left speechless by such a performance.)
+[background arg="res://Backgrounds/rehearsal room.jpg" fade="0.5"]
+update Seb (Smiling)
+Seb: Olivia... that was-
+Olivia: Yeah yeah I know it was horrible.
+Olivia: No need to say it I noticed it too.
+Olivia: Be honest,
+Olivia: what did you hear wrong? Which part?
+update Seb (Effraid)
+Seb: Huh? Nothing was wrong, it was-
+update Olivia (Angry)
+Olivia: Don't lie to me!
+Olivia: The staccatos, right?
+Olivia: Or was it the tempo?
+Olivia: The silences were too long, right?
+update Olivia (Away)
+Olivia: Dang it, I know I should have practiced more...
+Olivia: Now I just embarrassed myself again!
+update Seb (Embarrassed)
+Seb: I'm not lying! It was really good!
+update Olivia (Judgemental)
+Olivia: ...You obviously don't know enough about music to tell.
+update Seb (Embarrassed)
+Seb: Well... maybe not. But I know what I heard.
+update Olivia (Confused)
+Olivia: And what did you hear, exactly?
+update Seb (Smiling)
+Seb: Something great!
+Seb: It felt like I was floating.
+Seb: Like... I don't know how to explain it.
+update Olivia (Neutral)
+Olivia: That's because there's nothing to explain.
+Olivia: You just don't have the ear to catch the mistakes.
+Olivia: It was bad, that's all.
+update Seb (Curious)
+Seb: Does it really matter if I didn't notice them?
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: Of course it matters!
+update Olivia (Judgemental)
+Olivia: The judges notice.
+Olivia: The teachers notice.
+[wait time="1.0"]
+audio music - [fade="2.0" volume="0.0"]
+update Olivia (Away)
+Olivia: My parents notice.
+update Seb (Neutral)
+Seb: But I'm not any of those people.
+update Olivia (Confused)
+Olivia: ...
+Olivia: So you really think it was good?
+Seb: Of course!
+Olivia: But I made so many mistakes.
+Seb: So what?
+update Olivia (Angry)
+Olivia: It's supposed to be perfect!
+update Olivia (Away)
+[wait time="1.0"]
+Olivia: I'm supposed to be perfect!
+Olivia: If it's not perfect then what's the point of even trying?
+update Seb (Curious)
+Seb: And... why would you be perfect anyway?
+update Olivia (Judgemental)
+Olivia: Because my parents want me to! Obviously!
+update Olivia (Happy)
+Olivia: Everything I do is because they tell me to!
+update Seb (Effraid)
+Seb: That...
+Seb: That doesn't sound fun at all...
+update Olivia (Confused)
+Olivia: Wait, don't your parents do that?
+update Seb (Embarrassed)
+Seb: I mean...
+Seb: They do want me to be good at school and have good grades...
+Seb: But me being the best isn't really in their bingo.
+update Olivia (Judgemental)
+Olivia: Wow, they really must hate you then.
+update Seb (Shock) [animation="Shake X" length="0.2"]
+Seb: Excuse me?
+update Olivia (Laughing)
+Olivia: You heard me! What kind of parents wouldn't like their child to be the best?
+update Olivia (Flirting)
+Olivia: "Oh how great would it be for my kid to be a loser!"
+Olivia: To succeed in life, you must be the best, that's well known.
+update Seb (Effraid)
+Seb: But you're already good, Olivia!
+Seb: You're one of the best students in our school!
+update Olivia (Away)
+Olivia: ...
+update Olivia (Neutral)
+Olivia: "Good" isn't good enough.
+update Seb (Curious)
+Seb: Good enough for what?
+Olivia: For... everything.
+Seb: But it felt-
+Olivia: "Feel something" doesn't win competitions, Seb.
+Olivia: Life is a competition,
+Olivia: You're either the best, or a loser.
+Seb: Is that what music is about?
+Seb: Winning?
+update Olivia (Judgemental)
+Olivia: How dumb can you be?
+Olivia: Of course it is!
+Olivia: That's what they always say!
+Olivia: ...
+Seb: And what's the fun in that?
+Olivia: Fun, you say?
+Olivia: Fun makes you slack.
+Olivia: Slacking makes you mediocre.
+[wait time="1.0"]
+update Olivia (Away)
+Olivia: I just hope I won't mess it up on Tuesday...
+update Seb (Curious)
+Seb: What happens if you...
+Seb: I don't know, make a mistake?
+update Olivia (Away)
+Olivia: ...
+update Olivia (Laughing)
+Olivia: Nothing! They'll just be disappointed, that's all!
+update Seb (Curious)
+Seb: Your parents...
+Seb: Is it that important to them?
+update Olivia (Embarrassed)
+Olivia: I mean... not that it's awful!
+Olivia: They do happen to yell at me for not being good enough.
+update Olivia (Laughing)
+Olivia: But they're just trying to help me improve!
+Olivia: They only want my best!
+Seb: ...Do they?
+update Olivia (Happy)
+Olivia: Of course they do!
+update Olivia (Away)
+Olivia: They just...
+Olivia: They have high standards. That's all.
+update Olivia (Laughing)
+Olivia: High standards make great musicians.
+update Olivia (Trolling)
+Olivia: But of course uncultured ignoramuses like you wouldn't understand.
+update Seb (Exhausted)
+Seb: There isn't a single day that I spend with you where I get a compliment.
+update Olivia (Smiling)
+Olivia: Compliments are something that you have to deserve, carrot-head!
+update Seb (Trolling)
+Seb: I suppose you must get hundreds.
+update Olivia (Neutral)
+Olivia: ...
+Olivia: I should probably practice the difficult parts again before I go home.
+update Seb (Curious)
+Seb: Didn't you just play it perfectly?
+update Olivia (Sad)
+Olivia: I told you. I made mistakes.
+update Seb (Embarrassed)
+Seb: That I couldn't hear.
+update Olivia (Angry)
+Olivia: But THEY will.
+(Olivia stares into the void with a melancholic gaze, gripping her bow tighter and tighter.)
+update Olivia (Embarrassed)
+Olivia: Sorry. I shouldn't bother you with this.
+update Seb (Effraid)
+Seb: But... Olivia
+(As she looks at her music sheet,
+her hands start to shake, and her voice lowers.)
+(She's no longer the confident, sarcastic Olivia I'm used to.)
+[wait time="1.0"]
+update Olivia (Neutral)
+Olivia: ...Seb...
+Olivia: do you think my parents would still love me...
+Olivia: if I fail?
+- For sure
+	update Seb (Embarrassed)
+	Seb: You know...
+	Seb: I'm not the most perfect guy in the world...
+	update Olivia (Judgemental)
+	Olivia: Big surprise.
+	Seb: I make mistakes all the time,
+	Seb: I do stupid stuff, and I haven't really won any competition in my life.
+	update Seb (Smiling)
+	Seb: But I know that no matter how many times I fail,
+	Seb: my parents would still believe in me, and be proud!
+	Seb: I'm sure yours would be proud of you too, even though they don't tell you enough!
+	update Seb (Laugh)
+	Seb: And I think that you should also be proud of yourself too!
+	Seb: I mean look at you!
+	Seb: Top cellist in your year [speed=10], [speed=1]several solo concertos [speed=10], [speed=1]about twenty prizes...
+	Seb: Who would be fool enough to not be proud of you!
+	update Olivia (Away)
+	[wait time="0.5"]
+	Olivia: That doesn't make any sense...
+	Olivia: What makes you so special for them to love you...
+	Olivia: You're just some...guy.
+	update Olivia (Shocked) [animation="Shake X" length="0.2"]
+	Olivia: Oh-
+	Olivia: S-Sorry that was mean I shouldn't-
+	update Seb (Embarrassed)
+	Seb: Meh...Got used to it.
+	update Olivia (Embarrassed)
+	Olivia: I'm just being dramatic! Don't mind me.
+	update Olivia (Flirting)
+	Olivia: Of course they're proud of me for who I am.
+	Olivia: I'm amazing, after all.
+	update Seb (Smiling)
+	Seb: You bet.
+- Well...
+	update Seb (Neutral)
+	Seb: I... I don't know, Olivia.
+	update Seb (Embarrassed)
+	Seb: That's a really weird question to ask.
+	update Olivia (Confused)
+	Olivia: Weird? How?
+	update Seb (Curious)
+	Seb: Because... parents are supposed to love you anyway, right?
+	Seb: Like... that's the whole point?
+	update Olivia (Angry)
+	Olivia: But what if you're not GOOD enough?!
+	update Seb (Effraid)
+	Seb: Good enough for what?
+	update Olivia (Away)
+	Olivia: For... for them. To deserve it.
+	update Seb (Shock)
+	Seb: You don't have to deserve love from your parents...
+	Seb: Do you?
+	update Olivia (Neutral)
+	Olivia: ...
+	Olivia: "Nothing is given, everything in life needs to be deserved"
+	Olivia: That's what my Dad says all the time.
+	Olivia: And their love is no exception.
+	Olivia: Begging for it is a sign of weakness.
+	update Seb (Curious)
+	Seb: I...
+	Seb: I just don't get it...
+	update Olivia (Away)
+	Olivia: ...
+	update Olivia (Embarrassed)
+	Olivia: That was a stupid question.
+	Olivia: Forget I asked.
+	Olivia: I'm just stressed about Tuesday, that's all.
+	update Seb (Embarrassed)
+	Seb: Olivia, I-
+	update Olivia (Laughing)
+	Olivia: Seriously, drop it!
+	Olivia: I was being dramatic. It's fine.
+	update Olivia (Away)
+	Olivia: I need to practice more anyway.
+	update Seb (Neutral)
+	Seb: ...Okay.
+	update Olivia (Away)
+	Olivia: ...
+update Olivia (Neutral)
+Olivia: It's getting late. I should head home soon.
+update Seb (Smiling)
+Seb: Want me to walk with you?
+update Olivia (Judgemental)
+Olivia: And risk you making me late? No thanks.
+update Olivia (Sad)
+Olivia: Besides... I need to practice more tonight.
+Olivia: Tuesday is... important.
+update Seb (Embarrassed)
+Seb: You'll do great, Olivia.
+update Olivia (Neutral)
+Olivia: ...I have to.
+update Olivia (Embarrassed)
+Olivia: Thanks for... you know. Listening.
+update Olivia (Judgemental)
+Olivia: Even if you don't understand anything about music.
+update Seb (Smiling)
+Seb: Anytime!
+update Olivia (Embarrassed)
+Olivia: And sorry for calling you an uncultured ignoramus, that wasn't cool.
+update Seb (Embarrassed)
+Seb: Meh, I'm pretty sure Marcus has heard worse coming from you.
+update Olivia (Smiling)
+Olivia: See you on Monday!
+update Seb (Laugh)
+Seb: See ya, Maestro!
+leave Seb [animation="Fade Out"]
+[wait time="2.0"]
+update Olivia (Away)
+Olivia: ...
+update Olivia (Neutral)
+Olivia: [font_size=18]Just four more days.
+Olivia: You can do this Olivia...
+Olivia: For them...
+leave Olivia [animation="Fade Out"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+[wait time="2.0"]
+[background arg="res://Backgrounds/chambre nuit.jpg" fade="2.0"]
+audio music "res://game musics/sad theme 2.mp3" [fade="0.0" volume="0.0"]
+join Seb (Exhausted) center [animation="Fade In" length="3.0"]
+Seb: What a long day...
+Seb: I think I hit my record of insults coming from Olivia...
+update Seb (Tired)
+Seb: She may be harsh but she always knows what to do.
+Seb: I really don't get her reactions though.
+Seb: Olivia's hands were shaking so much.
+Seb: She looked terrified.
+[wait time="1.0"]
+update Seb (Effraid)
+Seb: Do her parents really only love her when she's perfect?
+Seb: That can't be right...
+Seb: Can it?
+[wait time="1.5"]
+Seb: I wish I knew what to say to her.
+update Seb (Sleepy)
+Seb: Maybe... maybe I should check on her next week.
+Seb: After Tuesday.
+[wait time="1.0"]
+Seb: Yeah... I'll do that.
+Seb: Yaaawn...
+Seb: But for now it's time to go to bed.
+leave Seb [animation="Fade Out" length="2.0"]
+[wait time="1.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+audio music -
+jump OliviaDream/

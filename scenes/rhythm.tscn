@@ -1,0 +1,199 @@
+[gd_scene load_steps=11 format=3 uid="uid://dsqrksp8p1ry4"]
+
+[ext_resource type="Script" uid="uid://m6tcarmwugvo" path="res://Scripts/rhythm.gd" id="1_g3crj"]
+[ext_resource type="PackedScene" uid="uid://c41jg3qu5f3bh" path="res://scenes/rhythm_bg.tscn" id="2_23qu7"]
+[ext_resource type="Texture2D" uid="uid://udr8w64nlv21" path="res://sprites 2/arrow white.png" id="2_g4swc"]
+[ext_resource type="PackedScene" uid="uid://cuyd1qv0pn26e" path="res://addons/midi/MidiPlayer.tscn" id="4_23qu7"]
+[ext_resource type="AudioStream" uid="uid://biee7jm3tioyp" path="res://game musics/Perfect ascension 2.mp3" id="5_23qu7"]
+[ext_resource type="FontFile" uid="uid://cesd7yrku342v" path="res://Assets/Fonts/Spell of Asia.ttf" id="6_7pmv0"]
+[ext_resource type="AudioStream" uid="uid://dnvqv17fo0v2r" path="res://game musics/Hysteria 2 slower.mp3" id="6_a75r5"]
+[ext_resource type="AudioStream" uid="uid://dj5xeomjsu4nc" path="res://sounds/cello hit.mp3" id="7_236do"]
+[ext_resource type="AudioStream" uid="uid://bajpjgsv76d5g" path="res://game musics/SAY IT.mp3" id="7_jn03i"]
+[ext_resource type="PackedScene" uid="uid://dkpsk3l6e0qa8" path="res://scenes/game_over_screen.tscn" id="8_slvee"]
+
+[node name="Rhythm" type="Node2D"]
+script = ExtResource("1_g3crj")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="RhythmBG" parent="." instance=ExtResource("2_23qu7")]
+
+[node name="Seb Arrows" type="Node2D" parent="."]
+
+[node name="Gauche" type="Sprite2D" parent="Seb Arrows"]
+position = Vector2(212, 580)
+rotation = 1.5708
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Haut" type="Sprite2D" parent="Seb Arrows"]
+position = Vector2(282, 580)
+rotation = -3.14159
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Bas" type="Sprite2D" parent="Seb Arrows"]
+position = Vector2(352, 580)
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Droite" type="Sprite2D" parent="Seb Arrows"]
+position = Vector2(422, 580)
+rotation = -1.5708
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Olivia Arrows" type="Node" parent="."]
+
+[node name="Gauche" type="Sprite2D" parent="Olivia Arrows"]
+position = Vector2(757, 580)
+rotation = 1.5708
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Haut" type="Sprite2D" parent="Olivia Arrows"]
+position = Vector2(827, 580)
+rotation = 3.14159
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Bas" type="Sprite2D" parent="Olivia Arrows"]
+position = Vector2(897, 580)
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="Droite" type="Sprite2D" parent="Olivia Arrows"]
+position = Vector2(967, 580)
+rotation = -1.5708
+scale = Vector2(0.261667, 0.22)
+texture = ExtResource("2_g4swc")
+
+[node name="SebPart" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/perfect ascension Seb part.mid"
+
+[node name="OliviaPart" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/perfect ascension Olivia Part.mid"
+
+[node name="SebPart2" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/Hysteria 2 Seb.mid"
+
+[node name="OliviaPart2" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/Hysteria 2 Olivia.mid"
+
+[node name="SebPart3" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/SAY IT Seb.mid"
+
+[node name="OliviaPart3" parent="." instance=ExtResource("4_23qu7")]
+file = "res://game musics/SAY IT Olivia.mid"
+
+[node name="Perfect" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_23qu7")
+volume_db = 5.572
+
+[node name="Hysteria" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_a75r5")
+volume_db = 3.714
+
+[node name="Say" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_jn03i")
+volume_db = 5.571
+
+[node name="Seb Lanes" type="Node" parent="."]
+
+[node name="gauche" type="Marker2D" parent="Seb Lanes"]
+position = Vector2(212, -500)
+
+[node name="haut" type="Marker2D" parent="Seb Lanes"]
+position = Vector2(285, -500)
+
+[node name="bas" type="Marker2D" parent="Seb Lanes"]
+position = Vector2(349, -500)
+
+[node name="droite" type="Marker2D" parent="Seb Lanes"]
+position = Vector2(422, -500)
+
+[node name="Olivia Lanes" type="Node" parent="."]
+
+[node name="gauche" type="Marker2D" parent="Olivia Lanes"]
+position = Vector2(757, -500)
+
+[node name="haut" type="Marker2D" parent="Olivia Lanes"]
+position = Vector2(830, -500)
+
+[node name="bas" type="Marker2D" parent="Olivia Lanes"]
+position = Vector2(894, -500)
+
+[node name="droite" type="Marker2D" parent="Olivia Lanes"]
+position = Vector2(967, -500)
+
+[node name="Olivia" type="Label" parent="."]
+offset_left = 726.0
+offset_top = 34.0
+offset_right = 966.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.886275, 0.909804, 1)
+theme_override_fonts/font = ExtResource("6_7pmv0")
+theme_override_font_sizes/font_size = 50
+text = "Olivia"
+horizontal_alignment = 1
+
+[node name="Seb" type="Label" parent="."]
+offset_left = 216.0
+offset_top = 36.0
+offset_right = 456.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.886275, 0.909804, 1)
+theme_override_fonts/font = ExtResource("6_7pmv0")
+theme_override_font_sizes/font_size = 50
+text = "Seb"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="."]
+offset_left = 461.0
+offset_top = 33.0
+offset_right = 701.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0.941176, 0.917647, 0.886275, 1)
+theme_override_colors/font_outline_color = Color(0.909804, 0.886275, 0.909804, 1)
+theme_override_fonts/font = ExtResource("6_7pmv0")
+theme_override_font_sizes/font_size = 50
+text = "Score:"
+horizontal_alignment = 1
+
+[node name="Comment" type="Label" parent="."]
+offset_left = 157.0
+offset_top = 293.0
+offset_right = 496.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_7pmv0")
+theme_override_font_sizes/font_size = 64
+text = "Comment"
+horizontal_alignment = 1
+
+[node name="WrongKeySound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_236do")
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+visible = false
+z_index = 10
+offset_right = 1155.0
+offset_bottom = 650.0
+
+[node name="GameOverScreen" parent="." instance=ExtResource("8_slvee")]
+visible = false
+z_index = 180
+offset_left = 2.0
+offset_right = 2.0
+
+[node name="ErrorBar" type="ProgressBar" parent="."]
+offset_left = -3.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 35.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6_7pmv0")
+theme_override_font_sizes/font_size = 30

@@ -1,0 +1,514 @@
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+audio music "res://game musics/main theme.mp3" [fade="3.0" volume="-4.0"]
+[wait time="2.0"]
+
+join Seb (Exhausted) left [animation="Slide From Left"]
+update Seb [animation="Tada" length="0.7" repeat="5"]
+Seb: Phew… Hey… Sophia!
+
+join Sophia (Happy) right [animation="Slide From Left"]
+Sophia: Oh, hey Seb!
+Sophia: Right on time! That’s not like you.
+
+update Sophia (Soupir)
+Sophia: And out of breath, I see.
+
+update Seb (Embarrassed)
+Seb: Yeah, not much stamina…
+
+update Seb (Smiling)
+Seb: But I wouldn’t miss this outing for the world.
+
+update Sophia (Embarrassed)
+Sophia: We’re just going to the park, you know…
+
+update Seb (Laugh)
+Seb: It’s just… I think it’s nice to hang out with you a bit.
+
+update Sophia (Silly)
+Sophia: We better get going then!
+
+update Seb (Smiling)
+leave Seb [animation="Fade Out"]
+leave Sophia [animation="Fade Out"]
+
+(And so, Sophia and I began our walk toward the park.)
+(Sunlight filtered through the trees,)
+(while the gentle late-summer breeze brushed against her blonde hair.)
+
+join Sophia (Sad) right [animation="Fade In"]
+join Seb (Neutral) left [animation="Fade In"]
+
+Sophia: That’s too bad the others couldn’t join us.
+Sophia: It would’ve been fun to all hang out again.
+
+update Seb (Laugh)
+Seb: I’m sure we’ll all get to have fun together when we’re free!
+
+update Seb (Curious)
+Seb: Speaking of which, you said you did the groceries today!
+
+update Sophia (Smiling)
+Sophia: Yeah, I handle it every week.
+
+update Sophia (Silly)
+Sophia: My sister gives me the list, I hand it to the guy at the grocery store,
+Sophia: and boom! Done.
+
+update Seb (Curious)
+Seb: He just gives you everything without a problem?
+
+update Sophia (Confuse)
+Sophia: Well yeah! Why would he say no?
+
+update Seb (Trolling)
+Seb: Lucky!
+Seb: With my parents, we always have to go to the supermarket and pick everything by hand.
+
+update Seb (Exhausted)
+Seb: And the cashiers are [speed=5]sooo sloooow!
+
+update Sophia (Laughing)
+Sophia: [speed=1]Haha, tell me about it.
+
+update Seb (Smiling)
+Seb: What’d you get this week?
+
+update Sophia (Smiling)
+Sophia: Oh, nothing crazy. Butter, milk cartons, rice…
+audio music - [volume="0.0"]d
+Sophia: green bottles.
+update Seb (Curious)
+Seb: Green bottles?
+
+Sophia: Yeah, you know, those bottles-
+
+update Sophia (Silly)
+Sophia: They’re super heavy, and the guy always puts them in a separate bag.
+
+update Sophia (Embarrassed)
+Sophia: Mom says they’re important and I’d better not break them.
+
+Seb: …And do you know what they are?
+
+update Seb (Curious)
+Seb: Maybe it's like... fancy juice or something?
+
+update Sophia (Confuse)
+Sophia: I don't know. It smells weird when my sister opens one.
+
+update Seb (Trolling)
+Seb: Maybe it's poison and your mom's secretly a villain!
+
+update Sophia (Laughing)
+Sophia: Haha! Yeah right!
+
+update Seb (Smiling)
+Seb: Grown-ups have such weird stuff anyway.
+
+update Sophia (Silly)
+Sophia: Tell me about it.
+
+update Seb (Embarrassed)
+Seb: My parents would probably tell us we’re still too young to understand.
+
+update Sophia (Soupir)
+Sophia: Yeah… parents really think they know everything…
+
+label park fr
+[background arg="res://Backgrounds/park 2.jpg" fade="3.0"]
+audio music "res://game musics/pearl's theme.mp3" [fade="2.0" volume="0.0"]
+
+update Sophia (Silly)
+Sophia: Anyway, we’re here!
+
+update Seb (Laugh)
+Seb: I’d forgotten how pretty this park was. Do you come often?
+
+update Sophia (Happy)
+Sophia: Yeah… I like it.
+Sophia: Feels good to be outside…
+
+update Sophia (Silly)
+Sophia: Plus, I’ve got my little whiskered friends.
+
+update Seb (Curious) [animation="Tada" length="0.4"]
+Seb: Your friends?
+
+update Sophia (Silly)
+Sophia: Cats, obviously!
+Sophia: Three of them live around here.
+Sophia: I named them Cloud, Luna, and Whispers.
+
+update Seb (Trolling)
+Seb: Whispers…?
+
+update Sophia (Spout)
+Sophia: What? That’s a great name!
+
+- It's a cool name
+	update Seb (Smiling)
+	Seb: You’re right, I think it suits him.
+	
+	update Sophia (Silly)
+	Sophia: My sister always told me I had a real talent for naming animals.
+	Sophia: She says I’m a really creative girl.
+
+- Poor cat
+	Seb: A name that only a mother would love.
+	
+	Sophia: Hey! That’s still better than Seb!
+	
+	update Seb (Sad) [length="0.8"]
+	Seb: Hahaha… [font_size=20]thanks.
+	
+	update Sophia (Soupir) [animation="Tada" length="0.8"]
+	Sophia: Oh come on, I’m joking! Don’t pout!
+
+audio music - [fade="1.0" volume="0.0"]
+[wait time="1.0"]
+
+audio sfx "res://sounds/086374_shaken-bush-40116.mp3" [volume="0.0" loop="false"]
+*crackle*
+
+update Seb (Curious)
+Seb: What was that?
+
+update Sophia (Confuse)
+Sophia: That what?
+
+[wait time="1.0"]
+
+audio sfx "res://sounds/086374_shaken-bush-40116.mp3" [volume="0.0" loop="false"]
+*crackle*
+
+update Seb (Shock) [animation="Shake X" length="0.2"]
+Seb: No seriously, what was that?
+
+update Sophia (Happy) [animation="Tada" length="0.4"]
+Sophia: Oh, I think it’s her!
+
+update Seb (Curious)
+Seb: Her who?
+
+join Luna center [animation="Fade In Up" z_index="1"]
+audio sfx "res://sounds/cat-meow-297927.mp3" [volume="0.0"]
+Luna: Meow!
+
+audio music "res://game musics/pearl's theme.mp3" [fade="2.0" volume="0.0"]
+
+Sophia: Luna! My favorite!
+Sophia: She almost always follows me here.
+
+update Sophia (Laughing)
+Sophia: How can you be scared of such a cute thing?
+
+update Seb (Embarrassed)
+Seb: I wasn’t scared, I was just…
+Seb: curious?
+
+audio sfx "res://sounds/cat-meow-297927.mp3" [volume="0.0"]
+Luna: Meow… (Quit the bullshit, bro.)
+
+update Sophia (Soupir)
+Sophia: Even Luna isn’t buying it…
+
+Seb: Don’t tell the others, please.
+
+update Seb (Smiling)
+Seb: She doesn’t look wild at all.
+
+update Sophia (Smiling)
+Sophia: Of course not.
+Sophia: I gave her my tuna sandwich the first time.
+
+update Sophia (Silly)
+Sophia: Since then, she adopted me.
+Sophia: Watch.
+(Sophia pulled out the leftover tuna sandwiches and a little milk bottle from her backpack.)
+
+leave --All-- [animation="Fade Out"]
+[background arg="res://Backgrounds/Seb Sophia cats.jpg" fade="0.5"]
+
+Seb: You really brought a feast.
+
+Sophia: Shh… don’t scare them.
+
+(She drops a bit on the ground. Luna moves in first, followed by the other cats.)
+
+Seb: Looks like some secret ritual.
+
+Sophia: Kind of, yeah.
+Sophia: Every time I come, they’re waiting…
+Sophia: like I’m their favorite restaurant.
+
+Seb: That’s so generous of you, Sophia.
+Seb: I’d be way too lazy to feed them every time.
+
+Sophia: These cats are what help me…
+Sophia: You know…
+
+Seb: Forget?
+
+Sophia: Yeah, kinda!
+
+(The cats eat peacefully.)
+
+(Sophia watches them fondly, then straightens up and dusts her hands.)
+
+Sophia: Aren’t they cute?
+Sophia: Look at their little ears and their little itty-bitty paws!
+Sophia: So cute I could eat them alive!
+
+Seb: That’s…
+Seb: surely a way to show affection.
+Seb: How come you haven’t eaten me too yet?
+
+Sophia: I think that’s quite self-explanatory.
+
+Seb: That hurts, Sophia.
+
+Sophia: At least you’re still alive.
+
+Sophia: Alright, service over!
+Sophia: But you know, the park’s not that peaceful!
+
+Seb: Really?
+
+Sophia: Yeah!
+Sophia: The other day, Marcus tried climbing a tree to catch a pigeon…
+
+Sophia: You know how he is,
+Sophia: always trying to impress Olivia.
+
+Sophia: He got stuck for twenty minutes before someone helped him.
+
+Seb: Wait, what? He actually got stuck?
+
+Sophia: Yup! And the worst part is Olivia flat-out refused to help him,
+Sophia: apparently to “teach him a lesson.”
+
+Seb: Is there a single day where these two don’t make a scene?
+
+Sophia: They bicker all the time, but deep down I’m sure they like each other.
+
+Seb: Yeah, probably.
+
+Sophia: Oh! And did [font_size=25]I tell you [font_size=20]about that [font_size=15]one time [font_size=13]when…
+
+[background arg="res://Backgrounds/park 2 sunset.jpg" fade="3.0"]
+audio music - [fade="2.0" volume="0.0"]
+
+(After feeding the cats,)
+(Sophia and I got up and began wandering through the park until the first light of dusk.)
+(She started telling me funny stories about her cats and how fun it was to play with them.)
+(Eventually[speed=5],[speed=1]we stopped.)
+
+label dusk
+audio music "res://game musics/sophia's theme guitar.mp3" [fade="2.0" volume="0.0"]
+[wait time="3.0"]
+
+join Sophia (Soupir) right [animation="Fade In"]
+join Seb (Exhausted) left [animation="Fade In"]
+
+Sophia: Phew, my feet hurt from walking. How about we sit down?
+
+Seb: Yeah, I can barely stand too…
+
+Sophia: There’s a bench right there.
+Sophia: How about we go?
+
+update Seb (Smiling)
+Seb: I’m following you.
+
+(We started walking toward a bench a few steps from here.)
+(We sat, Luna stretching at our feet.)
+
+Seb: It’s quiet here… a nice change from home.
+
+update Sophia (Smiling)
+Sophia: Yeah…
+
+update Sophia (Sad)
+Sophia: At my place it’s… louder.
+
+update Sophia (Soupir)
+Sophia: Well… except when Mom sleeps long,
+Sophia: then it’s as silent as a church on a Monday.
+
+update Seb (Curious)
+Seb: Does your mom sleep all day?
+
+update Sophia (Sad)
+Sophia: Mostly.
+Sophia: She’s asleep when I go to school,
+Sophia: and she’s asleep when I come back home.
+Sophia: My sister told me she’s mostly awake at night.
+
+update Seb (Curious)
+Seb: So she practically doesn’t do anything all day?
+
+update Seb (Laugh)
+Seb: She must be really tired.
+
+update Sophia (Soupir)
+Sophia: I guess…
+
+update Sophia (Silly)
+Sophia: But my sister handles things… she always does.
+
+update Seb (Curious)
+Seb: Do you…
+Seb: get to spend time with your mom?
+
+update Sophia (Sad)
+Sophia: …
+
+(Sophia lowers her head toward Luna, sleeping peacefully,
+gently patting her while she quietly purrs.)
+(Her expression turns melancholic.)
+
+update Sophia (Neutral)
+Sophia: Do you think…
+Sophia: animals can understand us sometimes?
+
+update Seb (Curious)
+Seb: Hm? What do you mean?
+
+update Sophia (Embarrassed)
+Sophia: It’s just…
+Sophia: sometimes when I play with my cats, they look so happy too.
+Sophia: Always jumping and running around me, begging for caresses.
+Sophia: And when I’m feeling down, they always come cuddle me.
+
+update Sophia (Sad)
+Sophia: I tell myself they do it to cheer me up…
+Sophia: but I don’t know… maybe it’s just me.
+
+update Seb (Neutral)
+Seb: Well…
+
+[wait time="0.5"]
+
+- Animals understand us
+	update Seb (Smiling)
+	Seb: You know, some animals are smarter than we think…
+	Seb: They’ve got their own way of thinking,
+	Seb: but I’m sure they’re smart enough to sense when we’re not okay.
+	
+	update Sophia (Happy)
+	Sophia: I knew you’d agree, Seb.
+	Sophia: Didn’t know you were an animal lover.
+	
+	update Seb (Embarrassed)
+	Seb: Let’s just say I was a huge Hello Kitten fan when I was little…
+	
+	update Sophia (Silly)
+	Sophia: And you were still scared by Luna!
+	
+	update Seb (Exhausted)
+	Seb: I thought you forgot about that.
+	
+	Sophia: Hehe!
+
+- Animals don't understand us
+	update Seb (Smiling)
+	Seb: I don’t think it’s that deep…
+	Seb: They probably just stick to you ’cause they’re hungry.
+	
+	
+	update Sophia (Sad)
+	Sophia: Yeah… you’re right.
+	Sophia: Why else would they care about me…
+	
+	update Seb (Effraid)
+	Seb: …Sophia, that’s not what I meant.
+	
+	update Sophia (Smiling)
+	Sophia: Don’t worry, Seb. I know you didn’t mean it badly. It’s just…
+	
+	update Sophia (Sad)
+	Sophia: I love my cats so much,
+	Sophia: and I hoped they’d love me back…
+	
+	update Seb (Neutral)
+	Seb: …
+
+(The sun starts to set, shadows stretching.)
+
+update Sophia (Smiling)
+Sophia: Well… I guess it’s time to head back.
+
+update Seb (Curious)
+Seb: Already? Time flies here…
+
+update Sophia (Silly)
+Sophia: That was really fun, Seb.
+Sophia: We should do this again soon!
+
+update Seb (Smiling)
+Seb: Definitely. I'd like that.
+
+update Seb (Laugh)
+Seb: See you Monday at school! Later, Sophia.
+
+leave Sophia [animation="Fade Out"]
+
+join Seb (Smiling) center [animation="Fade Cross"]
+
+(And so, Sophia and I went our separate ways.)
+(With Luna and the others at her side,)
+(She slowly made her way toward the south park’s exit.)
+(And so did I, through the north exit.)
+
+leave Seb [animation="Fade Out" length="2.0"]
+label room
+
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+
+audio music - [fade="2.0" volume="-1.0"]
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/chambre nuit.jpg" fade="2.0"]
+audio music "res://game musics/sad theme 2.mp3" [fade="2.0" volume="-1.0"]
+[wait time="2.0"]
+
+join Seb (Sleepy) center [animation="Fade In"]
+
+Seb: Well, that was a long day.
+
+update Seb (Tired)
+Seb: Those cats really seem to like Sophia.
+Seb: She looked like a princess when she was surrounded by them.
+Seb: I think one of them scratched my sock, though.
+
+update Seb (Neutral)
+Seb: Speaking of which, I’ve never seen Sophia like this before.
+Seb: She seemed so… saddened.
+Seb: That’s not in her habits.
+Seb: Maybe I should spend more time with her.
+Seb: She looks like she needs it…
+
+update Seb (Sleepy)
+Seb: Yaaaawn…
+Seb: It’s getting late. I should probably go to bed.
+
+leave Seb [animation="Fade Out" length="2.0"]
+[wait time="3.0"]
+[background arg="res://Backgrounds/Seb sleeping 1.jpg" fade="2.0"]
+Seb: But still...
+Seb: I wonder why Sophia loves her cats this much...
+[wait time="2.0"]
+[background arg="res://Backgrounds/Seb sleeping 2.jpg" fade="2.0"]
+Seb: And that green bottle thing...
+Seb: Why would her mom need SO many bottles?
+Seb: And why can't Sophia know what they are?
+[wait time="2.0"]
+[background arg="res://Backgrounds/Seb sleeping 3.jpg" fade="2.0"]
+Seb: Adults are weird.
+Seb: Whatever... I'm probably overthinking.
+[background arg="res://Backgrounds/Black (1).png" fade="3.0"]
+
+audio music - [fade="2.0" volume="-1.0"]
+[wait time="2.0"]
+[signal arg="platformer"]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://crny746rjgf27"]
+
+[ext_resource type="Script" uid="uid://imgsqrmug2v5" path="res://Scripts/button_red.gd" id="1_4ykai"]
+[ext_resource type="Texture2D" uid="uid://bt301tdvbkn3k" path="res://Assets/Sprites/button_red_pressed.png" id="1_urf4u"]
+[ext_resource type="Texture2D" uid="uid://d1mp1cu6df5dq" path="res://Assets/Sprites/button_red.png" id="2_4ykai"]
+[ext_resource type="AudioStream" uid="uid://bf51ucong7clu" path="res://Assets/AUDIO/blip-131856.mp3" id="4_tf2in"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsip3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_urf4u")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_4ykai")
+}],
+"loop": true,
+"name": &"unpressed",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j3pn0"]
+height = 226.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fhjaa"]
+radius = 26.0
+height = 144.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ykai"]
+size = Vector2(90.5, 20.5)
+
+[node name="Button red" type="AnimatableBody2D"]
+z_index = 5
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_4ykai")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7, -143)
+scale = Vector2(1.08667, 1.08667)
+sprite_frames = SubResource("SpriteFrames_hsip3")
+animation = &"pressed"
+
+[node name="collider_base" type="CollisionShape2D" parent="."]
+position = Vector2(4, -19)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_j3pn0")
+
+[node name="red_collider_top" type="CollisionShape2D" parent="."]
+z_index = 3
+position = Vector2(-1, -107)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_fhjaa")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -166)
+shape = SubResource("RectangleShape2D_4ykai")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_tf2in")
+volume_db = 10.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_top_checker_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_top_checker_body_exited"]

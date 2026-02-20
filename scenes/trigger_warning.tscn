@@ -1,0 +1,103 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpx5e8nfmffic"]
+
+[ext_resource type="Script" uid="uid://dinnqc85cg3pc" path="res://Scripts/trigger_warning.gd" id="1_ang1v"]
+[ext_resource type="FontFile" uid="uid://odetu2hmfcb1" path="res://Assets/Fonts/Cheveuxdange.ttf" id="1_b04gn"]
+[ext_resource type="FontFile" uid="uid://bx1x8217awu1f" path="res://Assets/Fonts/EraserRegular.ttf" id="3_rgldf"]
+
+[node name="Trigger warning" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ang1v")
+
+[node name="Fade" type="ColorRect" parent="."]
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="TW" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 64.0
+offset_top = 88.0
+offset_right = 1056.0
+offset_bottom = 312.0
+theme_override_fonts/normal_font = ExtResource("1_b04gn")
+theme_override_fonts/mono_font = ExtResource("1_b04gn")
+theme_override_fonts/bold_font = ExtResource("3_rgldf")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 60
+bbcode_enabled = true
+text = "
+The following game contains sensitive sujects"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Warning" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 64.0
+offset_top = 16.0
+offset_right = 1056.0
+offset_bottom = 240.0
+theme_override_fonts/normal_font = ExtResource("1_b04gn")
+theme_override_fonts/mono_font = ExtResource("1_b04gn")
+theme_override_fonts/bold_font = ExtResource("3_rgldf")
+theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/bold_font_size = 60
+bbcode_enabled = true
+text = "[b]WARNING:[/b]
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Details" type="RichTextLabel" parent="."]
+layout_mode = 2
+offset_left = 192.0
+offset_top = 324.0
+offset_right = 960.0
+offset_bottom = 528.0
+theme_override_fonts/normal_font = ExtResource("1_b04gn")
+theme_override_font_sizes/normal_font_size = 32
+text = "This game contains depictions of domestic violence in all its forms. Player discretion is advised."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="More details" type="Button" parent="."]
+layout_mode = 2
+offset_left = 320.0
+offset_top = 312.0
+offset_right = 832.0
+offset_bottom = 352.0
+theme_override_fonts/font = ExtResource("1_b04gn")
+theme_override_font_sizes/font_size = 25
+text = "More details"
+flat = true
+
+[node name="Continue" type="Button" parent="."]
+layout_mode = 2
+offset_left = 320.0
+offset_top = 544.0
+offset_right = 832.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("1_b04gn")
+theme_override_font_sizes/font_size = 32
+text = "Continue"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="More details" to="." method="_on_more_details_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

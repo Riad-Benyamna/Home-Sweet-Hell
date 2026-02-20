@@ -1,0 +1,59 @@
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+[wait time="2.0"]
+[background arg="res://Backgrounds/Olivia dream 1.jpg" fade="0.0"]
+audio "res://sounds/spotlight-91359.mp3" [loop="false"]
+[wait time="2.0"]
+[background arg="res://Backgrounds/Olivia dream 2.jpg" fade="0.0"]
+audio sfx "res://sounds/spotlight-91359.mp3" [loop="false"]
+[wait time="3.0"]
+[background arg="res://Backgrounds/Olivia dream 3.jpg" fade="0.0"]
+audio sfx "res://sounds/spotlight-91359.mp3" [loop="false"]
+[wait time="2.0"]
+audio music "res://game musics/EN GARDE.mp3"
+[background scene="res://scenes/oliviadream_4.tscn" arg="res://" fade="2.0"]
+Olivia: Welcome, Sebastian.
+Seb: O-Olivia? Is that you ?
+Seb: Where are we ?
+Seb: What's going on ?
+Seb: And...Why are you dressed like that ?
+Olivia: How despicable!
+Olivia: How destestable!
+Olivia: HOW EXECRABLE!
+Olivia: This, my good sir-
+Olivia: Is the attire of a [b]TRUE[/b] virtuoso, obviously!
+Olivia: Unlike [i]some people[/i] who show up to a duel in pajamas.
+Seb: A duel?
+Seb: A duel? What duel? I was literally just going to bed-
+Seb: Is this some kind of fancy prank ?
+Olivia: It is no "prank", Sebastian.
+Olivia: You DARE stand before the greatest cellist in all the realm?!
+Olivia: Your arrogance shall be punished.
+Seb: ...This is a dream, isn't it?
+Seb: What could Mom have put in her Pizza...
+Olivia: [b] SILENCE !
+Olivia: Dream, reality, it does not make the slightest difference.
+Olivia: Either way, you're about to be [b]UTTERLY DESTROYED[/b] by my superiority!
+Olivia: I challenge you to a duel!
+Seb: Olivia...I can't hit you...
+Olivia: Hit me ?! HOW GROTESQUE!
+Olivia: Our duel shall be musical !
+Olivia: Wield your bow! And may our cellos begin their deadly dance!
+Seb: Seriously ? We're gonna fight with...Cellos ?
+Olivia: Of course! What else would we use?
+Olivia: Violas? Ugh...[i]Disgusting.[/i]
+
+Olivia: The rules are simple\: match my performance, note for note.
+Olivia: Fail, and you'll be banished to the realm of mediocrity [b]FOREVER!
+Seb: That's... already where I live though.
+
+Olivia: [b]EXACTLY! Which is why you can't afford to lose!
+
+Seb: This is the weirdest dream I've ever had...
+
+Olivia: Oh, it's about to get weirder.
+Olivia: Behold! [speed=1] El Divino... [b]AWAKENS!
+Olivia: [b] EN GARDE !
+[background arg="res://Backgrounds/Black (1).png" fade="3.0"]
+audio music - [fade="2.0" volume="-1.0"]
+[wait time="2.0"]
+[signal arg="Rhythm"]

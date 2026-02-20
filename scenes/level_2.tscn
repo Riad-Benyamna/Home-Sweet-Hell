@@ -1,0 +1,184 @@
+[gd_scene load_steps=23 format=4 uid="uid://doukupgc42qql"]
+
+[ext_resource type="Texture2D" uid="uid://c4uiv3xh8ugkc" path="res://Assets/Sprites/alcohol bg.png" id="1_1y8me"]
+[ext_resource type="Texture2D" uid="uid://cjogm36wl0h7l" path="res://Assets/Sprites/alcohol bg 1.png" id="2_n7ypv"]
+[ext_resource type="Texture2D" uid="uid://bcnukyksxauqx" path="res://Assets/Sprites/alcohol bg 2.png" id="3_0s5r2"]
+[ext_resource type="Texture2D" uid="uid://dssoxu5k8e3mb" path="res://Assets/Sprites/alcohol bg 3.png" id="4_7j8ne"]
+[ext_resource type="PackedScene" uid="uid://5whewxccrae5" path="res://scenes/seb.tscn" id="5_n7ypv"]
+[ext_resource type="Texture2D" uid="uid://diu1o8auja5q0" path="res://Assets/Sprites/grass.png" id="6_0s5r2"]
+[ext_resource type="Texture2D" uid="uid://b41ghnsfamd2i" path="res://Assets/Sprites/rock.png" id="7_eoq84"]
+[ext_resource type="Texture2D" uid="uid://oxj04bffxju5" path="res://Assets/Sprites/bush.png" id="8_yl73a"]
+[ext_resource type="Texture2D" uid="uid://c4rpyvvwok7ck" path="res://Assets/Sprites/grass_pente.png" id="9_xbcdb"]
+[ext_resource type="Texture2D" uid="uid://dqvlvdo5vkyfl" path="res://Assets/Sprites/tree.png" id="10_s77qv"]
+[ext_resource type="Texture2D" uid="uid://dtcdy7v5x4rur" path="res://Assets/Sprites/tree_2.png" id="11_5hnhx"]
+[ext_resource type="Texture2D" uid="uid://cdyvjwsl1rjff" path="res://Assets/Sprites/door.png" id="12_yl73a"]
+[ext_resource type="AudioStream" uid="uid://jfjsiy3wtctm" path="res://Assets/AUDIO/winter-wind-402331.mp3" id="13_xbcdb"]
+[ext_resource type="PackedScene" uid="uid://0e2i35n7jbjm" path="res://scenes/collar_cat.tscn" id="14_s77qv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78pok"]
+texture = ExtResource("6_0s5r2")
+texture_region_size = Vector2i(300, 300)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+0:0/0/physics_layer_0/polygon_0/one_way_margin = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+1:0/0/physics_layer_0/polygon_0/one_way_margin = 0.0
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+2:0/0/physics_layer_0/polygon_0/one_way_margin = 0.0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 150, -150, 150, 150, -150, 150)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvfll"]
+texture = ExtResource("7_eoq84")
+texture_region_size = Vector2i(300, 300)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jcnlr"]
+texture = ExtResource("8_yl73a")
+texture_region_size = Vector2i(300, 300)
+0:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kfcu"]
+texture = ExtResource("9_xbcdb")
+texture_region_size = Vector2i(300, 300)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-150, -150, 0, 0, 150, 150, -150, 150)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i558w"]
+texture = ExtResource("10_s77qv")
+texture_region_size = Vector2i(100, 100)
+0:0/size_in_atlas = Vector2i(9, 9)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wvr33"]
+texture = ExtResource("11_5hnhx")
+texture_region_size = Vector2i(300, 300)
+0:0/size_in_atlas = Vector2i(3, 3)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sgm4o"]
+tile_size = Vector2i(300, 300)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_78pok")
+sources/4 = SubResource("TileSetAtlasSource_i558w")
+sources/2 = SubResource("TileSetAtlasSource_jcnlr")
+sources/1 = SubResource("TileSetAtlasSource_lvfll")
+sources/3 = SubResource("TileSetAtlasSource_5kfcu")
+sources/6 = SubResource("TileSetAtlasSource_wvr33")
+
+[sub_resource type="Curve" id="Curve_xbcdb"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.236842, 1), 0.0, 0.0, 0, 0, Vector2(0.494737, 0), 0.0, 0.0, 0, 0, Vector2(0.731579, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[node name="level2" type="Node2D"]
+position = Vector2(-202, 510)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scale = Vector2(0.5, 0.5)
+transform = Transform2D(0.5, 0, 0, 0.5, 0, 0)
+
+[node name="sky" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-3910, 2802)
+motion_mirroring = Vector2(5000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/sky"]
+position = Vector2(1827, -665.34)
+scale = Vector2(2, 2.12)
+texture = ExtResource("1_1y8me")
+
+[node name="bottles3" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-3910, 2802)
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(5000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/bottles3"]
+texture_filter = 1
+position = Vector2(1812, -685.84)
+scale = Vector2(2, 2.12)
+texture = ExtResource("2_n7ypv")
+
+[node name="bottle2" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-3910, 2802)
+motion_scale = Vector2(0.9, 0.9)
+motion_mirroring = Vector2(5000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/bottle2"]
+texture_filter = 1
+position = Vector2(1812, -685.84)
+scale = Vector2(2, 2.12)
+texture = ExtResource("3_0s5r2")
+
+[node name="bottles1" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-3910, 2802)
+motion_mirroring = Vector2(5000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/bottles1"]
+texture_filter = 1
+position = Vector2(1806, -661.34)
+scale = Vector2(2, 2.12)
+texture = ExtResource("4_7j8ne")
+
+[node name="Seb" parent="." instance=ExtResource("5_n7ypv")]
+modulate = Color(0, 0, 0, 1)
+z_index = 15
+position = Vector2(-889, 633)
+scale = Vector2(0.2, 0.2)
+zoom = Vector2(0.8, 0.8)
+camera_position = Vector2(900, -700)
+
+[node name="Ground" type="TileMapLayer" parent="."]
+modulate = Color(0, 0, 0, 1)
+z_index = 2
+position = Vector2(-444, -140)
+tile_map_data = PackedByteArray("AAD8/wUAAAABAAEAAAD8/wYAAAABAAEAAAD9/wUAAAABAAAAAAD9/wYAAAABAAEAAAD+/wUAAAABAAAAAAD+/wYAAAABAAEAAAD//wUAAAABAAAAAAD//wYAAAABAAEAAAAAAAUAAAABAAAAAAAAAAYAAAABAAEAAAABAAUAAAABAAAAAAABAAYAAAABAAEAAAACAAUAAAABAAAAAAACAAYAAAABAAEAAAADAAUAAAABAAAAAAADAAYAAAABAAEAAAAEAAUAAAABAAAAAAAEAAYAAAABAAEAAAAFAAUAAAABAAAAAAAFAAYAAAABAAEAAAAGAAUAAAABAAAAAAAGAAYAAAABAAEAAAAHAAUAAAABAAAAAAAHAAYAAAABAAEAAAAIAAUAAAABAAAAAAAIAAYAAAABAAEAAAAJAAUAAAABAAAAAAAJAAYAAAABAAEAAAAKAAUAAAABAAAAAAAKAAYAAAABAAEAAAALAAUAAAABAAAAAAALAAYAAAABAAEAAAAMAAUAAAABAAAAAAAMAAYAAAABAAEAAAANAAUAAAABAAAAAAANAAYAAAABAAEAAAD7/wUAAAABAAEAAAD7/wQAAAACAAEAAAD7/wMAAAACAAEAAAD7/wIAAAACAAEAAAD7/wEAAAACAAEAAAD7/wYAAAABAAEAAAD7/wcAAAABAAIAAAD8/wcAAAABAAEAAAD9/wcAAAABAAIAAAD+/wcAAAABAAIAAAD//wcAAAABAAIAAAAAAAcAAAABAAIAAAABAAcAAAABAAIAAAACAAcAAAABAAIAAAAGAAcAAAABAAIAAAAFAAcAAAABAAIAAAAEAAcAAAABAAIAAAADAAcAAAABAAIAAAAHAAcAAAABAAIAAAAIAAcAAAABAAIAAAAJAAcAAAABAAIAAAAKAAcAAAABAAIAAAALAAcAAAABAAIAAAAMAAcAAAABAAIAAAANAAcAAAABAAIAAAD6/wcAAAAAAAIAAAD6/wYAAAAAAAEAAAD6/wUAAAAAAAEAAAD6/wQAAAAAAAEAAAD6/wMAAAAAAAEAAAD6/wIAAAAAAAEAAAD6/wEAAAAAAAEAAAD6/wAAAAAAAAEAAAD7/wAAAAACAAEAAAD7////AAACAAEAAAD7//7/AAACAAEAAAD7//3/AAACAAAAAAD6//3/AAAAAAAAAAD6//7/AAAAAAEAAAD6////AAAAAAEAAAApAAUAAAABAAAAAAApAAYAAAABAAEAAAApAAcAAAABAAIAAAAqAAUAAAABAAAAAAAqAAYAAAABAAEAAAAqAAcAAAABAAIAAAArAAUAAAABAAAAAAArAAYAAAABAAEAAAArAAcAAAABAAIAAAAsAAUAAAABAAAAAAAsAAYAAAABAAEAAAAsAAcAAAABAAIAAAAtAP7/AAAAAAAAAAAtAP//AAAAAAEAAAAtAAAAAAAAAAEAAAAtAAEAAAAAAAEAAAAtAAIAAAAAAAEAAAAtAAMAAAAAAAEAAAAtAAQAAAAAAAEAAAAtAAUAAAABAAAAAAAtAAYAAAABAAEAAAAtAAcAAAABAAIAAAAuAP7/AAABAAAAAAAuAP//AAABAAEAAAAuAAAAAAABAAEAAAAuAAEAAAABAAEAAAAuAAIAAAABAAEAAAAuAAMAAAABAAEAAAAuAAQAAAABAAEAAAAuAAUAAAABAAEAAAAuAAYAAAABAAEAAAAuAAcAAAABAAIAAAAvAP7/AAACAAAAAAAvAP//AAACAAEAAAAvAAAAAAACAAEAAAAvAAEAAAACAAEAAAAvAAIAAAACAAEAAAAvAAMAAAACAAEAAAAvAAQAAAACAAEAAAAvAAUAAAACAAEAAAAvAAYAAAACAAEAAAAvAAcAAAACAAIAAAAOAAUAAAABAAAAAAAOAAYAAAABAAEAAAAOAAcAAAABAAIAAAAPAAUAAAABAAAAAAAPAAYAAAABAAEAAAAPAAcAAAABAAIAAAAQAAUAAAABAAAAAAAQAAYAAAABAAEAAAAQAAcAAAABAAIAAAARAAUAAAABAAAAAAARAAYAAAABAAEAAAARAAcAAAABAAIAAAASAAUAAAABAAAAAAASAAYAAAABAAEAAAASAAcAAAABAAIAAAATAAUAAAABAAAAAAATAAYAAAABAAEAAAATAAcAAAABAAIAAAAUAAUAAAABAAAAAAAUAAYAAAABAAEAAAAUAAcAAAABAAIAAAAVAAUAAAABAAAAAAAVAAYAAAABAAEAAAAVAAcAAAABAAIAAAAWAAUAAAABAAAAAAAWAAYAAAABAAEAAAAWAAcAAAABAAIAAAAXAAUAAAABAAAAAAAXAAYAAAABAAEAAAAXAAcAAAABAAIAAAAYAAUAAAABAAAAAAAYAAYAAAABAAEAAAAYAAcAAAABAAIAAAAZAAUAAAABAAAAAAAZAAYAAAABAAEAAAAZAAcAAAABAAIAAAAaAAUAAAABAAAAAAAaAAYAAAABAAEAAAAaAAcAAAABAAIAAAAbAAUAAAABAAAAAAAbAAYAAAABAAEAAAAbAAcAAAABAAIAAAAcAAUAAAABAAAAAAAcAAYAAAABAAEAAAAcAAcAAAABAAIAAAAdAAUAAAABAAAAAAAdAAYAAAABAAEAAAAdAAcAAAABAAIAAAAeAAUAAAABAAAAAAAeAAYAAAABAAEAAAAeAAcAAAABAAIAAAAfAAUAAAABAAAAAAAfAAYAAAABAAEAAAAfAAcAAAABAAIAAAAgAAUAAAABAAAAAAAgAAYAAAABAAEAAAAgAAcAAAABAAIAAAAhAAUAAAABAAAAAAAhAAYAAAABAAEAAAAhAAcAAAABAAIAAAAiAAUAAAABAAAAAAAiAAYAAAABAAEAAAAiAAcAAAABAAIAAAAjAAUAAAABAAAAAAAjAAYAAAABAAEAAAAjAAcAAAABAAIAAAAkAAUAAAABAAAAAAAkAAYAAAABAAEAAAAkAAcAAAABAAIAAAAlAAUAAAABAAAAAAAlAAYAAAABAAEAAAAlAAcAAAABAAIAAAAmAAUAAAABAAAAAAAmAAYAAAABAAEAAAAmAAcAAAABAAIAAAAnAAUAAAABAAAAAAAnAAYAAAABAAEAAAAnAAcAAAABAAIAAAAoAAUAAAABAAAAAAAoAAYAAAABAAEAAAAoAAcAAAABAAIAAAA=")
+tile_set = SubResource("TileSet_sgm4o")
+
+[node name="Door" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-1230, 1093)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_yl73a")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_xbcdb")
+volume_db = -7.428
+pitch_scale = 0.68
+autoplay = true
+bus = &"OST"
+parameters/looping = true
+
+[node name="GPUParticles2D" type="CPUParticles2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(2910, 1335)
+amount = 1000
+lifetime = 10.0
+preprocess = 1.64
+speed_scale = 0.65
+randomness = 0.53
+emission_shape = 3
+emission_rect_extents = Vector2(15000, 1)
+direction = Vector2(1, -1)
+spread = 61.13
+gravity = Vector2(0, -20)
+initial_velocity_max = 103.77
+scale_amount_min = 0.5
+scale_amount_max = 10.0
+scale_amount_curve = SubResource("Curve_xbcdb")
+
+[node name="CollarCat" parent="." instance=ExtResource("14_s77qv")]
+position = Vector2(12699, 1125)
+item_initial_scale = Vector2(0.1, 0.1)

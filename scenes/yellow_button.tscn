@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://j8qu5b2eeivv"]
+
+[ext_resource type="Texture2D" uid="uid://bhm3e7bsf0nbq" path="res://Assets/Sprites/button_yellow_pressed.png" id="1_cqq8q"]
+[ext_resource type="Script" uid="uid://diqikip8gw8wk" path="res://Scripts/yellow_button.gd" id="1_tnlv3"]
+[ext_resource type="Texture2D" uid="uid://cfkhbjq6j4a2e" path="res://Assets/Sprites/button_yellow.png" id="2_tnlv3"]
+[ext_resource type="AudioStream" uid="uid://bf51ucong7clu" path="res://Assets/AUDIO/blip-131856.mp3" id="4_fie16"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_auofo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cqq8q")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tnlv3")
+}],
+"loop": true,
+"name": &"unpressed",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ob3ke"]
+height = 208.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eox6g"]
+radius = 18.0
+height = 136.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_auofo"]
+size = Vector2(102, 20)
+
+[node name="Yellow Button" type="AnimatableBody2D"]
+z_index = 5
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_tnlv3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_auofo")
+animation = &"unpressed"
+
+[node name="collider_base" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 109)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ob3ke")
+
+[node name="yellow_collider_top" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 26)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_eox6g")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, -21)
+shape = SubResource("RectangleShape2D_auofo")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fie16")
+volume_db = 10.0

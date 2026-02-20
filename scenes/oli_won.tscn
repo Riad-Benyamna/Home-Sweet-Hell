@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqg6yq8hb2i26"]
+
+[ext_resource type="Script" uid="uid://c3vbl0f5xo8eq" path="res://Scripts/oli_won.gd" id="1_il5xb"]
+[ext_resource type="Texture2D" uid="uid://c8p0uynkmw3np" path="res://Backgrounds/Olivia won 1.jpg" id="2_ahacv"]
+[ext_resource type="Texture2D" uid="uid://di73bbljq3gwb" path="res://Backgrounds/Olivia won 2.jpg" id="3_6586u"]
+
+[node name="Oli Won" type="Node2D"]
+script = ExtResource("1_il5xb")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(561.875, 324)
+scale = Vector2(0.658816, 0.72)
+texture = ExtResource("2_ahacv")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(561.875, 324)
+scale = Vector2(0.658816, 0.72)
+texture = ExtResource("3_6586u")

@@ -1,0 +1,106 @@
+[background scene="res://scenes/oli_won.tscn" fade="1.0"]
+[wait time="2.0"]
+Olivia: Huff...
+Olivia: Huff...
+Olivia: I-
+Olivia: I...Won ?
+Olivia: I WON ?
+[wait time="1.0"]
+audio music "res://game musics/I won.mp3" [loop="true"]
+[background scene="res://scenes/crazy.tscn" fade="2.0"]
+Olivia: I WON !
+Olivia: [b] I WON !!!
+Olivia: I TOLD YOU !
+Olivia: I TOLD YOU YOU COULDN't BEAT ME !
+Olivia: YOU MISERABLE LOSER !
+Olivia: YOU DID NOT STAND A SINGLE CHANCE AGAINST ME!
+Olivia: AND YOU KNOW WHY ??
+Olivia: BECAUSE I'M PERFECT !
+Olivia: BECAUSE I'M THE BEST !
+Olivia: THE BEST ABSOLUTE !
+Olivia: [b] SAY IT SEB !
+Olivia: SAY THAT I'M THE BEST !
+- You're the best
+	jump Lost her shit
+- You're the best
+	jump Lost her shit
+- You're the best
+	jump Lost her shit
+label Lost her shit
+audio music - [loop="true"]
+Olivia: Hah...
+Olivia: Haha.
+Olivia: HAHAHA!
+[wait time="1.0"]
+audio music "res://game musics/I won.mp3" [loop="true"]
+[signal arg="won"]
+Olivia: [b]HAHAHAHAHAHAHAHAHAHAHA!
+Olivia: I KNOW RIGHT !
+Olivia: I HAVE NO EQUAL !
+Olivia: I HAVE NO RIVAL !
+Olivia: BECAUSE I-
+Olivia: AM-
+Olivia: THE BEST !
+Olivia: [b]THE BEST !
+Olivia: [font_size=64] [b]THE BEST !
+Olivia: THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST\
+THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST THE BEST
+audio music - [loop="true"]
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+audio sfx "res://game musics/Orchestral hit.mp3" [volume="-10.0"]
+The best.
+[wait time="2.0"]
+[background arg="res://Backgrounds/blank-white-background-xbsfzsltjksfompa.jpg" fade="5.0"]
+[wait time="2.0"]
+
+audio music "res://sounds/alarm-clock-90867.mp3" [loop="true"]
+[background arg="res://Backgrounds/Seb awake 1.jpg" fade="0.0"]
+[wait time="4.0"]
+[background arg="res://Backgrounds/Seb awake.jpg" fade="2.0"]
+[wait time="3.0"]
+I just hate this alarm.
+audio music - [fade="2.0"]
+[background arg="res://Backgrounds/chambre jour.jpg" fade="2.0" wait="true"]
+join Seb (Sleepy) center [animation="Fade In" length="1.0" wait="true"]
+Seb: Yaaaaawn...
+update Seb (Tired)
+Seb: Ugh... what a nightmare.
+Seb: So intense...
+Seb: It felt way too real.
+Seb: I should seriously tell Mom to stop adding wasabi to her pizza.
+Seb: A cello duel with Olivia... seriously?
+Seb: I don't even know how to hold a cello...
+update Seb (Neutral)
+Seb: Yesterday's hangout must've really messed with my head.
+update Seb (Curious)
+Seb: But she was...different in the dream.
+Seb: Can't remember exactly what she said but...
+update Seb (Effraid)
+Seb: She was completely hysterical after winning.
+[wait time="0.5"]
+update Seb (Trolling)
+Seb: ...Which, honestly, sounds pretty in character.
+update Seb (Effraid)
+Seb: But I wonder...
+Seb: What if she actually acts like that after her recital?
+update Seb (Effraid)
+Seb: Or worse... what if she [i]loses[/i]?
+update Seb (Laugh)
+Seb: Nah... she'd never lose control like that.
+update Seb (Neutral)
+Seb: ...Right?
+[wait time="2.0"]
+update Seb (Smiling) [animation="Tada" length="0.5"]
+Seb: Anyway! Time to start the day!
+Seb: Mom and Dad probably left for work already.
+update Seb (Laugh)
+Seb: And knowing Mom, she's definitely made pancakes!
+update Seb (Sad)
+Seb: I'd have loved to hang out with the others.
+Seb: But Olivia and Marcus are practicing, and Sophia is probably busy with her family...
+Seb: Gotta wait 'til Monday to see them...
+update Seb (Smiling) [animation="Bounce"]
+Seb: But hey! Pancakes, right ?
+leave Seb [animation="Fade Out" length="2.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+jump OliviaRoute/

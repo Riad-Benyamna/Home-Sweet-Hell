@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://b7ykqj8x3fq70"]
+
+[ext_resource type="Script" uid="uid://bxin5237i5r2c" path="res://Scripts/red_wall.gd" id="1_kv66h"]
+[ext_resource type="Texture2D" uid="uid://chatrbdtyxjk8" path="res://Assets/Sprites/Red Wall.png" id="1_va6k1"]
+[ext_resource type="Texture2D" uid="uid://dgd7y2hm1p8lw" path="res://Assets/Sprites/TokenBubble.png" id="2_00bbl"]
+[ext_resource type="Texture2D" uid="uid://d1mp1cu6df5dq" path="res://Assets/Sprites/button_red.png" id="3_4axky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kv66h"]
+size = Vector2(869, 622)
+
+[node name="Red Wall" type="AnimatableBody2D"]
+z_index = 5
+script = ExtResource("1_kv66h")
+bubble_texture = ExtResource("2_00bbl")
+button_texture = ExtResource("3_4axky")
+
+[node name="Wall" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_va6k1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(0.7, 0.7)
+polygon = PackedVector2Array(-364, 377, -262, 380, -261, -249, 236, -247, 230, 381, 336, 379, 335, -352, -361, -355)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-6.5, -40)
+shape = SubResource("RectangleShape2D_kv66h")

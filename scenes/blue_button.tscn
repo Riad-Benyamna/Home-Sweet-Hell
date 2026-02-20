@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://6p2xnck0qbse"]
+
+[ext_resource type="Script" uid="uid://dvynro8wsw2q6" path="res://Scripts/blue_button.gd" id="1_ve5ma"]
+[ext_resource type="Texture2D" uid="uid://b0aqxb7da3tjs" path="res://Assets/Sprites/button_blue_pressed.png" id="2_twdgw"]
+[ext_resource type="Texture2D" uid="uid://c1wrx1j5fyabm" path="res://Assets/Sprites/button_button.png" id="3_55kym"]
+[ext_resource type="AudioStream" uid="uid://bf51ucong7clu" path="res://Assets/AUDIO/blip-131856.mp3" id="4_twdgw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lvvrp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_twdgw")
+}],
+"loop": true,
+"name": &"pressed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_55kym")
+}],
+"loop": true,
+"name": &"unpressed",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u8mcq"]
+height = 210.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0mqkn"]
+radius = 19.0
+height = 120.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvvrp"]
+size = Vector2(97.5, 20)
+
+[node name="BlueButton" type="AnimatableBody2D"]
+z_index = 5
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_ve5ma")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(8, -152)
+sprite_frames = SubResource("SpriteFrames_lvvrp")
+animation = &"unpressed"
+
+[node name="collider_base" type="CollisionShape2D" parent="."]
+position = Vector2(5, -40)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_u8mcq")
+
+[node name="blue_collider_top" type="CollisionShape2D" parent="."]
+position = Vector2(1, -128)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0mqkn")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1, -175)
+shape = SubResource("RectangleShape2D_lvvrp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_twdgw")
+volume_db = 10.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_blue_checker_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_blue_checker_body_exited"]

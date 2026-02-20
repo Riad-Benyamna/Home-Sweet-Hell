@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1art1anrjcsi"]
+
+[ext_resource type="Script" uid="uid://dkb8gqd0uaaq5" path="res://Scripts/fade_transition.gd" id="1_5ggkw"]
+
+[node name="FadeTransition" type="Node2D"]
+script = ExtResource("1_5ggkw")

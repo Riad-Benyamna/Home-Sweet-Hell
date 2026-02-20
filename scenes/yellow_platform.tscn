@@ -1,0 +1,46 @@
+[gd_scene load_steps=8 format=3 uid="uid://xfj52l2mx2ue"]
+
+[ext_resource type="Script" uid="uid://cbhoayaoneo4j" path="res://Scripts/yellow_platform.gd" id="1_6dkg5"]
+[ext_resource type="Texture2D" uid="uid://dwd7kmauqt2dt" path="res://Assets/Sprites/cloud.png" id="1_38316"]
+[ext_resource type="Texture2D" uid="uid://eokm1vjj506l" path="res://Assets/Sprites/cloud 2.png" id="2_6dkg5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayhxt"]
+atlas = ExtResource("1_38316")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2tb2n"]
+atlas = ExtResource("2_6dkg5")
+region = Rect2(0, 0, 900, 900)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gkw34"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayhxt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2tb2n")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dkg5"]
+size = Vector2(781, 120)
+
+[node name="YellowPlatform" type="AnimatableBody2D"]
+z_index = 5
+script = ExtResource("1_6dkg5")
+
+[node name="Cloud" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 0.862745, 0.588235, 1)
+z_index = 5
+position = Vector2(16, -6)
+sprite_frames = SubResource("SpriteFrames_gkw34")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 5
+shape = SubResource("RectangleShape2D_6dkg5")
+one_way_collision = true

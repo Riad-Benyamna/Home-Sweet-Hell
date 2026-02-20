@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://chbhk0h0q74uh"]
+
+[ext_resource type="Texture2D" uid="uid://gqfic8bn2b7l" path="res://Backgrounds/Panick 1.jpg" id="1_kxyw4"]
+[ext_resource type="Script" uid="uid://bblnmn532ys0h" path="res://scenes/panick.gd" id="1_r7emc"]
+[ext_resource type="Texture2D" uid="uid://bfb4rrwt8kevd" path="res://Backgrounds/Panick 2.jpg" id="2_r7emc"]
+
+[node name="Panick" type="Node2D"]
+script = ExtResource("1_r7emc")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(588, 323)
+scale = Vector2(0.714737, 0.748889)
+texture = ExtResource("1_kxyw4")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(588, 323)
+scale = Vector2(0.714737, 0.748889)
+texture = ExtResource("2_r7emc")

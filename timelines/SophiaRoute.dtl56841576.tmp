@@ -1,0 +1,805 @@
+audio sfx "res://sounds/alarm-clock-90867.mp3" [loop="true"]
+[background arg="res://Backgrounds/Seb awake 1.jpg" fade="0.0"]
+[wait time="4.0"]
+[background arg="res://Backgrounds/Seb awake.jpg" fade="2.0"]
+[wait time="3.0"]
+I just hate this alarm.
+audio sfx - [fade="2.0"]
+[background arg="res://Backgrounds/chambre jour.jpg" fade="2.0" wait="true"]
+join Seb (Sleepy) center [animation="Fade In" length="1.0" wait="true"]
+
+Seb: Yaaaaawn...
+update Seb (Tired)
+Seb: What a weird dream...
+Seb: Cats everywhere. Everywhere.
+Seb: It felt way too real for a dream.
+
+Seb: Spending the day with Sophia yesterday must have messed with my head.
+Seb: How obsessed with cats do you have to be to dream about them like that?
+Seb: ...Sophia-level obsessed, I guess.
+
+Seb: And that whole thing about the collar and the golden-haired girl...
+Seb: Yeah. That part was definitely far-fetched.
+
+update Seb (Neutral)
+Seb: I should probably forget about it.
+Seb: Time to start the day.
+
+Seb: By now, Mom and Dad are probably already at work.
+update Seb (Smiling)
+Seb: Which means pancakes.
+Seb: Definitely pancakes.
+
+Seb: Alright! Let’s get going.
+
+[wait time="1.0"]
+update Seb (Curious) [animation="Tada" length="0.2"]
+Seb: Huh?
+
+join Seb (Curious) left [animation="Slide From Right"]
+Seb: What’s that on my desk?
+join Collar right [animation="Slide In Up"]
+
+Seb: It looks like...
+Seb: A cat collar?
+update Seb (Curious)
+Seb: How did this even get here?
+Seb: Did I... sleepwalk? Bring it home somehow?
+update Seb (Tired)
+Seb: That doesn't make any sense.
+Seb: None of us owns a cat anyway.
+
+update Seb (Laugh)
+Seb: Heh… funny though,
+Seb: It looks just like the one I saw in my-
+
+update Seb (Neutral)
+Seb: ...
+
+update Seb (Shock) [animation="Tada" length="0.2"]
+Seb: Wait.
+Seb: It looks EXACTLY like the one from my dream.
+
+Seb: That’s… not possible.
+Seb: Is it?
+
+update Seb (Effraid)
+Seb: I must still be dreaming.
+
+(I harshly pinched my cheek.)
+
+update Seb (Shock) [animation="Shake Y" length="0.3"]
+Seb: [b]OUCH!
+
+update Seb (Exhausted) [animation="Shake X" length="0.3"]
+Seb: Okay.
+Seb: That definitely hurt.
+
+Seb: So I’m not dreaming.
+
+update Seb (Neutral)
+Seb: Let’s take a closer look…
+
+update Seb (Curious)
+Seb: There’s something written on it.
+Seb: “Sunshine.”
+
+update Seb (Neutral)
+Seb: Must be the cat’s name.
+
+update Seb (Effraid)
+Seb: Oh no…
+Seb: The owner is probably looking for it everywhere right now.
+
+update Seb (Exhausted)
+Seb: Finding them would be like searching for a needle in a haystack.
+
+update Seb (Mad)
+Seb: Of course.
+Seb: The ONE day I have an interesting dream, it turns out to be completely useless.
+
+update Seb (Exhausted)
+Seb: Okay… okay.
+Seb: Calm down. Think rationally.
+
+update Seb (Tired)
+Seb: There was something else in that dream…
+Seb: Some big, mysterious cat said something important.
+
+Seb: But I can’t remember what.
+
+update Seb (Exhausted)
+Seb: Ugh…
+Seb: If only Sophia were here.
+Seb: She’s the only person I know who actually understands cats.
+Seb: ...
+update Seb (Curious)
+Seb: Hold on a sec,
+update Seb (Smiling) [animation="Bounce" length="0.3"]
+Seb: But of course!
+Seb: The Golden-haired girl!
+Seb: It must be sophia!
+Seb: I gotta give her this collar as soon as possible !
+Seb: Yeah! I'll just go see her and-
+[wait time="1.0"]
+
+update Seb (Embarrassed)
+Seb: Wait now that I think of it.
+Seb: Giving something to someone because a big wise cat told you to do so in a dream...
+Seb: Some people got sent to an asylum for less.
+Seb: But it's not like I had another choice anyway,
+Seb: I could never find the cat's owner by my own.
+update Seb (Exhausted)
+Seb: Oh yeah, right... I forgot.
+Seb: She can never hang out on weekends.
+Seb: Something about "family time" or whatever.
+update Seb (Neutral)
+Seb: Guess I'll have to wait until Monday.
+update Seb (Tired)
+Seb: Two whole days with this mystery collar...
+update Seb (Smiling) [animation="Tada" length="0.4"]
+Seb: But hey-at least I've got pancakes right now!
+Seb: Priorities, right?
+leave Seb [animation="Fade Out" length="1.0"]
+leave Collar [animation="Fade Out" length="1.0"]
+label school
+[background arg="res://Backgrounds/Black (1).png" fade="0.0"]
+Two days later...
+audio music "res://game musics/main theme.mp3" [fade="3.0" volume="-5.0"]
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+
+join Seb (Smiling) left [animation="Fade In" length="1.0"]
+
+Seb: Finally, Monday!
+Seb: I've been waiting all weekend to give Sophia the collar.
+Seb: Maybe she could help me finally find the their owner
+update Seb (Effraid)
+Seb: But what if she doesn't know either ?
+update Seb (Trolling)
+Seb: Nah she probably knows every single cat owner in town
+Seb: There's no way my plan fails.
+[background arg="res://Backgrounds/hall.jpg" fade="2.0"]
+
+[wait time="0.5"]
+
+update Seb (Curious)
+Seb: Now, where is everyone?
+update Seb (Tired)
+Seb: I'm the one who's supposed to always be late.
+
+[wait time="1.0"]
+
+join Marcus (Excited) leftmost [animation="Slide From Left" length="0.1" mirrored="true"]
+Marcus: YO SEB!
+
+update Seb (Shock) [animation="Shake X" length="0.2"]
+Seb: GAH!
+
+update Marcus (Laughing)
+Marcus: Haha! Got you good!
+
+update Seb (Exhausted)
+Seb: Do you HAVE to sneak up on me every single time?
+
+Marcus: It's my specialty dude!
+Marcus: Keeps you on your toes!
+
+join Olivia (Judgemental) right [animation="Slide From Right"]
+
+Olivia: More like keeps you annoying.
+
+update Marcus (Sceptical)
+Marcus: Oh look, Ms."I hate fun stuff" has arrived
+
+update Olivia (Angry)
+Olivia: Oh look, the village idiot is still talking.
+Marcus: if I'm a village idiot then you're a witch.
+update Marcus (Happy)
+Marcus: You would SO have been burnt back then.
+update Olivia (Judgemental)
+Olivia: Don't act as if you know anything about History, you got a C in the last test.
+Olivia: Pretty sure you don't even know who Sherlock is.
+update Marcus (Angry)
+Marcus: Of course I do!
+Marcus: He's the guy from the expression "No shit Sherlock"
+update Olivia (Sad)
+Olivia: Please somebody finish me off I can't stand him anymore.
+update Seb (Exhausted)
+Seb: Guys, please... it's Monday morning.
+
+update Marcus (Happy)
+Marcus: Exactly! Monday! New week, new pranks!
+
+update Olivia (Judgemental)
+Olivia: New headaches, you mean.
+
+update Seb (Curious)
+Seb: Have you guys seen Sophia?
+
+update Marcus (Confused)
+Marcus: Nah, not yet. Why?
+
+update Seb (Embarrassed)
+Seb: I... have something to give her.
+
+update Olivia (Flirting)
+Olivia: Ooooh, a gift?
+Olivia: How romantic~
+
+update Seb (Shock)
+Seb: It's not like that!
+
+update Marcus (Flirty)
+Marcus: Seb's got a cruuuush!
+
+update Seb (Exhausted)
+Seb: I don't have a crush!
+Seb: It's just... something I found.
+
+update Olivia (Confused)
+Olivia: Found? What is it?
+
+update Seb (Neutral)
+
+Seb: A cat collar.
+
+
+update Marcus (Confused)
+Marcus: A... cat collar?
+
+update Olivia (Judgemental)
+Olivia: That's the weirdest gift I've ever heard.
+
+update Seb (Embarrassed)
+Seb: I'm not GIVING it to her as a gift!
+Seb: I found it in my room.
+Seb: And I thought Sophia would know what to do with it.
+Seb: You know...With her obsession with cats it wouldn't be surprising.
+
+update Marcus (Sceptical)
+Marcus: Bro, you're so weird sometimes.
+
+update Olivia (Laughing)
+Olivia: "Sometimes" is generous.
+
+[wait time="1.0"]
+
+join Sophia (Happy) rightmost [animation="Slide From Right" z_index="2"]
+
+Sophia: Hey everyone!
+
+update Marcus (Happy)
+Marcus: Yo, Sophia!
+
+update Olivia (Smiling)
+Olivia: Good morning.
+
+update Seb (Smiling)
+Seb: Hi Sophia! Perfect timing!
+
+update Sophia (Silly)
+Sophia: What's up?
+
+update Seb (Smiling)
+Seb: I... have something for you.
+
+update Sophia (Confuse)
+Sophia: For me?
+
+Seb: Yeah. It's kind of strange, but...
+
+(I reach into my bag and pull out the collar.)
+(The small bell jingles softly.)
+
+update Seb (Embarrassed)
+join Collar center [animation="Slide In Up"]
+Seb: Here.
+Seb: I thought you could help me find their owner.
+Seb: You know cats like anybody else so...
+
+[wait time="1.0"]
+
+update Sophia (Shocked) [animation="Shake X" length="0.2"]
+(Sophia's eyes widen.)
+(Her face goes pale.)
+(She takes a step back.)
+audio music -
+
+Sophia: Where... where did you get that?
+Sophia: How did you get that?
+
+update Seb (Curious)
+Seb: I... found it. In my room. Saturday morning.
+
+Sophia: That's... that's not possible.
+
+update Marcus (Confused)
+Marcus: Uh... Sophia? You okay?
+
+update Olivia (Confused)
+Olivia: What's wrong?
+
+(Sophia stares at the collar, trembling.)
+(She reaches out slowly, fingers hovering over it.)
+(Then pulls back like it burned her.)
+
+Sophia: How... how do you have this?
+
+update Seb (Effraid)
+Seb: I... I don't know. It just appeared.
+Seb: I thought... You'd know their owner
+
+update Sophia (Sad)
+Sophia: It...
+
+[wait time="0.5"]
+
+update Sophia (Crying)
+Sophia: It WAS mine.
+
+update Marcus (Shocked)
+Marcus: No way.
+
+update Olivia (Neutral)
+Olivia: Sophia...
+
+(Tears start streaming down Sophia's face.)
+(She covers her mouth with both hands.)
+
+update Sophia (Crying)
+Sophia: I...
+Sophia: I have to go.
+
+update Seb (Shock)
+Seb: Wait, Sophia- !
+
+leave Sophia [animation="Slide To Left"]
+
+(Before anyone can stop her, she runs.)
+(The collar falls from my hands, landing softly on the ground.)
+
+[wait time="1.0"]
+
+update Marcus (Confused)
+Marcus: ...What just happened?
+
+update Olivia (Neutral)
+Olivia: I... don't know.
+
+update Seb (Effraid)
+Seb: I didn't mean to upset her...
+
+update Marcus (Sad)
+Marcus: Dude, she was crying.
+Marcus: Like, really crying.
+
+update Olivia (Judgemental)
+Olivia: Obviously something's wrong.
+
+update Marcus (Confused)
+Marcus: Seb, where did you REALLY get that collar?
+
+update Seb (Embarrassed)
+Seb: I told you! It just... appeared in my room!
+
+update Olivia (Confused)
+Olivia: That doesn't make any sense.
+
+update Marcus (Happy)
+Marcus: Well, standing here won't help.
+Marcus: Go after her, Carrothead !
+
+update Seb (Curious)
+Seb: Me? Why me?
+
+update Olivia (Judgemental)
+Olivia: Because you're the one who made her cry, genius.
+
+update Marcus (Laughing)
+Marcus: Yeah! Take responsibility!
+
+update Seb (Exhausted)
+Seb: I didn't-
+Seb: ...Fine. I'll go talk to her.
+
+update Marcus (Happy)
+Marcus: That's the spirit!
+
+update Olivia (Neutral)
+Olivia: And Seb?
+
+update Seb (Curious)
+Seb: Yeah?
+
+update Olivia (Away)
+Olivia: Be gentle. She looked... broken.
+
+update Seb (Neutral)
+Seb: ...I will.
+
+(I pick up the collar from the ground.)
+(The name tag catches the light\: "Sunshine.")
+
+[wait time="1.0"]
+
+leave --All-- [animation="Fade Out"]
+
+audio music - [fade="2.0" volume="0.0"]
+[wait time="2.0"]
+
+join Seb (Curious) center [animation="Fade In"]
+
+Seb: (Where would she go?)
+Seb: (The bathroom? The library?)
+
+[wait time="0.5"]
+
+update Seb (Neutral)
+Seb: (Wait... I think I hear something.)
+
+
+Seb: (Crying...?)
+Seb: (Coming from the music room.)
+label class
+
+[wait time="1.0"]
+
+leave Seb [animation="Fade Out"]
+[background arg="res://Backgrounds/class Monday.jpg" fade="1.0"]
+audio music "res://game musics/melancholic theme.mp3" [fade="3.0" volume="-3.0"]
+
+(I slowly open the door.)
+
+join Seb (Effraid) left [animation="Fade In" length="1.0"]
+Seb: ...Sophia?
+
+join Sophia (Crying) right [animation="Fade In" z_index="2"]
+
+(She doesn't look up.)
+
+Sophia: [font_size=18]Go away, Seb...
+
+update Seb (Embarrassed)
+Seb: I... I'm sorry. I didn't mean to-
+
+update Sophia (Sad)
+Sophia: Where did you find it?
+
+update Seb (Curious)
+Seb: The collar?
+
+Sophia: ...
+
+update Seb (Neutral)
+Seb: It was on my desk. Saturday morning.
+Seb: I... had a dream. About cats.
+Seb: And when I woke up, it was just... there.
+
+Sophia: A dream...?
+
+update Seb (Embarrassed)
+Seb: I know it sounds crazy, but-
+
+update Sophia (Sad)
+Sophia: That collar belonged to my cat.
+
+update Seb (Curious)
+Seb: Really ? Sunshine is your cat ?
+Seb: But you never told us about him.
+
+update Sophia (Crying)
+Sophia: He...
+Sophia: He died.
+
+update Seb (Effraid)
+Seb: Oh... Sophia,
+Seb: I'm so sorry.
+(She stares at the collar, a faint smile appearing through her tears.)
+leave --All-- [animation="Fade Out"]
+[background arg="res://Backgrounds/Sophia sunshine.jpg" fade="1.0" wait="true"]
+
+
+
+Sophia: He was beautiful, you know.
+Sophia: Golden fur, green eyes...
+Sophia: Like a little ball of sunshine.
+
+
+Sophia: I found him when I was seven.
+Sophia: Tiny kitten, hiding under a car in the rain.
+
+
+Sophia: My sister helped me bring him home.
+Sophia: He purred SO loud when we dried him off!
+
+[wait time="0.5"]
+
+
+Sophia: He was my best friend, Seb.
+
+
+Sophia: When Mom was sleeping all day...
+Sophia: When my sister was too busy...
+Sophia: Sunshine was always there.
+
+
+Sophia: He'd curl up on my bed and purr.
+Sophia: And I'd tell him everything.
+
+[wait time="1.0"]
+
+
+Sophia: The house feels so empty without him.
+
+Sophia: He was only three years old.
+Sophia: We should've had so many more years together.
+Sophia: It was... two months ago.
+
+[wait time="1.0"]
+
+(She wipes her eyes, but more tears keep coming.)
+
+Sophia: I came home from school one day, and...
+Sophia: My sister was waiting for me at the door.
+Sophia: She looked... scared.
+[background arg="res://Backgrounds/class Monday.jpg" fade="2.0" wait="true"]
+join Seb (Neutral) left [animation="Fade In" length="1.0"]
+join Sophia (Sad) right [animation="Fade In" length="1.0"]
+Seb: ...
+
+update Sophia (Crying)
+Sophia: She said Mom had a... really bad day.
+Sophia: That she was acting weird.
+Sophia: Stumbling around, knocking things over.
+
+update Sophia (Sad)
+Sophia: My sister said she was... "not feeling well."
+Sophia: That she kept drinking from those green bottles.
+
+update Seb (Curious)
+Seb: (The green bottles...)
+
+Sophia: And then... Sunshine got in the way.
+leave --All-- [animation="Fade Out"]
+
+[wait time="1.0"]
+[background arg="res://Backgrounds/Abuse.jpg" fade="2.0" wait="true"]
+
+
+Sophia: My sister said Mom just... snapped.
+Sophia: Started yelling at him.
+Sophia: Said he was too loud, too annoying.
+
+(Sophia's voice breaks.)
+
+Sophia: And then she...
+
+[wait time="1.0"]
+
+
+Sophia: She threw him.
+Sophia: Against the wall.
+
+
+[wait time="1.0"]
+
+[background arg="res://Backgrounds/class Monday.jpg" fade="2.0" wait="true"]
+
+join Seb (Shock) left [animation="Fade In" length="1.0"]
+join Sophia (Crying) right [animation="Fade In" length="1.0"]
+Seb: ...
+
+Sophia: My sister tried to stop her, but...
+Sophia: Mom pushed her away.
+Sophia: Hard.
+
+Sophia: My sister had bruises all over her arms the next day.
+Sophia: She said they were from falling, but...
+
+[wait time="0.5"]
+
+update Sophia (Sad)
+Sophia: I don't think she fell.
+
+update Seb (Effraid)
+Seb: Sophia...
+
+update Sophia (Crying)
+Sophia: When I got home, Sunshine was already...
+Sophia: My sister had wrapped him in a blanket.
+Sophia: His collar was the only thing I got to keep.
+
+[wait time="1.0"]
+
+update Sophia (Sad)
+Sophia: I buried it in the park.
+Sophia: Under the tree where we used to feed the cats together.
+
+Sophia: So how... how do YOU have it?
+
+update Seb (Neutral)
+Seb: I... I don't know, Sophia.
+
+update Sophia (Sad)
+Sophia: Nothing makes sense anymore.
+
+(She hugs her knees tighter.)
+
+Sophia: Mom doesn't even remember what she did.
+Sophia: She asked where Sunshine went the next day.
+Sophia: My sister lied and said he ran away.
+
+update Sophia (Crying)
+Sophia: And Mom just... nodded.
+Sophia: Like it didn't matter.
+
+update Seb (Sad)
+Seb: That's... awful.
+
+
+Sophia: My sister said Mom gets like that sometimes.
+Sophia: When she drinks too much from the green bottles.
+Sophia: That she doesn't mean it.
+
+Sophia: But... how can you not MEAN to kill someone's cat?
+
+update Seb (Neutral)
+Seb: ...
+
+
+Sophia: I loved him so much, Seb.
+Sophia: He was always there for me.
+Sophia: When I was sad, he'd curl up in my lap and purr.
+
+update Sophia (Sad)
+Sophia: And now he's gone.
+Sophia: Because Mom had a "bad day."
+
+[wait time="1.5"]
+
+update Seb (Effraid)
+Seb: Sophia... do you want the collar back?
+
+update Sophia (Neutral)
+(She looks at the collar in my hands.)
+(Then shakes her head slowly.)
+
+update Sophia (Sad)
+Sophia: No.
+Sophia: It hurts too much to look at.
+
+update Sophia (Crying)
+Sophia: But... thank you.
+Sophia: For bringing it.
+Sophia: I don't know how you found it, but...
+Sophia: Maybe Sunshine wanted me to know he's okay.
+
+update Sophia (Sad)
+Sophia: Wherever he is now.
+
+update Seb (Neutral)
+Seb: ...I think he does.
+
+[wait time="1.0"]
+
+Sophia: Can you... not tell the others?
+Sophia: About my mom. And the bottles.
+
+update Seb (Curious)
+Seb: But Sophia-
+
+Sophia: Please, Seb.
+Sophia: My sister says we can't tell anyone.
+Sophia: That people wouldn't understand.
+
+update Seb (Effraid)
+Seb: ...
+
+update Sophia (Crying)
+Sophia: Promise me.
+
+[wait time="1.0"]
+
+- I promise
+	update Seb (Embarrassed)
+	Seb: I... okay. I promise.
+	
+	update Sophia (Neutral)
+	Sophia: Thank you.
+	
+	Seb: (But... this doesn't feel right.)
+	Seb: (Something is really wrong at Sophia's house.)
+
+- I can't promise that
+	update Seb (Neutral)
+	Seb: Sophia... I don't think I can promise that.
+	
+	update Sophia (Shocked)
+	Sophia: What?!
+	
+	update Seb (Effraid)
+	Seb: Because... what if someone can help?
+	Seb: What if telling someone could make things better?
+	
+	update Sophia (Angry)
+	Sophia: No one can help!
+	Sophia: It'll just make things worse!
+	
+	update Sophia (Crying)
+	Sophia: My sister said so!
+	
+	update Seb (Embarrassed)
+	Seb: But what if your sister is wrong?
+	
+	update Sophia (Sad)
+	Sophia: ...
+	Sophia: Please, Seb.
+	Sophia: Just... don't say anything. Not yet.
+	
+	update Seb (Neutral)
+	Seb: ...Okay. Not yet.
+	
+	Seb: (But I have a bad feeling about this.)
+
+update Sophia (Sad)
+Sophia: I should probably wash my face before class.
+
+update Seb (Embarrassed)
+Seb: Do you... want me to wait for you?
+
+Sophia: No, it's okay.
+Sophia: I'll be fine.
+
+(She stands up slowly, wiping her eyes one more time.)
+
+update Sophia (Neutral)
+Sophia: Seb?
+
+update Seb (Curious)
+Seb: Yeah?
+
+update Sophia (Sad)
+Sophia: Thank you for listening.
+Sophia: You're... a really good friend.
+
+update Seb (Neutral)
+Seb: Anytime, Sophia.
+
+leave Sophia [animation="Fade Out" length="1.5"]
+
+[wait time="2.0"]
+
+(She leaves, and I'm alone with the collar.)
+(I look down at the name tag\: "Sunshine.")
+
+[wait time="1.0"]
+
+update Seb (Effraid)
+Seb: (What am I supposed to do...?)
+Seb: (Her mom... those green bottles...)
+
+[wait time="0.5"]
+
+update Seb (Neutral)
+Seb: (I need to think about this.)
+
+leave Seb [animation="Fade Out" length="2.0"]
+
+audio music - [fade="3.0" volume="0.0"]
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+(The day went by normally)
+(But Sophia started avoiding us at the end of class)
+(Eventually we all got home)
+[wait time="1.0"]
+[background arg="res://Backgrounds/Seb sleeping 1.jpg" fade="2.0"]
+[wait time="2.0"]
+Poor Sophia.
+Losing her cat must have been such a difficult experience for her.
+I wish I was there for her more.
+Yes. From now on I'll spend more time with her.
+[background arg="res://Backgrounds/Black (1).png" fade="2.0" wait="true"]
+jump SophiaHome/

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://f38jwuoy045a"]
+
+[ext_resource type="Texture2D" uid="uid://cpmf6ejn1prfk" path="res://Assets/Sprites/ladder.png" id="1_03c8b"]
+[ext_resource type="Script" uid="uid://d1asyay3glt17" path="res://Scripts/blue_ladder_bottom.gd" id="1_th8ma"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vo450"]
+size = Vector2(491, 683)
+
+[node name="BlueLadderBottom" type="Area2D"]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_th8ma")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.192157, 0.556863, 1, 1)
+z_index = 5
+texture = ExtResource("1_03c8b")
+region_enabled = true
+region_rect = Rect2(0, 1800, 900, 900)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 5
+position = Vector2(-14.5, -108.5)
+shape = SubResource("RectangleShape2D_vo450")

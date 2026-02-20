@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c41jg3qu5f3bh"]
+
+[ext_resource type="Script" uid="uid://brjm012vtayj2" path="res://Scripts/rhythm_bg.gd" id="1_c5ivh"]
+[ext_resource type="Texture2D" uid="uid://blqikpeli4kuj" path="res://Backgrounds/rythmebg.jpg" id="1_rc3xe"]
+[ext_resource type="Texture2D" uid="uid://5y0xustmcvgi" path="res://Backgrounds/rythmebg 2.jpg" id="2_c5ivh"]
+
+[node name="RhythmBG" type="Node2D"]
+script = ExtResource("1_c5ivh")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.72, 0.647353)
+texture = ExtResource("1_rc3xe")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.72, 0.647353)
+texture = ExtResource("2_c5ivh")

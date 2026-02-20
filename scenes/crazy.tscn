@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ynn0gshdjdp0"]
+
+[ext_resource type="Script" uid="uid://cfoj65ryuctcf" path="res://Scripts/crazy.gd" id="1_ojc21"]
+[ext_resource type="Texture2D" uid="uid://cqcg1m27suij" path="res://Backgrounds/Olivia won crazy 2.jpg" id="2_6a5ni"]
+[ext_resource type="Texture2D" uid="uid://dvfex80wmcf2h" path="res://Backgrounds/Olivia won crazy.jpg" id="3_7ykgs"]
+
+[node name="Crazy" type="Node2D"]
+script = ExtResource("1_ojc21")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+position = Vector2(607, 335)
+scale = Vector2(0.715, 0.746111)
+texture = ExtResource("2_6a5ni")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+position = Vector2(607, 335)
+scale = Vector2(0.715, 0.746111)
+texture = ExtResource("3_7ykgs")

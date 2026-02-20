@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c5fl8vtjd6vma"
+path="res://.godot/imported/Sophia death.mp3-338c68d430119efd3d4d6bf6cb6aa65b.mp3str"
+
+[deps]
+
+source_file="res://game musics/Sophia death.mp3"
+dest_files=["res://.godot/imported/Sophia death.mp3-338c68d430119efd3d4d6bf6cb6aa65b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

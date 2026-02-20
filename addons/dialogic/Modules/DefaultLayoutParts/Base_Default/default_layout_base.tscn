@@ -1,0 +1,126 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqpb3ie51rwl5"]
+
+[sub_resource type="GDScript" id="GDScript_aa3ow"]
+script/source = "@tool
+extends DialogicLayoutBase
+
+## Custom Dialogic style with fade in/out text in center screen
+
+@export_group(\"Fade Settings\")
+@export var fade_in_duration: float = 0.5
+@export var fade_out_duration: float = 0.3
+@export var text_display_time: float = 2.0  # Temps avant de fade out automatiquement
+
+@export_group(\"Text Settings\")
+@export var font: Font
+@export var font_size: int = 32
+@export var text_color: Color = Color.WHITE
+@export var shadow_enabled: bool = true
+@export var shadow_color: Color = Color(0, 0, 0, 0.8)
+@export var shadow_offset: Vector2 = Vector2(2, 2)
+
+@export_group(\"Position\")
+@export var text_position_offset: Vector2 = Vector2(0, 0)  # Offset depuis le centre
+
+var text_label: Label
+var current_tween: Tween
+var waiting_for_input: bool = false
+
+func _ready() -> void:
+	setup_text_label()
+
+func setup_text_label() -> void:
+	# Créer le label centré
+	text_label = Label.new()
+	text_label.anchor_left = 0.5
+	text_label.anchor_top = 0.5
+	text_label.anchor_right = 0.5
+	text_label.anchor_bottom = 0.5
+	text_label.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	text_label.grow_vertical = Control.GROW_DIRECTION_BOTH
+	
+	# Apparence du texte
+	if font:
+		text_label.add_theme_font_override(\"font\", font)
+	text_label.add_theme_font_size_override(\"font_size\", font_size)
+	text_label.add_theme_color_override(\"font_color\", text_color)
+	
+	# Ombre
+	if shadow_enabled:
+		text_label.add_theme_color_override(\"font_shadow_color\", shadow_color)
+		text_label.add_theme_constant_override(\"shadow_offset_x\", int(shadow_offset.x))
+		text_label.add_theme_constant_override(\"shadow_offset_y\", int(shadow_offset.y))
+	
+	# Alignement
+	text_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	text_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	text_label.autowrap_mode = TextServer.AUTOWRAP_WORD
+	
+	# Taille
+	text_label.custom_minimum_size = Vector2(800, 200)
+	text_label.position = text_position_offset - Vector2(400, 100)
+	
+	# Invisible au départ
+	text_label.modulate.a = 0.0
+	
+	add_child(text_label)
+
+## Appelé quand Dialogic veut afficher du texte
+func _on_dialogic_text_event(info: Dictionary) -> void:
+	var text: String = info.get('text', '')
+	show_text_with_fade(text)
+
+## Affiche le texte avec fondu
+func show_text_with_fade(text: String) -> void:
+	# Annuler le tween précédent
+	if current_tween:
+		current_tween.kill()
+	
+	# Définir le texte
+	text_label.text = text
+	text_label.modulate.a = 0.0
+	waiting_for_input = false
+	
+	# Créer l'animation de fondu entrant
+	current_tween = create_tween()
+	current_tween.tween_property(text_label, \"modulate:a\", 1.0, fade_in_duration)
+	
+	await current_tween.finished
+	
+	# Attendre l'input du joueur
+	waiting_for_input = true
+
+## Appelé quand le joueur passe au texte suivant
+func _on_dialogic_text_advance() -> void:
+	if not waiting_for_input:
+		return
+	
+	fade_out_text()
+
+## Fait disparaître le texte en fondu
+func fade_out_text() -> void:
+	waiting_for_input = false
+	
+	if current_tween:
+		current_tween.kill()
+	
+	current_tween = create_tween()
+	current_tween.tween_property(text_label, \"modulate:a\", 0.0, fade_out_duration)
+	
+	await current_tween.finished
+	
+	# Signaler à Dialogic que c'est terminé
+	Dialogic.Text.continue_typing()
+
+## Override de la méthode d'input de Dialogic
+func _input(event: InputEvent) -> void:
+	if not waiting_for_input:
+		return
+	
+	if event.is_action_pressed(\"dialogic_default_action\"):
+		get_viewport().set_input_as_handled()
+		_on_dialogic_text_advance()
+"
+
+[node name="DefaultLayoutBase" type="CanvasLayer"]
+script = SubResource("GDScript_aa3ow")

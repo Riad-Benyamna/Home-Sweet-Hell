@@ -1,0 +1,727 @@
+Two days later...
+[background arg="res://Backgrounds/class Monday.jpg" fade="2.0"]
+audio music "res://game musics/class theme.mp3" [fade="1.0" volume="0.0"]
+[wait time="2.5"]
+join Marcus (Sceptical) right [animation="Fade In" length="0.2"]
+Marcus: I'm just saying,
+Marcus: Putting the sauce at the bottom of the sandwich is the only correct way.
+join Olivia (Judgemental) left [animation="Fade In" mirrored="true"]
+Olivia: Oh please, you literally eat cereal with orange juice.
+Olivia: Don't play the gastronomic connoisseur.
+update Marcus (Angry) [animation="Tada" length="0.2"]
+Marcus: That was ONE TIME!
+Marcus: And I was half asleep!
+update Olivia (Trolling)
+Olivia: Sure, keep telling yourself that Marcus.
+join Sophia (Soupir) rightmost [animation="Slide From Right"]
+Sophia: Can you two not argue about food for like... five minutes?
+join Seb (Tired) leftmost [animation="Slide From Left"]
+Seb: They've been at it since we got here...
+update Olivia (Judgemental)
+Olivia: Putting the sauce on the top bun guarantees to taste the sauce FIRST !
+update Olivia (Laughing)
+Olivia: And as we all know, the sauce is the best part of a sandwich!
+update Marcus (Sceptical)
+Marcus: This gotta be the dumbest thing I've ever heard.
+Marcus: The sauce should be enjoyed when combined with the food!
+update Marcus (Angry) [animation="Tada" length="0.2"]
+Marcus: At this point just drink a whole bottle of mayonnaise !
+update Olivia (Judgemental)
+Olivia: When you dip a french fry in the sauce, which part of the fry do you eat first ?
+Marcus: Duh what a question ? The part I sauced of course !
+update Olivia (Laughing)
+Olivia: Exactly! You wouldn't start with the unsauced part!
+Olivia: The sauce is made to be enjoyed before the food that's all !
+update Marcus (Exhausted)
+Marcus: It's not even the same thing! You wouldn't eat a sandwich the same way you'd eat a fry.
+update Sophia (Embarrassed)
+Sophia: Or...Maybe you could add the sauce on both sides ?
+update Marcus (Shocked) [animation="Shake X"]
+update Olivia (Shocked) [animation="Shake X"]
+Marcus: EEEW!
+Olivia: ARE YOU CRAZY SOPHIA ??
+Marcus: What kind of psycopath would do that ?
+Olivia: Literally!
+update Sophia (Sad)
+Sophia: ...Me ?
+update Marcus (Angry) [animation="Tada" length="0.2" z_index="1"]
+Marcus: Okay Seb, you're the tiebreaker here!
+update Olivia (Judgemental) [animation="Tada" length="0.2" z_index="1"]
+Olivia: Yeah Seb, settle this once and for all!
+update Seb (Effraid)
+Seb: Wait what? Why me?!
+update Marcus (Smiling)
+Marcus: Because you're the only one here with common sense!
+update Olivia (Scary)
+Olivia: Don't listen to him Seb, side with reason!
+update Sophia (Silly)
+Sophia: Good luck with this one...
+update Seb (Tired)
+Seb: (Oh boy, here we go again...)
+Seb: (Why do I always get dragged into their arguments?)
+- Agree with Marcus (sauce at the bottom)
+	update Seb (Embarrassed)
+	Seb: Uh... well...
+	Seb: I think Marcus has a point?
+	update Marcus (Excited) [animation="Tada" length="0.3"]
+	Marcus: HA! SEE?!
+	Marcus: Seb gets it!
+	update Olivia (Angry) [animation="Shake X" length="0.2"]
+	Olivia: Oh COME ON Seb!
+	update Olivia (Judgemental)
+	Olivia: I expected better taste from you!
+	update Seb (Embarrassed)
+	Seb: I mean, the sauce soaking into the bottom bun makes sense...
+	update Marcus (Laughing)
+	Marcus: EXACTLY! Thank you!
+	update Olivia (Trolling)
+	Olivia: Fine. You both have terrible opinions.
+	update Olivia (Smiling)
+	Olivia: But I'll prove you wrong anyway.
+- Agree with Olivia (sauce on top)
+	update Seb (Neutral)
+	Seb: Actually...
+	Seb: Olivia might be onto something.
+	update Olivia (Laughing) [animation="Tada" length="0.3"]
+	Olivia: HA! I KNEW IT!
+	update Olivia (Flirting)
+	Olivia: Finally, someone with refined taste!
+	update Marcus (Shocked)
+	Marcus: WHAT?!
+	update Marcus (Angry)
+	Marcus: Seb, buddy, pal, FRIEND-
+	update Marcus (Sad)
+	Marcus: How could you betray me like this?!
+	update Seb (Trolling)
+	Seb: The sauce first theory is pretty solid though...
+	update Marcus (Exhausted)
+	Marcus: I can't believe this...
+	update Olivia (Trolling)
+	Olivia: Face it Marcus, you're outnumbered.
+- Stay neutral (diplomatic answer)
+	update Seb (Embarrassed)
+	Seb: Honestly...
+	Seb: I think both methods have their merits?
+	update Marcus (Sceptical)
+	Marcus: Oh come on!
+	update Olivia (Judgemental)
+	Olivia: That's such a cop-out Seb!
+	update Sophia (Laughing)
+	Sophia: Classic Seb, never picking sides.
+	update Seb (Tired)
+	Seb: I just don't want to get involved in sandwich politics!
+	update Marcus (Angry)
+	Marcus: There's no neutrality in the sauce war Seb!
+	update Olivia (Scary)
+	Olivia: You're either with us or against us!
+	update Seb (Effraid)
+	(Why did I think staying neutral would work...)
+update Marcus (Excited)
+Marcus: You know what? I'm done arguing.
+update Marcus (Smiling)
+Marcus: Let's settle this like civilized people.
+update Olivia (Confused)
+Olivia: ...With a debate?
+update Marcus (Laughing) [animation="Tada" length="0.3"]
+Marcus: Pfah!
+Marcus: With a race dummy ! Loser admits defeat!
+update Olivia (Shocked)
+Olivia: A race? Are you serious?
+update Marcus (Flirty)
+Marcus: What's wrong? Scared you'll lose princess ?
+update Marcus (Smiling)
+Marcus: I mean, I get it, those fancy shoes probably aren't made for running.
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: LOSING ?! ME ?!
+update Olivia (Scary)
+Olivia: I'll have you know these shoes cost more than your entire wardrobe!
+update Marcus (Sceptical)
+Marcus: Cool story, still can't run in them though.
+update Sophia (Embarrassed)
+Sophia: Marcus, maybe this isn't-
+update Olivia (Judgemental) [z_index="1"]
+Olivia: You know what? [b]Fine.
+update Olivia (Laughing)
+Olivia: I accept your pathetic challenge.
+update Olivia (Flirting)
+Olivia: And when I win, you'll admit sauce is on the top bun and on the top bun ONLY!
+update Marcus (Angry)
+Marcus: NEVER!
+update Seb (Effraid)
+Seb: Guys, maybe we should-
+update Marcus (Excited) [animation="Bounce" length="0.2"]
+Marcus: After class! School courtyard!
+update Olivia (Trolling)
+Olivia: Prepare to eat dirt, Marcus.
+update Sophia (Soupir)
+Sophia: ...This is going to end badly.
+leave --All-- [animation="Fade Out"]
+audio music - [fade="2.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+[wait time="2.0"]
+
+label courtyard
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+audio music "res://game musics/marcus theme.mp3" [fade="1.0" volume="-3.0"]
+[wait time="2.0"]
+join Marcus (Excited) left [animation="Fade In" ]
+join Olivia (Smiling) leftmost [animation="Fade In"]
+join Sophia (Confuse) rightmost [animation="Fade In"]
+join Seb (Neutral) right [animation="Fade In" mirrored="true" ]
+
+update Sophia (Embarrassed)
+Sophia: I still think this is a terrible idea...
+update Seb (Tired)
+Seb: At this point, let's just see how it goes.
+update Marcus (Smiling)
+Marcus: From here to the gate and back!
+update Marcus (Excited) [animation="Tada" length="0.2"]
+Marcus: First one back wins!
+update Olivia (Flirting)
+Olivia: Hope you're ready to lose in front of everyone, Marcus.
+update Marcus (Laughing)
+Marcus: Big talk for someone who's never beaten me at anything physical!
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: Oh you're SO going down!
+update Sophia (Soupir)
+Sophia: Okay, I guess I'm the referee then...
+update Sophia (Silly)
+Sophia: Ready...
+update Marcus (Excited) [animation="Bounce" length="0.1"]
+Marcus: Born ready!
+update Olivia (Scary) [animation="Shake Y" length="0.1"]
+Olivia: Just start already!
+update Sophia (Smiling)
+Sophia: Set...
+[wait time="1.0"]
+update Sophia (Happy) [animation="Tada" length="0.2"]
+Sophia: GO!
+leave Marcus [animation="Slide To Left"]
+leave Olivia [animation="Slide To Left"]
+[wait time="1.0"]
+
+update Seb (Curious)
+Seb: Wow, they're actually going fast!
+[background arg="res://Backgrounds/race.jpg" fade="2.0"]
+leave --All-- [animation="Fade Out" length="1.0"]
+
+Sophia: Marcus is in the lead!
+Marcus: Oh please this is almost too easy !
+Marcus: Where's your private Chauffeur now ?
+Marcus: Prepare to admit you're wrong Oli !
+Olivia: On my dead body !
+[background arg="res://Backgrounds/race 2.jpg" fade="2.0"]
+Seb: Wait- Olivia's catching up!
+Seb: She looks so determined!
+Sophia: She's passing him!
+Olivia: HAH ! WHAT DOES IT FEEL LIKE TO BE A LOSER MARCUS ?
+Olivia: UNFORTUNATELY I WOULDN'T KNOW !
+Seb: No way! She's actually winning!
+Marcus: Uh... Olivia you might wanna look in front of you-
+Olivia: Pff- Yeah right ! Can't handle a loss ?
+Marcus: No seriously !
+Marcus: OLIVIA WATCH OUT !
+Olivia: Uh-
+[wait time="0.5"]
+audio music - [fade="0.0" volume="-5.0"]
+audio sfx "res://sounds/body-fall-47877.mp3"
+Olivia: OW!
+[wait time="1"]
+Marcus: Crap !
+[wait time="1"]
+Seb: OLIVIA!
+Sophia: Oh no!
+[background arg="res://Backgrounds/schoolgate.jpg" fade="2.0"]
+[wait time="2"]
+join Olivia (Sad) rightmost [animation="Fade In" length="0.5"]
+join Marcus (Shocked) center [animation="Fade In" length="0.5" mirrored="true"]
+join Sophia (Shocked) left [animation="Fade In" length="0.5" mirrored="true"]
+join Seb (Effraid) leftmost [animation="Fade In" length="0.5"]
+
+update Seb (Shock)
+Seb: We need to get you to the nurse!
+update Sophia (Sad)
+Sophia: Can you stand?
+update Olivia (Crying) [animation="Shake X" length="0.1"]
+Olivia: I- I think so but-
+update Olivia (Sad)
+Olivia: My wrist hurts so much...
+update Marcus (Sad)
+Marcus: Olivia, I'm so sorry, I didn't think-
+update Olivia (Angry) [animation="Tada" length="0.2"]
+Olivia: This is YOUR fault Marcus!
+update Olivia (Crying)
+Olivia: You and your stupid race!
+update Marcus (Crying)
+Marcus: I know! I know! I'm sorry!
+update Seb (Effraid)
+Seb: Guys, we can deal with blame later!
+update Seb (Shock)
+Seb: Right now we need to get her help!
+update Sophia (Soupir)
+Sophia: Come on Olivia, lean on me.
+update Olivia (Sad)
+Olivia: But...My recital...
+update Olivia (Crying)
+Olivia: My recital is tomorrow...
+[wait time="1.5"]
+update Olivia (Angry) [animation="Shake Y" length="0.2"]
+Olivia: I CAN'T-
+update Olivia (Crying)
+Olivia: I can't...
+leave Olivia [animation="Slide To Right"]
+[wait time="1.0"]
+update Seb (Shock)
+Seb: Olivia?!
+update Marcus (Confused)
+Marcus: Where is she going?!
+update Sophia (Shocked)
+Sophia: We need to go after her!
+
+leave --All-- [animation="Fade Out" length="1.0"]
+audio music - [fade="2.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="1.0"]
+[wait time="2.0"]
+
+[background arg="res://Backgrounds/hall.jpg" fade="2.0"]
+[wait time="2.0"]
+
+join Seb (Effraid) center [animation="Fade In"]
+Seb: (Marcus and Sophia went to get the nurse...)
+Seb: (But I need to find Olivia first)
+Seb: (Where would she go...?)
+Seb: (Wait... is that...)
+Seb: (Crying?)
+update Seb (Curious)
+Seb: Olivia...?
+[wait time="0.5"]
+Seb: Olivia, are you in there?
+
+leave Seb [animation="Fade Out"]
+[wait time="1.0"]
+label class
+[background arg="res://Backgrounds/class Monday.jpg" fade="2.0"]
+audio music "res://game musics/melancholic theme.mp3" [fade="2.0" volume="-5.0"]
+(I slowly open the door.)
+
+join Seb (Effraid) left [animation="Fade In" length="1.0"]
+Seb: ...Olivia?
+
+join Olivia (Crying) right [animation="Fade In" z_index="2"]
+
+(She's sitting on the floor, back against the wall.)
+(Her right hand is cradled against her chest.)
+(She doesn't look up.)
+
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: [font_size=18]Go away, Seb...
+
+update Seb (Effraid)
+Seb: Olivia, please, we need to-
+
+update Olivia (Angry) [animation="Shake X" length="0.2"]
+Olivia: I SAID GO AWAY !
+[wait time="1.5"]
+update Olivia (Crying) [animation="Shake Y" length="0.1" repeat="3"]
+Olivia: ...Please.
+
+update Seb (Neutral)
+Seb: We need to get you to the nurse.
+Seb: Your hand-
+
+update Olivia (Crying) [animation="Shake Y" length="0.2"]
+Olivia: My hand is FINE!
+
+update Seb (Effraid)
+Seb: Olivia, it's clearly not-
+
+update Olivia (Sad)
+Olivia: Just... leave me alone.
+Olivia: Please.
+
+[wait time="2.0"]
+
+update Seb (Neutral)
+Seb: ...I'm not leaving.
+
+update Olivia (Crying)
+Olivia: ...
+Olivia: You're so stubborn.
+
+update Seb (Embarrassed)
+Seb: I learned from the best.
+
+(A faint, broken laugh escapes her.)
+
+update Olivia (Sad)
+Olivia: ...
+
+[wait time="2.0"]
+
+update Seb (Curious)
+Seb: What's really going on, Olivia?
+Seb: This isn't just about the recital, is it?
+
+update Olivia (Crying)
+Olivia: You... you don't understand, Seb.
+
+update Seb (Neutral)
+Seb: Then help me understand.
+
+[wait time="2.0"]
+
+update Olivia (Sad)
+Olivia: ...This isn't the first time.
+
+update Seb (Curious)
+Seb: What do you mean?
+
+update Olivia (Crying)
+Olivia: Last year...
+Olivia: During a game of tag with some other students...
+
+update Olivia (Sad)
+Olivia: I fell. Hard.
+Olivia: Broke my left wrist.
+
+[wait time="1.0"]
+
+leave --All-- [animation="Fade Out"]
+[background arg="res://Backgrounds/Scold.jpg" fade="2.0" wait="true"]
+
+Olivia: I had a recital scheduled for that week.
+Olivia: Ferunovsky's 12th Etude.
+Olivia: I'd been practicing for months.
+
+Olivia: When my parents found out...
+
+[wait time="1.0"]
+
+Olivia: Dad didn't speak to me for two weeks.
+Olivia: Mom kept calling me "careless" and "irresponsible."
+Olivia: Said I wasn't taking my music seriously enough.
+Olivia: "Do you only realize how much money we spent to prepare you for that recital Olivia ?"
+
+[wait time="0.5"]
+
+Olivia: They made me practice anyway.
+Olivia: With a broken wrist.
+Olivia: Every single day.
+
+Olivia: "Pain is just weakness leaving the body," Dad said.
+Olivia: "Real musicians push through discomfort."
+
+[wait time="1.0"]
+
+Olivia: It hurt so much, Seb.
+Olivia: Every note felt like fire.
+Olivia: But I couldn't stop.
+Olivia: I couldn't disappoint them.
+
+[wait time="1.5"]
+
+[background arg="res://Backgrounds/class Monday.jpg" fade="2.0" wait="true"]
+
+join Seb (Shock) left [animation="Fade In" length="1.0"]
+join Olivia (Crying) right [animation="Fade In" length="1.0"]
+
+update Seb (Effraid)
+Seb: Olivia... that's...
+
+update Olivia (Sad)
+Olivia: I know what you're thinking.
+Olivia: That they were being cruel.
+
+update Olivia (Crying)
+Olivia: But they just want me to be the best.
+Olivia: To reach my full potential.
+
+update Olivia (Sad)
+Olivia: That's what they always say.
+
+[wait time="1.0"]
+
+update Seb (Neutral)
+Seb: ...
+
+update Olivia (Crying)
+Olivia: And I knew! I KNEW I shouldn't have raced Marcus!
+
+update Olivia (Frustrated) [animation="Shake X" length="0.2"]
+Olivia: But I just... I can't stand losing!
+Olivia: I can't stand people thinking I'm weak!
+
+update Olivia (Sad)
+Olivia: It's like... this thing inside me.
+Olivia: This need to prove I'm better than everyone.
+
+update Olivia (Crying)
+Olivia: And now look where it got me.
+
+[wait time="1.5"]
+
+update Seb (Sad)
+Seb: Have your parents... been told yet?
+
+update Olivia (Shocked) [animation="Shake Y" length="0.3"]
+Olivia: NO!
+
+update Olivia (Crying)
+Olivia: And they CAN'T find out!
+Olivia: You don't understand what they'll do!
+
+update Seb (Effraid)
+Seb: Olivia, they need to know-
+
+update Olivia (Frustrated)
+Olivia: They'll make me practice anyway!
+Olivia: Just like last time!
+
+update Olivia (Crying)
+Olivia: And when I can't play...
+Olivia: When I fail the recital...
+
+update Olivia (Sad)
+Olivia: They'll never forgive me.
+
+[wait time="2.0"]
+
+update Seb (Neutral)
+Seb: That's... that's not normal, Olivia.
+Seb: Parents shouldn't-
+
+update Olivia (Frustrated)
+Olivia: What would YOU know about it?
+
+update Olivia (Sad)
+Olivia: Your parents are normal.
+Olivia: They're happy when you get a B.
+Olivia: They don't care if you're perfect.
+
+update Olivia (Crying)
+Olivia: Mine do.
+
+[wait time="1.5"]
+
+(She looks down at her injured hand.)
+
+update Olivia (Sad)
+Olivia: The recital is tomorrow, Seb.
+Olivia: I was supposed to perform Ferunovsky's 67th.
+Olivia: At the city opera.
+Olivia: In front of hundreds of people.
+Olivia: Scouts from the conservatory.
+Olivia: Critics.
+
+[wait time="1.0"]
+
+update Olivia (Crying)
+Olivia: Dad already told all his colleagues.
+Olivia: Mom bought a new dress for the occasion.
+
+update Olivia (Sad)
+Olivia: They've been planning this for months.
+
+[wait time="2.0"]
+
+update Olivia (Crying) [animation="Shake Y" length="0.2"]
+Olivia: And I ruined it.
+Olivia: Again.
+
+update Seb (Effraid)
+Seb: You didn't ruin anything.
+Seb: It was an accident-
+
+update Olivia (Angry)
+Olivia: ACCIDENTS DON'T MATTER TO THEM!
+
+[wait time="1.0"]
+
+update Olivia (Sad)
+Olivia: ...Sorry.
+Olivia: I didn't mean to yell.
+
+update Seb (Neutral)
+Seb: It's okay.
+
+[wait time="2.0"]
+
+update Olivia (Crying)
+Olivia: What am I going to do, Seb?
+Olivia: I can't tell them.
+Olivia: But I can't hide it forever either.
+
+update Seb (Sad)
+Seb: ...
+
+update Olivia (Sad)
+Olivia: They're going to find out eventually.
+Olivia: And when they do...
+
+[wait time="1.5"]
+
+update Olivia (Crying)
+Olivia: I don't know what they'll do.
+Olivia: But it won't be good.
+
+update Seb (Effraid)
+Seb: Olivia... do you want me to come with you?
+Seb: When you tell them?
+
+update Olivia (Shocked)
+Olivia: What?! No!
+
+update Olivia (Sad)
+Olivia: That would just make it worse.
+
+[wait time="1.0"]
+
+(She wipes her eyes, but the tears keep coming.)
+
+update Olivia (Crying)
+Olivia: I just...
+Olivia: I just want to be good enough for them.
+
+update Olivia (Sad)
+Olivia: Is that too much to ask?
+
+update Seb (Neutral)
+Seb: ...You ARE good enough, Olivia.
+Seb: You're one of the most talented people I know.
+
+update Olivia (Crying)
+Olivia: Then why does it never feel like enough?
+
+[wait time="2.0"]
+
+update Seb (Sad)
+Seb: ...
+
+update Olivia (Neutral)
+Olivia: Can you... not tell the others?
+Olivia: About my parents. And last year.
+
+update Seb (Curious)
+Seb: But Olivia-
+
+update Olivia (Sad)
+Olivia: Please, Seb.
+Olivia: I don't want them to know.
+Olivia: I don't want them to pity me.
+
+[wait time="1.0"]
+
+- I promise
+	update Seb (Embarrassed)
+	Seb: I... okay. I promise.
+	
+	update Olivia (Neutral)
+	Olivia: Thank you.
+	
+	Seb: (But... this doesn't feel right.)
+	Seb: (Something is really wrong with Olivia's family.)
+
+- I can't promise that
+	update Seb (Neutral)
+	Seb: Olivia... I don't think I can promise that.
+	
+	update Olivia (Shocked)
+	Olivia: What?!
+	
+	update Seb (Effraid)
+	Seb: Because... what if someone can help?
+	Seb: What if there's a way to make this better?
+	
+	update Olivia (Angry)
+	Olivia: No one can help!
+	Olivia: This is MY problem!
+	
+	update Olivia (Crying)
+	Olivia: You don't understand!
+	
+	update Seb (Embarrassed)
+	Seb: Maybe not completely, but...
+	Seb: I want to help.
+	
+	update Olivia (Sad)
+	Olivia: ...
+	Olivia: Just... don't say anything. Not yet.
+	
+	update Seb (Neutral)
+	Seb: ...Okay. Not yet.
+	
+	Seb: (But I have a very bad feeling about this.)
+
+[wait time="1.5"]
+
+update Olivia (Sad)
+Olivia: I should... probably go home.
+Olivia: Before they start wondering where I am.
+
+update Seb (Effraid)
+Seb: What are you going to tell them?
+
+update Olivia (Neutral)
+Olivia: Nothing.
+Olivia: I'll hide it as long as I can.
+
+update Seb (Shock)
+Seb: Olivia-
+
+update Olivia (Sad)
+Olivia: It's my only option, Seb.
+
+(She stands up slowly, still cradling her wrist.)
+
+update Olivia (Neutral)
+Olivia: Seb?
+
+update Seb (Curious)
+Seb: Yeah?
+
+update Olivia (Sad)
+Olivia: ...Thank you.
+Olivia: For not judging me.
+
+update Seb (Neutral)
+Seb: I'd never judge you, Olivia.
+
+update Olivia (Crying)
+Olivia: ...
+
+leave Olivia [animation="Fade Out" length="1.5" mirrored="true"]
+
+[wait time="2.0"]
+
+(She leaves, and I'm alone in the empty classroom.)
+
+[wait time="1.0"]
+
+update Seb (Sad)
+(What am I supposed to do...?)
+(Her parents... the way they treat her...)
+
+[wait time="0.5"]
+
+update Seb (Effraid)
+(This isn't right.)
+
+leave Seb [animation="Fade Out" length="2.0"]
+
+audio music - [fade="3.0" volume="0.0"]
+[wait time="2.0"]
+[background arg="res://Backgrounds/Black (1).png" fade="2.0"]
+(The day went by normally)
+(But Olivia started avoiding us at the end of class)
+(Eventually we all got home)
+[wait time="1.0"]
+[background arg="res://Backgrounds/Seb sleeping 1.jpg" fade="2.0"]
+[wait time="2.0"]
+Poor Olivia.
+I wonder how she'll manage to hide that from her parents until tomorrow...
+I always thought her obsession for winning was weird.
+But now I understand her...
+I wish I was there for her more.
+Yes. From now on I'll spend more time with her.
+[background arg="res://Backgrounds/Black (1).png" fade="2.0" wait="true"]
+jump OliviaHome/

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bajpjgsv76d5g"
+path="res://.godot/imported/SAY IT.mp3-7cdf65afec052d5a2f16d790b58e7859.mp3str"
+
+[deps]
+
+source_file="res://game musics/SAY IT.mp3"
+dest_files=["res://.godot/imported/SAY IT.mp3-7cdf65afec052d5a2f16d790b58e7859.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

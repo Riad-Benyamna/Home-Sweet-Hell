@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfnk6ws44fnis"
+path="res://.godot/imported/sad theme 2 slowed and reverbed asf.mp3-75611e28697aeea0f0573af16a5ff34d.mp3str"
+
+[deps]
+
+source_file="res://game musics/sad theme 2 slowed and reverbed asf.mp3"
+dest_files=["res://.godot/imported/sad theme 2 slowed and reverbed asf.mp3-75611e28697aeea0f0573af16a5ff34d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

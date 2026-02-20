@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://sgisii217fa2"]
+
+[ext_resource type="Script" uid="uid://bmpqn1j3fhbxq" path="res://Scripts/cat_obstacle.gd" id="1_u8c5f"]
+[ext_resource type="Texture2D" uid="uid://dgd7y2hm1p8lw" path="res://Assets/Sprites/TokenBubble.png" id="3_kqsqy"]
+[ext_resource type="Texture2D" uid="uid://6ltkcwdo6awc" path="res://Assets/Sprites/maneki neko.png" id="4_kqsqy"]
+[ext_resource type="FontFile" uid="uid://odetu2hmfcb1" path="res://Assets/Fonts/Cheveuxdange.ttf" id="4_o3x7w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3x7w"]
+size = Vector2(606, 691)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btjab"]
+size = Vector2(894, 697)
+
+[node name="CatObstacle" type="StaticBody2D"]
+z_index = 5
+scale = Vector2(1.7, 1.7)
+script = ExtResource("1_u8c5f")
+dialogue_bubble_texture = ExtResource("3_kqsqy")
+custom_font = ExtResource("4_o3x7w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_kqsqy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-53, -30.5)
+shape = SubResource("RectangleShape2D_o3x7w")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-36, -29.5)
+shape = SubResource("RectangleShape2D_btjab")

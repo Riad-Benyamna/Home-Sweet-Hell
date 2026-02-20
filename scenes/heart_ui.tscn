@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4kahut2y2ivt"]
+
+[ext_resource type="Script" uid="uid://hwdvnnqct5ko" path="res://Scripts/heart_ui.gd" id="1_qhayj"]
+[ext_resource type="Texture2D" uid="uid://cfkdogt83e3wl" path="res://Assets/Sprites/heart.png" id="3_ys402"]
+
+[node name="HeartUI" type="CanvasLayer"]
+script = ExtResource("1_qhayj")
+heart_full_texture = ExtResource("3_ys402")
+heart_empty_texture = ExtResource("3_ys402")
+
+[node name="HeartContainer" type="HBoxContainer" parent="."]
+offset_left = 82.0
+offset_top = 52.0
+offset_right = 122.0
+offset_bottom = 92.0
+theme_override_constants/separation = -20
