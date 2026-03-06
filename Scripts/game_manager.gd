@@ -18,6 +18,19 @@ var red_token: bool = false
 var yellow_token: bool = false
 var has_key: bool = false
 
+# === CHECKPOINT ===
+var checkpoint_active: bool = false
+var checkpoint_position: Vector2 = Vector2.ZERO
+var checkpoint_coins: int = 0
+var checkpoint_has_key: bool = false
+var checkpoint_blue_token: bool = false
+var checkpoint_red_token: bool = false
+var checkpoint_yellow_token: bool = false
+
+# === COLLECTED COINS (persist across respawn) ===
+var collected_coin_ids: Array[String] = []
+var checkpoint_collected_coins: Array[String] = []
+
 func _ready():
 	current_health = max_health
 
@@ -94,8 +107,48 @@ func reset_tokens():
 	yellow_token = false
 	has_key = false
 
+func save_checkpoint(pos: Vector2):
+	checkpoint_active = true
+	checkpoint_position = pos
+	checkpoint_coins = coins
+	checkpoint_has_key = has_key
+	checkpoint_blue_token = blue_token
+	checkpoint_red_token = red_token
+	checkpoint_yellow_token = yellow_token
+	checkpoint_collected_coins = collected_coin_ids.duplicate()
+	print("Checkpoint saved at ", pos)
+
+func restore_checkpoint_state():
+	coins = checkpoint_coins
+	coins_changed.emit(coins)
+	has_key = checkpoint_has_key
+	blue_token = checkpoint_blue_token
+	red_token = checkpoint_red_token
+	yellow_token = checkpoint_yellow_token
+	collected_coin_ids = checkpoint_collected_coins.duplicate()
+	reset_health()
+
+func clear_checkpoint():
+	checkpoint_active = false
+	checkpoint_position = Vector2.ZERO
+	checkpoint_coins = 0
+	checkpoint_has_key = false
+	checkpoint_blue_token = false
+	checkpoint_red_token = false
+	checkpoint_yellow_token = false
+	checkpoint_collected_coins = []
+
+func register_coin_collected(id: String):
+	if id not in collected_coin_ids:
+		collected_coin_ids.append(id)
+
+func is_coin_collected(id: String) -> bool:
+	return id in collected_coin_ids
+
 # === RESET ===
 func reset_game():
 	reset_coins()
 	reset_health()
 	reset_tokens()
+	clear_checkpoint()
+	collected_coin_ids = []

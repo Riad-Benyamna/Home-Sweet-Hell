@@ -15,21 +15,42 @@ const AUTOSAVE = "autosave"
 ## Set to false during gameplay sections (platformer/rhythm)
 var saving_enabled: bool = true
 
+## Slot to load when visual_novel.gd next starts up.
+## Set this instead of calling Dialogic.Save.load() directly from menus,
+## so the load happens after the Dialogic layout is ready.
+var pending_load_slot: String = ""
+
 func _ready():
-	# Ensure Dialogic autosave is initially enabled
-	Dialogic.Save.autosave_enabled = true
+	# Configure Dialogic autosave
+	Dialogic.Save.autosave_mode = Dialogic.Save.AutoSaveMode.ON_TIMER  # Save every X seconds
+	Dialogic.Save.autosave_time = 60  # Every 60 seconds
+	Dialogic.Save.autosave_enabled = false  # Start disabled — VN scenes enable it via enable_saving()
+
+	print("[SaveManager] Autosave configured: Mode=TIMER, Interval=60s (disabled until VN starts)")
+
+	# Connect to Dialogic's save signal to print when saves happen
+	Dialogic.Save.saved.connect(_on_dialogic_saved)
+
+func _on_dialogic_saved(info: Dictionary):
+	var slot = info.get("slot_name", "unknown")
+	var is_auto = info.get("is_autosave", false)
+
+	if is_auto:
+		print("[SaveManager] 💾 AUTOSAVE triggered! Saved to: " + slot)
+	else:
+		print("[SaveManager] 💾 MANUAL SAVE successful! Saved to: " + slot)
 
 ## Enable saving (call when entering VN sections)
 func enable_saving():
 	saving_enabled = true
 	Dialogic.Save.autosave_enabled = true
-	print("[SaveManager] Saving ENABLED (VN mode)")
+	print("[SaveManager] ✓ Saving ENABLED (VN mode) - Autosave every 60 seconds")
 
 ## Disable saving (call when entering gameplay sections)
 func disable_saving():
 	saving_enabled = false
 	Dialogic.Save.autosave_enabled = false
-	print("[SaveManager] Saving DISABLED (Gameplay mode)")
+	print("[SaveManager] ✗ Saving DISABLED (Gameplay mode)")
 
 ## Manually save to a specific slot (1, 2, or 3)
 func save_to_slot(slot_number: int) -> bool:

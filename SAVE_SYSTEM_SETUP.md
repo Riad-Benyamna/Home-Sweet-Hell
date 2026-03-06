@@ -47,30 +47,30 @@ I've implemented a DDLC-style save/load system for Nocturnal Tots with the follo
 Control (name: SaveLoadMenu)
 └─ Panel
    └─ MarginContainer
-      └─ VBoxContainer
-         ├─ Label (name: TitleLabel, text: "Save/Load Game")
-         ├─ VBoxContainer (name: SlotContainer)
-         └─ Button (name: BackButton, text: "Back")
+	  └─ VBoxContainer
+		 ├─ Label (name: TitleLabel, text: "Save/Load Game")
+		 ├─ VBoxContainer (name: SlotContainer)
+		 └─ Button (name: BackButton, text: "Back")
 ```
 
 3. Configure the nodes:
    - **Control (SaveLoadMenu)**:
-     - Anchor Preset: Full Rect
-     - Layout: Fill
+	 - Anchor Preset: Full Rect
+	 - Layout: Fill
 
    - **Panel**:
-     - Anchor Preset: Center
-     - Custom Minimum Size: 800 x 600
+	 - Anchor Preset: Center
+	 - Custom Minimum Size: 800 x 600
 
    - **MarginContainer**:
-     - All margins: 20
+	 - All margins: 20
 
    - **TitleLabel**:
-     - Font Size: 32
-     - Horizontal Alignment: Center
+	 - Font Size: 32
+	 - Horizontal Alignment: Center
 
    - **BackButton**:
-     - Text: "Back to Title"
+	 - Text: "Back to Title"
 
 4. Attach the script `res://Scripts/save_load_menu.gd` to the **SaveLoadMenu** (Control) node
 

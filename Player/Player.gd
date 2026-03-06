@@ -72,6 +72,10 @@ func _ready():
 	invincibility_timer.timeout.connect(_on_invincibility_timeout)
 	GameManager.player_died.connect(_on_player_died)
 
+	# Respawn at checkpoint if one is active
+	if GameManager.checkpoint_active:
+		global_position = GameManager.checkpoint_position
+
 func _draw() -> void:
 	currentState.Draw()
 	
@@ -187,7 +191,17 @@ func _on_player_died():
 	Engine.time_scale = 1.0
 	
 	# Recharger la scène
-	GameManager.reset_game()
+	if GameManager.checkpoint_active:
+		print("=== CHECKPOINT RESTORE ===")
+		print("Coins: ", GameManager.checkpoint_coins)
+		print("Key: ", GameManager.checkpoint_has_key)
+		print("Blue token: ", GameManager.checkpoint_blue_token)
+		print("Red token: ", GameManager.checkpoint_red_token)
+		print("Yellow token: ", GameManager.checkpoint_yellow_token)
+		GameManager.restore_checkpoint_state()
+	else:
+		print("=== NO CHECKPOINT - full reset ===")
+		GameManager.reset_game()
 	get_tree().reload_current_scene()
 	
 func HandleFalling():

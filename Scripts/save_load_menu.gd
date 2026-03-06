@@ -123,24 +123,43 @@ func _on_slot_pressed(slot_index: int):
 		if slot_index == 0:
 			# Can't manually save to autosave slot
 			push_warning("Cannot save to Autosave slot manually!")
+			print("[SaveLoadMenu] ✗ Cannot manually save to autosave slot!")
 			return
 
 		# Save to slot
 		var success = SaveManager.save_to_slot(slot_index)
 		if success:
-			print("Saved to slot " + str(slot_index))
+			print("[SaveLoadMenu] ✓ Player saved to slot " + str(slot_index))
 			refresh_slots()
 	else:
-		# Loading mode
-		var success = SaveManager.load_from_slot(slot_index)
-		if success:
-			print("Loaded from slot " + str(slot_index))
-			# Close menu and return to VN
-			get_tree().change_scene_to_file("res://scenes/visual_novel.tscn")
+		# Loading mode — don't call Dialogic.Save.load() here.
+		# Calling it before the VN scene loads causes a null instance crash
+		# because the Dialogic layout nodes don't exist yet on the title screen.
+		# Instead, store the slot name and let visual_novel.gd load it after setup.
+		var slot_names = [SaveManager.AUTOSAVE, SaveManager.SLOT_1, SaveManager.SLOT_2, SaveManager.SLOT_3]
+		if slot_index >= slot_names.size():
+			print("[SaveLoadMenu] ✗ Invalid slot index")
+			return
+		var slot_name = slot_names[slot_index]
+		if not Dialogic.Save.has_slot(slot_name):
+			print("[SaveLoadMenu] ✗ Slot " + str(slot_index) + " is empty!")
+			return
+		print("[SaveLoadMenu] ✓ Queuing load from slot: " + slot_name)
+		SaveManager.pending_load_slot = slot_name
+		var tree = get_tree()
+		_close_menu()
+		tree.change_scene_to_file("res://scenes/visual_novel.tscn")
 
 func _on_back_pressed():
-	# Return to title screen or close menu
-	queue_free()
+	_close_menu()
+
+## Close the menu, unpause Dialogic, and clean up the CanvasLayer parent (if any)
+func _close_menu():
+	Dialogic.paused = false
+	if get_parent() is CanvasLayer:
+		get_parent().queue_free()  # Frees the canvas layer and this node with it
+	else:
+		queue_free()
 
 ## Show the menu in LOAD mode
 static func show_load_menu(parent: Node):

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b37yq14fo3oxt"]
+
+[ext_resource type="Script" uid="uid://b3u5h53ccgto5" path="res://Scripts/token_ui.gd" id="1_tkui"]
+[ext_resource type="Texture2D" uid="uid://ds75vhve56k2p" path="res://Assets/Sprites/jeton blue.png" id="2_blue"]
+[ext_resource type="Texture2D" uid="uid://qyishsvysbu3" path="res://Assets/Sprites/jeton red.png" id="3_red"]
+[ext_resource type="Texture2D" uid="uid://c5jduw8opfida" path="res://Assets/Sprites/jeton yellow.png" id="4_ylow"]
+
+[node name="TokenUI" type="CanvasLayer"]
+layer = 5
+script = ExtResource("1_tkui")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 82.0
+offset_top = 130.0
+offset_right = 242.0
+offset_bottom = 178.0
+theme_override_constants/separation = 8
+
+[node name="BlueToken" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("2_blue")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RedToken" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("3_red")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="YellowToken" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("4_ylow")
+expand_mode = 1
+stretch_mode = 5

@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://bsn5u2m4onjag"]
+[gd_scene load_steps=65 format=4 uid="uid://bsn5u2m4onjag"]
 
 [ext_resource type="Texture2D" uid="uid://1wmb6svq2vsk" path="res://Assets/Sprites/bg 6.png" id="1_rqwqc"]
 [ext_resource type="PackedScene" uid="uid://5whewxccrae5" path="res://scenes/seb.tscn" id="2_mje6s"]
@@ -54,6 +54,8 @@
 [ext_resource type="PackedScene" uid="uid://c17oa81o5aknh" path="res://scenes/key.tscn" id="48_uaxyp"]
 [ext_resource type="PackedScene" uid="uid://bbxayjovf28qk" path="res://scenes/final_door.tscn" id="49_scexy"]
 [ext_resource type="PackedScene" uid="uid://bs67gcfvel10p" path="res://scenes/invisible_wall.tscn" id="51_nus26"]
+[ext_resource type="PackedScene" uid="uid://b37yq14fo3oxt" path="res://scenes/token_ui.tscn" id="55_3fmqn"]
+[ext_resource type="PackedScene" uid="uid://dsl4ajord0t7m" path="res://scenes/checkpoint.tscn" id="55_125wu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nus26"]
 texture = ExtResource("5_f0b77")
@@ -181,7 +183,7 @@ texture = ExtResource("6_onixs")
 
 [node name="Seb" parent="Sophialvl1" instance=ExtResource("2_mje6s")]
 z_index = 15
-position = Vector2(-880, -2083)
+position = Vector2(-776, -1168)
 zoom = Vector2(0.3, 0.3)
 
 [node name="Ground" type="TileMapLayer" parent="Sophialvl1"]
@@ -1740,10 +1742,10 @@ position = Vector2(21404, 6824)
 font_size = 60
 
 [node name="key" parent="Sophialvl1" instance=ExtResource("48_uaxyp")]
-position = Vector2(13865, -2934)
+position = Vector2(1045, -171)
 
 [node name="finaldoor" parent="Sophialvl1" node_paths=PackedStringArray("music_player") instance=ExtResource("49_scexy")]
-position = Vector2(8603, 13850)
+position = Vector2(2861, -230)
 music_player = NodePath("../AudioStreamPlayer")
 
 [node name="invisible wall" parent="Sophialvl1" instance=ExtResource("51_nus26")]
@@ -1765,3 +1767,8 @@ position = Vector2(21571, 16405)
 [node name="CoinUI" parent="Sophialvl1/UIs" instance=ExtResource("39_323mt")]
 
 [node name="HeartUI" parent="Sophialvl1/UIs" instance=ExtResource("42_4qid8")]
+
+[node name="TokenUI" parent="Sophialvl1/UIs" instance=ExtResource("55_3fmqn")]
+
+[node name="Checkpoint" parent="." instance=ExtResource("55_125wu")]
+position = Vector2(14942, 11154)

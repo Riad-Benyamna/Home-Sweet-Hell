@@ -12,6 +12,11 @@ var collected := false
 
 
 func _ready():
+	# Don't respawn if already collected (checkpoint restore keeps the flag set)
+	if _is_already_collected():
+		queue_free()
+		return
+
 	body_entered.connect(_on_body_entered)
 
 	# Appliquer la texture si fournie
@@ -41,6 +46,13 @@ func _on_body_entered(body):
 		collected = true
 		collect()
 
+
+func _is_already_collected() -> bool:
+	match token_color:
+		"blue": return GameManager.blue_token
+		"red": return GameManager.red_token
+		"yellow": return GameManager.yellow_token
+	return false
 
 func collect():
 	# Désactiver la détection

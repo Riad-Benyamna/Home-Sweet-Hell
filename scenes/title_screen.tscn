@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://buddtsauurirh"]
+[gd_scene load_steps=35 format=3 uid="uid://buddtsauurirh"]
 
 [ext_resource type="Script" uid="uid://cr40enm46dlf3" path="res://Scripts/title_screen.gd" id="1_4qe4i"]
 [ext_resource type="Texture2D" uid="uid://k1d8pn6238yk" path="res://sprites 2/title 1.png" id="2_p07av"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://cf8w3ew1fvldt" path="res://sprites 2/Quit 1.png" id="14_yrrko"]
 [ext_resource type="Texture2D" uid="uid://d26gjmqlyrtg" path="res://sprites 2/Quit 2.png" id="15_aidx5"]
 [ext_resource type="Texture2D" uid="uid://bv3qxtcl6qw2d" path="res://sprites 2/Quit 3.png" id="16_6uh13"]
+[ext_resource type="Texture2D" uid="uid://ccee5lvahl5ip" path="res://sprites 2/Continue placeholder.png" id="17_p07av"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lf08s"]
 atlas = ExtResource("2_p07av")
@@ -214,5 +215,18 @@ scale = Vector2(0.499297, 0.519306)
 sprite_frames = SubResource("SpriteFrames_g3bb0")
 frame_progress = 0.684255
 
+[node name="Continue" type="Button" parent="."]
+layout_mode = 0
+offset_left = 762.0
+offset_top = 309.0
+offset_right = 938.0
+offset_bottom = 400.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Continue"]
+position = Vector2(86.375, 45)
+scale = Vector2(0.133371, 0.119792)
+texture = ExtResource("17_p07av")
+
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]

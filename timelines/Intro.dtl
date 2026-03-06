@@ -1,4 +1,3 @@
-jump Conservatory/
 [background arg="res://Backgrounds/Black (1).png" fade="0.0"]
 [wait time="2.0"]
 audio music "res://game musics/sad theme 2 slowed and reverbed asf.mp3" [fade="2.0" volume="-5.0"]
